@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "care-plan2-status",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>CarePlan2Status</h2><p>Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record.</p><p>This value set defines its own terms in the system http://hl7.org/fhir/care-plan2-status</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>planned<a name=\"planned\"> </a></td><td>Planned</td><td>The plan is in development or awaiting use but is not yet intended to be acted upon.</td></tr><tr><td>active<a name=\"active\"> </a></td><td>Active</td><td>The plan is intended to be followed and used as part of patient care.</td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>Completed</td><td>The plan is no longer in use and is not expected to be followed or used in patient care.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.545"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/care-plan2-status",
+  "version": "0.4.0",
+  "name": "CarePlan2Status",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates whether the plan is currently being acted upon, represents future intentions or is now just historical record.",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.545"
+      }
+    ],
+    "system": "http://hl7.org/fhir/care-plan2-status",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "planned",
+        "display": "Planned",
+        "definition": "The plan is in development or awaiting use but is not yet intended to be acted upon."
+      },
+      {
+        "code": "active",
+        "display": "Active",
+        "definition": "The plan is intended to be followed and used as part of patient care."
+      },
+      {
+        "code": "completed",
+        "display": "Completed",
+        "definition": "The plan is no longer in use and is not expected to be followed or used in patient care."
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "RS-link",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 2 concepts</p><h2>RemittanceOutcome</h2><p>The outcome of the processing.</p><p>This value set defines its own terms in the system http://hl7.org/fhir/RS-link</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>complete<a name=\"complete\"> </a></td><td>Complete</td><td>The processing completed without errors.</td></tr><tr><td>error<a name=\"error\"> </a></td><td>Error</td><td>The processing identified with errors.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.467"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/RS-link",
+  "version": "0.4.0",
+  "name": "RemittanceOutcome",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The outcome of the processing.",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.467"
+      }
+    ],
+    "system": "http://hl7.org/fhir/RS-link",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "complete",
+        "display": "Complete",
+        "definition": "The processing completed without errors."
+      },
+      {
+        "code": "error",
+        "display": "Error",
+        "definition": "The processing identified with errors."
+      }
+    ]
+  }
+}

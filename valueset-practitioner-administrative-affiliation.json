@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-practitioner-administrative-affiliation",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div>TBD</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1563"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/practitioner-administrative-affiliation",
+  "version": "0.01",
+  "name": "HSPC Provider Administrative Affiliation Value Set Definition",
+  "immutable": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "description": "TBD",
+  "copyright": "TBD",
+  "status": "draft",
+  "experimental": true,
+  "extensible": true,
+  "date": "2015-02-09",
+  "compose": {
+    "include": [
+      {
+        "system": "http://need.a.uri.org/practitioner/administrativeAffiliation",
+        "concept": [
+          {
+            "code": "1",
+            "display": "TBD"
+          }
+        ]
+      }
+    ]
+  }
+}

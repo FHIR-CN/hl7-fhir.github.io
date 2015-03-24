@@ -1,0 +1,1546 @@
+﻿<!DOCTYPE HTML>
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Parameters.questionnaire.xml - FHIR v0.4.0</title>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="http://hl7.org/fhir"/>
+
+  <link href="fhir.css" rel="stylesheet"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/parameters.questionnaire.xml.html"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./dist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="./assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="./assets/css/project.css" rel="stylesheet"/>
+  <link href="./assets/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment"><!-- segment-header -->	
+		<div class="container"><!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img src="./assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img src="./assets/images/hl7-logo.png" width="42" height="50" alt="visit the hl7 website"/>
+				</a> 
+			</div>       	
+			<!--hl7-search-->
+		</div>
+		<div class="container"><!-- container -->
+	</div></div><!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment"><!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container"><!-- container -->
+ <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a href="index.html" class="navbar-brand hidden">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div><!-- /.nav-collapse -->
+				</div><!-- /.container -->
+			</nav><!-- /.navbar -->
+      		
+				
+<!-- /HEADER CONTENT -->				
+		</div><!-- /container -->
+	</div><!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment"><!-- segment-breadcrumb -->
+		<div class="container"><!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infrastructure.html">Infrastructure</a></li>        <li><a href="parameters.html">Parameters</a></li>        <li><b>Generated Questionnaire</b></li>        <!-- parameters.questionnaire.xml.html / resource-questionnaire:Parameters / Questionnaire-->
+
+			</ul>	
+		</div><!-- /container -->
+	</div><!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment"><!-- segment-content -->
+	<div class="container"><!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+<!-- CONTENT CONTENT -->
+
+
+<div class="col-9">
+
+<h1>Parameters.questionnaire.xml</h1>
+
+<p>
+<a href="parameters.questionnaire.xml">Raw XML</a> (<a href="parameters.questionnaire.canonical.xml">canonical form</a>)
+</p>
+
+
+<div class="example">
+<p>Generated Questionnaire for Parameters</p>
+<pre class="json">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;Questionnaire xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;id value=&quot;qs1&quot;/&gt;
+  &lt;contained&gt;
+    &lt;ValueSet&gt;
+      &lt;id value=&quot;vs2&quot;/&gt;
+      &lt;url value=&quot;urn:uuid:f8e38191-4957-434e-9e44-aef5436c6d9b&quot;/&gt;
+      &lt;name value=&quot;Type options for Parameters.parameter.value[x]&quot;/&gt;
+      &lt;description value=&quot;Type options for Parameters.parameter.value[x]&quot;/&gt;
+      &lt;status value=&quot;active&quot;/&gt;
+      &lt;expansion&gt;
+        &lt;identifier value=&quot;urn:uuid:72e16133-c67a-4e52-8080-490f25df083b&quot;/&gt;
+        &lt;timestamp value=&quot;2015-03-23T23:58:37+00:00&quot;/&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;integer&quot;/&gt;
+          &lt;display value=&quot;integer&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;decimal&quot;/&gt;
+          &lt;display value=&quot;decimal&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;dateTime&quot;/&gt;
+          &lt;display value=&quot;dateTime&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;date&quot;/&gt;
+          &lt;display value=&quot;date&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;instant&quot;/&gt;
+          &lt;display value=&quot;instant&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;time&quot;/&gt;
+          &lt;display value=&quot;time&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;string&quot;/&gt;
+          &lt;display value=&quot;string&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;uri&quot;/&gt;
+          &lt;display value=&quot;uri&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;boolean&quot;/&gt;
+          &lt;display value=&quot;boolean&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Coding&quot;/&gt;
+          &lt;display value=&quot;Coding&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;CodeableConcept&quot;/&gt;
+          &lt;display value=&quot;CodeableConcept&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Attachment&quot;/&gt;
+          &lt;display value=&quot;Attachment&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Identifier&quot;/&gt;
+          &lt;display value=&quot;Identifier&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Quantity&quot;/&gt;
+          &lt;display value=&quot;Quantity&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Range&quot;/&gt;
+          &lt;display value=&quot;Range&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Period&quot;/&gt;
+          &lt;display value=&quot;Period&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Ratio&quot;/&gt;
+          &lt;display value=&quot;Ratio&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;HumanName&quot;/&gt;
+          &lt;display value=&quot;HumanName&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Address&quot;/&gt;
+          &lt;display value=&quot;Address&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;ContactPoint&quot;/&gt;
+          &lt;display value=&quot;ContactPoint&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Timing&quot;/&gt;
+          &lt;display value=&quot;Timing&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Reference&quot;/&gt;
+          &lt;display value=&quot;Reference&quot;/&gt;
+        &lt;/contains&gt;
+      &lt;/expansion&gt;
+    &lt;/ValueSet&gt;
+  &lt;/contained&gt;
+  &lt;contained&gt;
+    &lt;ValueSet&gt;
+      &lt;id value=&quot;vs3&quot;/&gt;
+      &lt;url value=&quot;urn:uuid:d10967d3-dd4b-4b0a-b070-078d0e09f722&quot;/&gt;
+      &lt;name value=&quot;Type options for Parameters.parameter.part.value[x]&quot;/&gt;
+      &lt;description value=&quot;Type options for Parameters.parameter.part.value[x]&quot;/&gt;
+      &lt;status value=&quot;active&quot;/&gt;
+      &lt;expansion&gt;
+        &lt;identifier value=&quot;urn:uuid:1edb3ca5-967d-4e30-9a2d-52ca2c5baac4&quot;/&gt;
+        &lt;timestamp value=&quot;2015-03-23T23:58:37+00:00&quot;/&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;integer&quot;/&gt;
+          &lt;display value=&quot;integer&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;decimal&quot;/&gt;
+          &lt;display value=&quot;decimal&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;dateTime&quot;/&gt;
+          &lt;display value=&quot;dateTime&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;date&quot;/&gt;
+          &lt;display value=&quot;date&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;instant&quot;/&gt;
+          &lt;display value=&quot;instant&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;time&quot;/&gt;
+          &lt;display value=&quot;time&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;string&quot;/&gt;
+          &lt;display value=&quot;string&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;uri&quot;/&gt;
+          &lt;display value=&quot;uri&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;boolean&quot;/&gt;
+          &lt;display value=&quot;boolean&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Coding&quot;/&gt;
+          &lt;display value=&quot;Coding&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;CodeableConcept&quot;/&gt;
+          &lt;display value=&quot;CodeableConcept&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Attachment&quot;/&gt;
+          &lt;display value=&quot;Attachment&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Identifier&quot;/&gt;
+          &lt;display value=&quot;Identifier&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Quantity&quot;/&gt;
+          &lt;display value=&quot;Quantity&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Range&quot;/&gt;
+          &lt;display value=&quot;Range&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Period&quot;/&gt;
+          &lt;display value=&quot;Period&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Ratio&quot;/&gt;
+          &lt;display value=&quot;Ratio&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;HumanName&quot;/&gt;
+          &lt;display value=&quot;HumanName&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Address&quot;/&gt;
+          &lt;display value=&quot;Address&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;ContactPoint&quot;/&gt;
+          &lt;display value=&quot;ContactPoint&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Timing&quot;/&gt;
+          &lt;display value=&quot;Timing&quot;/&gt;
+        &lt;/contains&gt;
+        &lt;contains&gt;
+          &lt;system value=&quot;http://hl7.org/fhir/data-types&quot;/&gt;
+          &lt;code value=&quot;Reference&quot;/&gt;
+          &lt;display value=&quot;Reference&quot;/&gt;
+        &lt;/contains&gt;
+      &lt;/expansion&gt;
+    &lt;/ValueSet&gt;
+  &lt;/contained&gt;
+  &lt;identifier&gt;
+    &lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;status value=&quot;draft&quot;/&gt;
+  &lt;date value=&quot;2015-03-23T23:56:59+00:00&quot;/&gt;
+  &lt;publisher value=&quot;HL7 FHIR Project&quot;/&gt;
+  &lt;group&gt;
+    &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+      &lt;valueString value=&quot;This special resource type is used to represent [operation](operations.html] request and response. It has no other use, and there is no RESTful end=point associated with it.&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;linkId value=&quot;Parameters&quot;/&gt;
+    &lt;title value=&quot;Operation Request or Response&quot;/&gt;
+    &lt;text value=&quot;The parameters that may be used are defined by the OperationDefinition resource.&quot;/&gt;
+    &lt;required value=&quot;true&quot;/&gt;
+    &lt;repeats value=&quot;false&quot;/&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;string&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;Parameters.id&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;Parameters.id.value&quot;/&gt;
+        &lt;text value=&quot;Logical id of this artefact&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;Parameters.meta&quot;/&gt;
+      &lt;text value=&quot;Metadata about the resource&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;uri&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;Parameters.implicitRules&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;Parameters.implicitRules.value&quot;/&gt;
+        &lt;text value=&quot;A set of rules under which this content was created&quot;/&gt;
+        &lt;type value=&quot;string&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+        &lt;valueString value=&quot;code&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;Parameters.language&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;question&gt;
+        &lt;linkId value=&quot;Parameters.language.value&quot;/&gt;
+        &lt;text value=&quot;language&quot;/&gt;
+        &lt;type value=&quot;choice&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;false&quot;/&gt;
+      &lt;/question&gt;
+    &lt;/group&gt;
+    &lt;group&gt;
+      &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+        &lt;valueString value=&quot;A parameter passed to or received from the operation.&quot;/&gt;
+      &lt;/extension&gt;
+      &lt;linkId value=&quot;Parameters.parameter&quot;/&gt;
+      &lt;title value=&quot;Operation Parameter&quot;/&gt;
+      &lt;required value=&quot;false&quot;/&gt;
+      &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;Parameters.parameter.id&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;Parameters.parameter.id.value&quot;/&gt;
+          &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;The name of the parameter (reference to the operation definition).&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+          &lt;valueString value=&quot;string&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;Parameters.parameter.name&quot;/&gt;
+        &lt;required value=&quot;true&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;Parameters.parameter.name.value&quot;/&gt;
+          &lt;text value=&quot;Name from the definition&quot;/&gt;
+          &lt;type value=&quot;string&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;If the parameter is a data type.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;Parameters.parameter.value[x]&quot;/&gt;
+        &lt;text value=&quot;If parameter is a data type&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;question&gt;
+          &lt;linkId value=&quot;Parameters.parameter.value[x]._type&quot;/&gt;
+          &lt;text value=&quot;type&quot;/&gt;
+          &lt;type value=&quot;choice&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;options&gt;
+            &lt;reference value=&quot;#vs2&quot;/&gt;
+          &lt;/options&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;integer&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._integer&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._integer.value&quot;/&gt;
+              &lt;text value=&quot;integer&quot;/&gt;
+              &lt;type value=&quot;integer&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;decimal&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._decimal&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._decimal.value&quot;/&gt;
+              &lt;text value=&quot;decimal&quot;/&gt;
+              &lt;type value=&quot;decimal&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;datetime&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._dateTime&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._dateTime.value&quot;/&gt;
+              &lt;text value=&quot;dateTime&quot;/&gt;
+              &lt;type value=&quot;dateTime&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;datetime&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._date&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._date.value&quot;/&gt;
+              &lt;text value=&quot;date&quot;/&gt;
+              &lt;type value=&quot;dateTime&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;instant&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._instant&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._instant.value&quot;/&gt;
+              &lt;text value=&quot;instant&quot;/&gt;
+              &lt;type value=&quot;instant&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;time&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._time&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._time.value&quot;/&gt;
+              &lt;text value=&quot;time&quot;/&gt;
+              &lt;type value=&quot;time&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;string&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._string&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._string.value&quot;/&gt;
+              &lt;text value=&quot;string&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;uri&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._uri&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._uri.value&quot;/&gt;
+              &lt;text value=&quot;uri&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;boolean&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._boolean&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._boolean.value&quot;/&gt;
+              &lt;text value=&quot;boolean&quot;/&gt;
+              &lt;type value=&quot;boolean&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Coding&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Coding&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Coding.value&quot;/&gt;
+              &lt;text value=&quot;Coding&quot;/&gt;
+              &lt;type value=&quot;open-choice&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._CodeableConcept&quot;/&gt;
+            &lt;text value=&quot;CodeableConcept&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._CodeableConcept.coding&quot;/&gt;
+              &lt;text value=&quot;code:&quot;/&gt;
+              &lt;type value=&quot;open-choice&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._CodeableConcept.text&quot;/&gt;
+              &lt;text value=&quot;text:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Attachment&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Attachment&quot;/&gt;
+            &lt;text value=&quot;Attachment&quot;/&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Identifier&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Identifier&quot;/&gt;
+            &lt;text value=&quot;Identifier&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Identifier.label&quot;/&gt;
+              &lt;text value=&quot;label:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Identifier.system&quot;/&gt;
+              &lt;text value=&quot;system:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Identifier.value&quot;/&gt;
+              &lt;text value=&quot;value:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Quantity&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Quantity&quot;/&gt;
+            &lt;text value=&quot;Quantity&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Quantity.comparator&quot;/&gt;
+              &lt;text value=&quot;comp:&quot;/&gt;
+              &lt;type value=&quot;choice&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Quantity.value&quot;/&gt;
+              &lt;text value=&quot;value:&quot;/&gt;
+              &lt;type value=&quot;decimal&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Quantity.units&quot;/&gt;
+              &lt;text value=&quot;units:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Quantity.code&quot;/&gt;
+              &lt;text value=&quot;coded units:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Quantity.system&quot;/&gt;
+              &lt;text value=&quot;units system:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Range&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Range&quot;/&gt;
+            &lt;text value=&quot;Range&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Range.low&quot;/&gt;
+              &lt;text value=&quot;low:&quot;/&gt;
+              &lt;type value=&quot;decimal&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Range.high&quot;/&gt;
+              &lt;text value=&quot;high:&quot;/&gt;
+              &lt;type value=&quot;decimal&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Range.units&quot;/&gt;
+              &lt;text value=&quot;units:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Period&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Period&quot;/&gt;
+            &lt;text value=&quot;Period&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Period.low&quot;/&gt;
+              &lt;text value=&quot;start:&quot;/&gt;
+              &lt;type value=&quot;dateTime&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Period.end&quot;/&gt;
+              &lt;text value=&quot;end:&quot;/&gt;
+              &lt;type value=&quot;dateTime&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Ratio&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Ratio&quot;/&gt;
+            &lt;text value=&quot;Ratio&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Ratio.numerator&quot;/&gt;
+              &lt;text value=&quot;numerator:&quot;/&gt;
+              &lt;type value=&quot;decimal&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Ratio.denominator&quot;/&gt;
+              &lt;text value=&quot;denominator:&quot;/&gt;
+              &lt;type value=&quot;decimal&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Ratio.units&quot;/&gt;
+              &lt;text value=&quot;units:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Name&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._HumanName&quot;/&gt;
+            &lt;text value=&quot;HumanName&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._HumanName.text&quot;/&gt;
+              &lt;text value=&quot;text:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._HumanName.family&quot;/&gt;
+              &lt;text value=&quot;family:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._HumanName.given&quot;/&gt;
+              &lt;text value=&quot;given:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Address&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Address&quot;/&gt;
+            &lt;text value=&quot;Address&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.text&quot;/&gt;
+              &lt;text value=&quot;text:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.line&quot;/&gt;
+              &lt;text value=&quot;line:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;true&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.city&quot;/&gt;
+              &lt;text value=&quot;city:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.state&quot;/&gt;
+              &lt;text value=&quot;state:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.postalCode&quot;/&gt;
+              &lt;text value=&quot;post code:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.country&quot;/&gt;
+              &lt;text value=&quot;country:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Address.use&quot;/&gt;
+              &lt;text value=&quot;use:&quot;/&gt;
+              &lt;type value=&quot;choice&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;ContactPoint&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._ContactPoint&quot;/&gt;
+            &lt;text value=&quot;ContactPoint&quot;/&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._ContactPoint.system&quot;/&gt;
+              &lt;text value=&quot;type:&quot;/&gt;
+              &lt;type value=&quot;choice&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._ContactPoint.value&quot;/&gt;
+              &lt;text value=&quot;value:&quot;/&gt;
+              &lt;type value=&quot;string&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+            &lt;question&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._ContactPoint.use&quot;/&gt;
+              &lt;text value=&quot;use:&quot;/&gt;
+              &lt;type value=&quot;choice&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Schedule&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Timing&quot;/&gt;
+            &lt;text value=&quot;Timing&quot;/&gt;
+          &lt;/group&gt;
+          &lt;group&gt;
+            &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+              &lt;valueString value=&quot;Reference&quot;/&gt;
+            &lt;/extension&gt;
+            &lt;linkId value=&quot;Parameters.parameter.value[x]._Reference&quot;/&gt;
+            &lt;question&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+                &lt;valueString value=&quot;/_search?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.value[x]._Reference.value&quot;/&gt;
+              &lt;text value=&quot;Reference&quot;/&gt;
+              &lt;type value=&quot;reference&quot;/&gt;
+              &lt;required value=&quot;false&quot;/&gt;
+              &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;/question&gt;
+          &lt;/group&gt;
+        &lt;/question&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;If the parameter is a whole resource.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;Parameters.parameter.resource&quot;/&gt;
+        &lt;text value=&quot;If parameter is a whole resource&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+      &lt;/group&gt;
+      &lt;group&gt;
+        &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+          &lt;valueString value=&quot;A named part of a parameter. In many implementation context, a set of named parts is known as a &amp;quot;Tuple&amp;quot;.&quot;/&gt;
+        &lt;/extension&gt;
+        &lt;linkId value=&quot;Parameters.parameter.part&quot;/&gt;
+        &lt;title value=&quot;Named part of a parameter (e.g. Tuple)&quot;/&gt;
+        &lt;text value=&quot;Only one level of tuples is allowed.&quot;/&gt;
+        &lt;required value=&quot;false&quot;/&gt;
+        &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;unique id for the element within a resource (for internal references).&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;Parameters.parameter.part.id&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;Parameters.parameter.part.id.value&quot;/&gt;
+            &lt;text value=&quot;xml:id (or equivalent in JSON)&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;The name of the parameter (reference to the operation definition).&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+            &lt;valueString value=&quot;string&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;Parameters.parameter.part.name&quot;/&gt;
+          &lt;required value=&quot;true&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;Parameters.parameter.part.name.value&quot;/&gt;
+            &lt;text value=&quot;Name from the definition&quot;/&gt;
+            &lt;type value=&quot;string&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;The value of the parameter. If there is no value, simply omit the parameter.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;Parameters.parameter.part.value[x]&quot;/&gt;
+          &lt;text value=&quot;Value of the part&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+          &lt;question&gt;
+            &lt;linkId value=&quot;Parameters.parameter.part.value[x]._type&quot;/&gt;
+            &lt;text value=&quot;type&quot;/&gt;
+            &lt;type value=&quot;choice&quot;/&gt;
+            &lt;required value=&quot;false&quot;/&gt;
+            &lt;repeats value=&quot;false&quot;/&gt;
+            &lt;options&gt;
+              &lt;reference value=&quot;#vs3&quot;/&gt;
+            &lt;/options&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;integer&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._integer&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._integer.value&quot;/&gt;
+                &lt;text value=&quot;integer&quot;/&gt;
+                &lt;type value=&quot;integer&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;decimal&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._decimal&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._decimal.value&quot;/&gt;
+                &lt;text value=&quot;decimal&quot;/&gt;
+                &lt;type value=&quot;decimal&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;datetime&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._dateTime&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._dateTime.value&quot;/&gt;
+                &lt;text value=&quot;dateTime&quot;/&gt;
+                &lt;type value=&quot;dateTime&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;datetime&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._date&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._date.value&quot;/&gt;
+                &lt;text value=&quot;date&quot;/&gt;
+                &lt;type value=&quot;dateTime&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;instant&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._instant&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._instant.value&quot;/&gt;
+                &lt;text value=&quot;instant&quot;/&gt;
+                &lt;type value=&quot;instant&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;time&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._time&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._time.value&quot;/&gt;
+                &lt;text value=&quot;time&quot;/&gt;
+                &lt;type value=&quot;time&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;string&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._string&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._string.value&quot;/&gt;
+                &lt;text value=&quot;string&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;uri&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._uri&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._uri.value&quot;/&gt;
+                &lt;text value=&quot;uri&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;boolean&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._boolean&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._boolean.value&quot;/&gt;
+                &lt;text value=&quot;boolean&quot;/&gt;
+                &lt;type value=&quot;boolean&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Coding&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Coding&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Coding.value&quot;/&gt;
+                &lt;text value=&quot;Coding&quot;/&gt;
+                &lt;type value=&quot;open-choice&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;CodeableConcept&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._CodeableConcept&quot;/&gt;
+              &lt;text value=&quot;CodeableConcept&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._CodeableConcept.coding&quot;/&gt;
+                &lt;text value=&quot;code:&quot;/&gt;
+                &lt;type value=&quot;open-choice&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._CodeableConcept.text&quot;/&gt;
+                &lt;text value=&quot;text:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Attachment&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Attachment&quot;/&gt;
+              &lt;text value=&quot;Attachment&quot;/&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Identifier&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Identifier&quot;/&gt;
+              &lt;text value=&quot;Identifier&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Identifier.label&quot;/&gt;
+                &lt;text value=&quot;label:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Identifier.system&quot;/&gt;
+                &lt;text value=&quot;system:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Identifier.value&quot;/&gt;
+                &lt;text value=&quot;value:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Quantity&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Quantity&quot;/&gt;
+              &lt;text value=&quot;Quantity&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Quantity.comparator&quot;/&gt;
+                &lt;text value=&quot;comp:&quot;/&gt;
+                &lt;type value=&quot;choice&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Quantity.value&quot;/&gt;
+                &lt;text value=&quot;value:&quot;/&gt;
+                &lt;type value=&quot;decimal&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Quantity.units&quot;/&gt;
+                &lt;text value=&quot;units:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Quantity.code&quot;/&gt;
+                &lt;text value=&quot;coded units:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Quantity.system&quot;/&gt;
+                &lt;text value=&quot;units system:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Range&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Range&quot;/&gt;
+              &lt;text value=&quot;Range&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Range.low&quot;/&gt;
+                &lt;text value=&quot;low:&quot;/&gt;
+                &lt;type value=&quot;decimal&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Range.high&quot;/&gt;
+                &lt;text value=&quot;high:&quot;/&gt;
+                &lt;type value=&quot;decimal&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Range.units&quot;/&gt;
+                &lt;text value=&quot;units:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Period&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Period&quot;/&gt;
+              &lt;text value=&quot;Period&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Period.low&quot;/&gt;
+                &lt;text value=&quot;start:&quot;/&gt;
+                &lt;type value=&quot;dateTime&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Period.end&quot;/&gt;
+                &lt;text value=&quot;end:&quot;/&gt;
+                &lt;type value=&quot;dateTime&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Ratio&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Ratio&quot;/&gt;
+              &lt;text value=&quot;Ratio&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Ratio.numerator&quot;/&gt;
+                &lt;text value=&quot;numerator:&quot;/&gt;
+                &lt;type value=&quot;decimal&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Ratio.denominator&quot;/&gt;
+                &lt;text value=&quot;denominator:&quot;/&gt;
+                &lt;type value=&quot;decimal&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Ratio.units&quot;/&gt;
+                &lt;text value=&quot;units:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Name&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._HumanName&quot;/&gt;
+              &lt;text value=&quot;HumanName&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._HumanName.text&quot;/&gt;
+                &lt;text value=&quot;text:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._HumanName.family&quot;/&gt;
+                &lt;text value=&quot;family:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;true&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._HumanName.given&quot;/&gt;
+                &lt;text value=&quot;given:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;true&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Address&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address&quot;/&gt;
+              &lt;text value=&quot;Address&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.text&quot;/&gt;
+                &lt;text value=&quot;text:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.line&quot;/&gt;
+                &lt;text value=&quot;line:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;true&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.city&quot;/&gt;
+                &lt;text value=&quot;city:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.state&quot;/&gt;
+                &lt;text value=&quot;state:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.postalCode&quot;/&gt;
+                &lt;text value=&quot;post code:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.country&quot;/&gt;
+                &lt;text value=&quot;country:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Address.use&quot;/&gt;
+                &lt;text value=&quot;use:&quot;/&gt;
+                &lt;type value=&quot;choice&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;ContactPoint&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._ContactPoint&quot;/&gt;
+              &lt;text value=&quot;ContactPoint&quot;/&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._ContactPoint.system&quot;/&gt;
+                &lt;text value=&quot;type:&quot;/&gt;
+                &lt;type value=&quot;choice&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._ContactPoint.value&quot;/&gt;
+                &lt;text value=&quot;value:&quot;/&gt;
+                &lt;type value=&quot;string&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+              &lt;question&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._ContactPoint.use&quot;/&gt;
+                &lt;text value=&quot;use:&quot;/&gt;
+                &lt;type value=&quot;choice&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Schedule&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Timing&quot;/&gt;
+              &lt;text value=&quot;Timing&quot;/&gt;
+            &lt;/group&gt;
+            &lt;group&gt;
+              &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#type&quot;&gt;
+                &lt;valueString value=&quot;Reference&quot;/&gt;
+              &lt;/extension&gt;
+              &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Reference&quot;/&gt;
+              &lt;question&gt;
+                &lt;extension url=&quot;http://www.healthintersections.com.au/fhir/Profile/metadata#reference&quot;&gt;
+                  &lt;valueString value=&quot;/_search?subject=$subj&amp;amp;patient=$subj&amp;amp;encounter=$encounter&quot;/&gt;
+                &lt;/extension&gt;
+                &lt;linkId value=&quot;Parameters.parameter.part.value[x]._Reference.value&quot;/&gt;
+                &lt;text value=&quot;Reference&quot;/&gt;
+                &lt;type value=&quot;reference&quot;/&gt;
+                &lt;required value=&quot;false&quot;/&gt;
+                &lt;repeats value=&quot;false&quot;/&gt;
+              &lt;/question&gt;
+            &lt;/group&gt;
+          &lt;/question&gt;
+        &lt;/group&gt;
+        &lt;group&gt;
+          &lt;extension url=&quot;http://hl7.org/fhir/Profile/questionnaire-extensions#flyover&quot;&gt;
+            &lt;valueString value=&quot;If the parameter is a whole resource.&quot;/&gt;
+          &lt;/extension&gt;
+          &lt;linkId value=&quot;Parameters.parameter.part.resource&quot;/&gt;
+          &lt;text value=&quot;If part is a whole resource&quot;/&gt;
+          &lt;required value=&quot;false&quot;/&gt;
+          &lt;repeats value=&quot;true&quot;/&gt;
+        &lt;/group&gt;
+      &lt;/group&gt;
+    &lt;/group&gt;
+  &lt;/group&gt;
+&lt;/Questionnaire&gt;
+</pre>
+</div>
+
+
+<p>
+Usage note: every effort has been made to ensure that the 
+examples are correct and useful, but they are not a normative part 
+of the specification. 
+</p>
+
+</div>
+
+
+				</div><!-- /inner-wrapper -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+        
+    </div><!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment"><!-- segment-footer -->
+		<div class="container"><!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-4833) generated on Mon, Mar 23, 2015 23:58+0000. <!-- <a href="qa.html">QA Report</a> --> <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Specification Map</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Fparameters.questionnaire.xml.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Fparameters.questionnaire.xml.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img src="cc0.png" style="border-style: none;" alt="CC0"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div><!-- /inner-wrapper -->
+		</div><!-- /container -->
+	</div><!-- /segment-footer -->
+<!-- disqus thread -->
+<!--disqus-->
+<!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden"><!-- segment-post-footer -->
+		<div class="container"><!-- container -->
+		</div><!-- /container -->
+	</div><!-- /segment-post-footer -->
+    
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>   <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "network-type",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 5 concepts</p><h2>AuditEventParticipantNetworkType</h2><p>The type of network access point that originated the audit event</p><p>This value set defines its own terms in the system http://hl7.org/fhir/network-type</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td> </td><td>Machine Name, including DNS name.</td></tr><tr><td>2<a name=\"2\"> </a></td><td> </td><td>IP Address.</td></tr><tr><td>3<a name=\"3\"> </a></td><td> </td><td>Telephone Number.</td></tr><tr><td>4<a name=\"4\"> </a></td><td> </td><td>Email address.</td></tr><tr><td>5<a name=\"5\"> </a></td><td> </td><td>URI (User directory, HTTP-PUT, ftp, etc.).</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1478"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/network-type",
+  "version": "0.4.0",
+  "name": "AuditEventParticipantNetworkType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The type of network access point that originated the audit event",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1478"
+      }
+    ],
+    "system": "http://hl7.org/fhir/network-type",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "1",
+        "display": " ",
+        "definition": "Machine Name, including DNS name."
+      },
+      {
+        "code": "2",
+        "display": " ",
+        "definition": "IP Address."
+      },
+      {
+        "code": "3",
+        "display": " ",
+        "definition": "Telephone Number."
+      },
+      {
+        "code": "4",
+        "display": " ",
+        "definition": "Email address."
+      },
+      {
+        "code": "5",
+        "display": " ",
+        "definition": "URI (User directory, HTTP-PUT, ftp, etc.)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><Encounter xmlns="http://hl7.org/fhir"><id value="f202"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>identifier</b>: Roel&#39;s encounter on January 28th, 2013 = Encounter_Roel_20130128 (TEMP)
+      </p>
+      <p>
+        <b>status</b>: FINISHED
+      </p>
+      <p>
+        <b>class</b>: OUTPATIENT
+      </p>
+      <p>
+        <b>type</b>: Chemotherapy 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;367336001&#39; = &#39;Chemotherapy&#39;, given as &#39;Chemotherapy&#39;})</span>
+      </p>
+      <p>
+        <b>patient</b>: 
+        <a href="Patient/f201">Roel. Generated Summary: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL); Roel(OFFICIAL); ph: +31612345678(MOBILE), ph: +31201234567(HOME); MALE; birthDate: Mar 13, 1960; 
+          <span title="Codes: {http://snomed.info/sct 36629006}, {http://hl7.org/fhir/v3/MaritalStatus M}">Legally married</span>; active
+        </a>
+      </p>
+      <h3>Participants</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+          <td>
+            <b>Period</b>
+          </td>
+          <td>
+            <b>Individual</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>
+            <a href="Practitioner/f201">Generated Summary: UZI-nummer = 12345678901 (OFFICIAL); Dokter Bronsig(OFFICIAL); ph: +31715269111(WORK); MALE; birthDate: Dec 24, 1956</a>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <b>length</b>: 56 minutes
+        <span style="background: LightGoldenRodYellow "> (Details: SNOMED CT code 258701004 = &#39;min (qualifier value)&#39;)</span>
+      </p>
+      <p>
+        <b>reason</b>: The patient is treated for a tumor. 
+        <span style="background: LightGoldenRodYellow ">(Details )</span>
+      </p>
+      <p>
+        <b>indication</b>: 
+        <a href="Procedure/f201">Roel&#39;s TPF chemotherapy on January 28th, 2013. Generated Summary: COMPLETED; 
+          <span title="Codes: {http://snomed.info/sct 367336001}">Chemotherapy</span>; 
+          <span title="Codes: {http://snomed.info/sct 272676008}">Sphenoid bone</span>; 
+          <span title="Codes: ">DiagnosticReport/f201</span>; performed: Jan 28, 2013 12:31:00 PM --&gt; Jan 28, 2013 1:27:00 PM; notes: Eerste neo-adjuvante TPF-kuur bij groot proces in sphenoid met intracraniale uitbreiding.
+        </a>
+      </p>
+      <p>
+        <b>priority</b>: Urgent 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;103391001&#39; = &#39;Urgent&#39;, given as &#39;Urgent&#39;})</span>
+      </p>
+      <p>
+        <b>serviceProvider</b>: 
+        <a href="Organization/f201">Generated Summary: Zorginstelling naam = Artis University Medical Center (OFFICIAL); name: Artis University Medical Center (AUMC); 
+          <span title="Codes: {http://snomed.info/sct 405608006}, {urn:oid:2.16.840.1.113883.2.4.15.1060 V6}, {http://hl7.org/fhir/organization-type prov}">Academic Medical Center</span>; ph: +31715269111(WORK); active
+        </a>
+      </p>
+    </div></text><identifier><use value="temp"/><!--    0..1 The use of this identifier    --><label value="Roel&#39;s encounter on January 28th, 2013"/><value value="Encounter_Roel_20130128"/></identifier><status value="finished"/><!--   Encounter has finished   --><class value="outpatient"/><!--   Outpatient encounter for chemotherapy   --><type><coding><system value="http://snomed.info/sct"/><code value="367336001"/><display value="Chemotherapy"/></coding></type><patient><reference value="Patient/f201"/><display value="Roel"/></patient><participant><individual><reference value="Practitioner/f201"/></individual></participant><length><value value="56"/><units value="minutes"/><system value="http://snomed.info/sct"/><code value="258701004"/></length><reason><text value="The patient is treated for a tumor."/></reason><indication><reference value="Procedure/f201"/><display value="Roel&#39;s TPF chemotherapy on January 28th, 2013"/></indication><priority><!--   Urgent priority, because of complications   --><coding><system value="http://snomed.info/sct"/><code value="103391001"/><display value="Urgent"/></coding></priority><!--   No hospitalization was deemed necessary   --><serviceProvider><reference value="Organization/f201"/></serviceProvider></Encounter>

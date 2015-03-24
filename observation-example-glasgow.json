@@ -1,0 +1,167 @@
+{
+  "resourceType": "Observation",
+  "id": "glasgow",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>contained</b>: , , \n      </p>\n      <p>\n        <b>code</b>: Glasgow Coma Scale , (GCS) \n        <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '9269-2' = 'Glasgow coma score total', given as 'Glasgow coma score total'})</span>\n      </p>\n      <p>\n        <b>value</b>: 13 {score}\n        <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>\n      </p>\n      <p>\n        <b>applies</b>: Dec 11, 2014 4:44:16 AM\n      </p>\n      <p>\n        <b>status</b>: FINAL\n      </p>\n      <p>\n        <b>reliability</b>: OK\n      </p>\n      <p>\n        <b>subject</b>: \n        <a href=\"Patient/example\">Peter James Chalmers. Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>\n      </p>\n      <blockquote>\n        <p>\n          <b>referenceRange</b>\n        </p>\n        <p>\n          <b>high</b>: 8 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>\n        </p>\n        <p>\n          <b>meaning</b>: Severe TBI \n          <span style=\"background: LightGoldenRodYellow \">(Details )</span>\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b>referenceRange</b>\n        </p>\n        <p>\n          <b>low</b>: 9 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>\n        </p>\n        <p>\n          <b>high</b>: 12 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>\n        </p>\n        <p>\n          <b>meaning</b>: Moderate TBI \n          <span style=\"background: LightGoldenRodYellow \">(Details )</span>\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b>referenceRange</b>\n        </p>\n        <p>\n          <b>low</b>: 13 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>\n        </p>\n        <p>\n          <b>meaning</b>: Mild TBI \n          <span style=\"background: LightGoldenRodYellow \">(Details )</span>\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b>related</b>\n        </p>\n        <p>\n          <b>type</b>: DERIVEDFROM\n        </p>\n        <p>\n          <b>target</b>: Motor score. Generated Summary: Motor \n          <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '9268-4' = 'Glasgow coma score motor', given as 'Glasgow coma score motor'})</span>; 5 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>; applies: Dec 11, 2014 4:44:16 AM; FINAL; OK; ????\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b>related</b>\n        </p>\n        <p>\n          <b>type</b>: DERIVEDFROM\n        </p>\n        <p>\n          <b>target</b>: Verbal score. Generated Summary: Verbal \n          <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '9270-0' = 'Glasgow coma score verbal', given as 'Glasgow coma score verbal'})</span>; 4 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>; applies: Dec 11, 2014 4:44:16 AM; FINAL; OK; ????\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b>related</b>\n        </p>\n        <p>\n          <b>type</b>: DERIVEDFROM\n        </p>\n        <p>\n          <b>target</b>: Eyes score. Generated Summary: Eyes \n          <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '9267-6' = 'Glasgow coma score eye opening', given as 'Glasgow coma score eye opening'})</span>; 4 {score}\n          <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code {score} = '{score}')</span>; applies: Dec 11, 2014 4:44:16 AM; FINAL; OK; ????\n        </p>\n      </blockquote>\n    </div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Observation",
+      "id": "motor",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9268-4",
+            "display": "Glasgow coma score motor"
+          }
+        ],
+        "text": "Motor"
+      },
+      "valueQuantity": {
+        "value": 5,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "appliesDateTime": "2014-12-11T04:44:16Z",
+      "status": "final",
+      "reliability": "ok",
+      "subject": {
+        "reference": "Patient/example"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "verbal",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9270-0",
+            "display": "Glasgow coma score verbal"
+          }
+        ],
+        "text": "Verbal"
+      },
+      "valueQuantity": {
+        "value": 4,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "appliesDateTime": "2014-12-11T04:44:16Z",
+      "status": "final",
+      "reliability": "ok",
+      "subject": {
+        "reference": "Patient/example"
+      }
+    },
+    {
+      "resourceType": "Observation",
+      "id": "eyes",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "9267-6",
+            "display": "Glasgow coma score eye opening"
+          }
+        ],
+        "text": "Eyes"
+      },
+      "valueQuantity": {
+        "value": 4,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "appliesDateTime": "2014-12-11T04:44:16Z",
+      "status": "final",
+      "reliability": "ok",
+      "subject": {
+        "reference": "Patient/example"
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "9269-2",
+        "display": "Glasgow coma score total"
+      }
+    ],
+    "text": "Glasgow Coma Scale , (GCS)"
+  },
+  "valueQuantity": {
+    "value": 13,
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+  "appliesDateTime": "2014-12-11T04:44:16Z",
+  "status": "final",
+  "reliability": "ok",
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Peter James Chalmers"
+  },
+  "referenceRange": [
+    {
+      "high": {
+        "value": 8,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "meaning": {
+        "text": "Severe TBI"
+      }
+    },
+    {
+      "low": {
+        "value": 9,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "high": {
+        "value": 12,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "meaning": {
+        "text": "Moderate TBI"
+      }
+    },
+    {
+      "low": {
+        "value": 13,
+        "system": "http://unitsofmeasure.org",
+        "code": "{score}"
+      },
+      "meaning": {
+        "text": "Mild TBI"
+      }
+    }
+  ],
+  "related": [
+    {
+      "type": "derived-from",
+      "target": {
+        "reference": "#motor",
+        "display": "Motor score"
+      }
+    },
+    {
+      "type": "derived-from",
+      "target": {
+        "reference": "#verbal",
+        "display": "Verbal score"
+      }
+    },
+    {
+      "type": "derived-from",
+      "target": {
+        "reference": "#eyes",
+        "display": "Eyes score"
+      }
+    }
+  ]
+}

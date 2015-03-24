@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "questionnaire-answers-status",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>QuestionnaireAnswersStatus</h2><p>Lifecycle status of the questionnaire answers</p><p>This value set defines its own terms in the system http://hl7.org/fhir/questionnaire-answers-status</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>in-progress<a name=\"in-progress\"> </a></td><td>in-progress</td><td>This QuestionnaireAnswers has been partially filled out with answers, but changes or additions are still expected to be made to it.</td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>completed</td><td>This QuestionnaireAnswers has been filled out with answers, and the current content is regarded as definitive.</td></tr><tr><td>amended<a name=\"amended\"> </a></td><td>amended</td><td>This QuestionnaireAnswers has been filled out with answers, then marked as complete, yet changes or additions have been made to it afterwards.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.387"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/questionnaire-answers-status",
+  "version": "0.4.0",
+  "name": "QuestionnaireAnswersStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Lifecycle status of the questionnaire answers",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.387"
+      }
+    ],
+    "system": "http://hl7.org/fhir/questionnaire-answers-status",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "in-progress",
+        "display": "in-progress",
+        "definition": "This QuestionnaireAnswers has been partially filled out with answers, but changes or additions are still expected to be made to it."
+      },
+      {
+        "code": "completed",
+        "display": "completed",
+        "definition": "This QuestionnaireAnswers has been filled out with answers, and the current content is regarded as definitive."
+      },
+      {
+        "code": "amended",
+        "display": "amended",
+        "definition": "This QuestionnaireAnswers has been filled out with answers, then marked as complete, yet changes or additions have been made to it afterwards."
+      }
+    ]
+  }
+}

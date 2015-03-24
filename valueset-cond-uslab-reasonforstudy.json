@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-cond-uslab-reasonforstudy",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t\t<p>This value set includes all ICD-9CM and  ICD-10CM concepts.  This content may not be published ( EH:Todo - whether and how can display this)</p>\n\t\t</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.560"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/cond-uslab-reasonforstudy",
+  "version": "0.4.0",
+  "name": "USlabConditonCodes",
+  "publisher": "HL7 Orders and Observation Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes all ICD-9CM and  ICD-10CM concepts and is part of the of the The USLabOrder and USLabReport Implementation Guides.  This content may not be published ( EH:Todo - whether and how can display this)",
+  "copyright": "This value set includes content from ICD-9 and ICD-10 , which is © Copyright World Health Organization (WHO), 2014. All Rights Reserved.",
+  "status": "draft",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes.html"
+      },
+      {
+        "system": "http://www.cms.gov/Medicare/Coding/ICD10/index.html"
+      }
+    ]
+  }
+}

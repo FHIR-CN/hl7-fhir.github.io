@@ -1,0 +1,140 @@
+{
+  "resourceType": "Bundle",
+  "id": "blood-pressure",
+  "meta": {
+    "lastUpdated": "2014-01-30T22:35:23+11:00"
+  },
+  "type": "collection",
+  "base": "http://hl7.org/fhir",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "34252345234",
+        "meta": {
+          "lastUpdated": "2014-01-30T22:35:23+11:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Sept 17, 2012: Systolic Blood pressure 107/60 mmHg (low)\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>code</b>: Blood pressure systolic &amp; diastolic \n              <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '55284-4' = 'Blood pressure systolic and diastolic', given as 'Blood pressure systolic &amp; diastolic'})</span>\n            </p>\n            <p>\n              <b>interpretation</b>: low \n              <span style=\"background: LightGoldenRodYellow \">(Details : {http://hl7.org/fhir/v2/0078 code 'L' = 'Below low normal', given as 'Below low normal'})</span>\n            </p>\n            <p>\n              <b>applies</b>: Sep 17, 2012\n            </p>\n            <p>\n              <b>status</b>: FINAL\n            </p>\n            <p>\n              <b>reliability</b>: OK\n            </p>\n            <p>\n              <b>identifier</b>: urn:uuid:187e0c12-8dd2-67e2-99b2-bf273c878281\n            </p>\n            <p>\n              <b>subject</b>: \n              <a href=\"Patient/example\">Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>\n            </p>\n            <p>\n              <b>performer</b>: \n              <a href=\"Practitioner/example\">Generated Summary: 23; Adam Careful </a>\n            </p>\n            <blockquote>\n              <p>\n                <b>related</b>\n              </p>\n              <p>\n                <b>type</b>: HASCOMPONENT\n              </p>\n              <p>\n                <b>target</b>: \n                <a href=\"http://acme.org/ehr/observations/34252345234-s\">http://acme.org/ehr/observations/34252345234-s</a>\n              </p>\n            </blockquote>\n            <blockquote>\n              <p>\n                <b>related</b>\n              </p>\n              <p>\n                <b>type</b>: HASCOMPONENT\n              </p>\n              <p>\n                <b>target</b>: \n                <a href=\"http://acme.org/ehr/observations/34252345234-d\">http://acme.org/ehr/observations/34252345234-d</a>\n              </p>\n            </blockquote>\n          </div>"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic & diastolic"
+            }
+          ]
+        },
+        "interpretation": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0078",
+              "code": "L",
+              "display": "Below low normal"
+            }
+          ],
+          "text": "low"
+        },
+        "appliesDateTime": "2012-09-17",
+        "status": "final",
+        "reliability": "ok",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:187e0c12-8dd2-67e2-99b2-bf273c878281"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/example"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/example"
+          }
+        ],
+        "related": [
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "http://acme.org/ehr/observations/34252345234-s"
+            }
+          },
+          {
+            "type": "has-component",
+            "target": {
+              "reference": "http://acme.org/ehr/observations/34252345234-d"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "34252345234-s",
+        "meta": {
+          "lastUpdated": "2014-01-30T22:35:23+11:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Sept 17, 2012: Systolic Blood pressure 107 mmHg (low)\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>code</b>: Systolic blood pressure \n              <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '8480-6' = 'Systolic blood pressure', given as 'Systolic blood pressure'}; {SNOMED CT code '271649006' = 'Systolic blood pressure', given as 'Systolic blood pressure'}; {http://acme.org/devices/clinical-codes code 'bp-s' = 'bp-s', given as 'Systolic Blood pressure'})</span>\n            </p>\n            <p>\n              <b>value</b>: 107 mm[Hg]\n            </p>\n            <p>\n              <b>status</b>: FINAL\n            </p>\n            <p>\n              <b>reliability</b>: OK\n            </p>\n          </div>"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic blood pressure"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "271649006",
+              "display": "Systolic blood pressure"
+            },
+            {
+              "system": "http://acme.org/devices/clinical-codes",
+              "code": "bp-s",
+              "display": "Systolic Blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 107,
+          "units": "mm[Hg]"
+        },
+        "status": "final",
+        "reliability": "ok"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "34252345234-d",
+        "meta": {
+          "lastUpdated": "2014-01-30T22:35:23+11:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Sept 17, 2012: Diastolic Blood pressure 60 mmHg (low)\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>code</b>: Diastolic blood pressure \n              <span style=\"background: LightGoldenRodYellow \">(Details : {LOINC code '8462-4' = 'Diastolic blood pressure', given as 'Diastolic blood pressure'})</span>\n            </p>\n            <p>\n              <b>value</b>: 60 mm[Hg]\n            </p>\n            <p>\n              <b>status</b>: FINAL\n            </p>\n            <p>\n              <b>reliability</b>: OK\n            </p>\n          </div>"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 60,
+          "units": "mm[Hg]"
+        },
+        "status": "final",
+        "reliability": "ok"
+      }
+    }
+  ]
+}

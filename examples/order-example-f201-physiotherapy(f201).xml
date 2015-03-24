@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Order xmlns="http://hl7.org/fhir">
+  <id value="f201"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>date</b>: Mar 5, 2013 11:00:00 AM
+      </p>
+      <p>
+        <b>subject</b>: 
+        <a href="Patient/f201">Roel. Generated Summary: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL); Roel(OFFICIAL); ph: +31612345678(MOBILE), ph: +31201234567(HOME); MALE; birthDate: Mar 13, 1960; 
+          <span title="Codes: {http://snomed.info/sct 36629006}, {http://hl7.org/fhir/v3/MaritalStatus M}">Legally married</span>; active
+        </a>
+      </p>
+      <p>
+        <b>source</b>: 
+        <a href="Practitioner/f201">Generated Summary: UZI-nummer = 12345678901 (OFFICIAL); Dokter Bronsig(OFFICIAL); ph: +31715269111(WORK); MALE; birthDate: Dec 24, 1956</a>
+      </p>
+      <p>
+        <b>target</b>: 
+        <a href="Practitioner/f203">Juri van Gelder. Generated Summary: UZI-nummer = 12345678903 (OFFICIAL), BIG-nummer = 12345678903 (OFFICIAL); Juri van Gelder(OFFICIAL); ph: +31715269111(WORK); MALE; birthDate: Apr 20, 1983</a>
+      </p>
+      <p>
+        <b>reason</b>: It concerns a one-off order for consultation in order to evaluate the stairs walking ability of Roel. 
+        <span style="background: LightGoldenRodYellow ">(Details )</span>
+      </p>
+      <h3>Whens</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Schedule</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>Normal priority 
+            <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;394848005&#39; = &#39;Normal priority&#39;, given as &#39;Normal priority&#39;})</span>
+          </td>
+          <td> </td>
+        </tr>
+      </table>
+      <p>
+        <b>detail</b>: Consultation, not yet developed
+      </p>
+    </div>
+  </text>
+  <date value="2013-03-05T12:00:00+01:00"/>
+  <subject><!--  Order was sent to Juri van Gelder for Roel by Dokter Bronsig.  -->
+    <reference value="Patient/f201"/>
+    <display value="Roel"/>
+  </subject>
+  <source>
+    <reference value="Practitioner/f201"/>
+  </source>
+  <target>
+    <reference value="Practitioner/f203"/>
+    <display value="Juri van Gelder"/>
+  </target>
+  <reasonCodeableConcept>
+    <text value="It concerns a one-off order for consultation in order to evaluate the stairs walking ability of Roel."/>
+  </reasonCodeableConcept><!--  <authority> and <payment> were registered in the EHR as "not applicable"  -->
+  <when>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="394848005"/>
+        <display value="Normal priority"/>
+      </coding>
+    </code>
+  </when>
+  <detail>
+    <display value="Consultation, not yet developed"/>
+  </detail>
+</Order>

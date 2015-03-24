@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="qs1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+  </identifier>
+  <status value="draft"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <publisher value="HL7 FHIR Project (FHIR Management Group)"/>
+  <group>
+    <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+      <valueString value="A conformance statement is a set of requirements for a desired implementation or a description of how a target application fulfills those requirements in a particular implementation."/>
+    </extension>
+    <linkId value="Conformance"/>
+    <title value="A conformance statement"/>
+    <required value="true"/>
+    <repeats value="false"/>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.id"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.id.value"/>
+        <text value="Logical id of this artefact"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."/>
+      </extension>
+      <linkId value="Conformance.meta"/>
+      <text value="Metadata about the resource"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Conformance.implicitRules"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.implicitRules.value"/>
+        <text value="A set of rules under which this content was created"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource
+
+Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Conformance.language"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.language.value"/>
+        <text value="language"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."/>
+      </extension>
+      <linkId value="Conformance.text"/>
+      <text value="Text summary of the resource, for human interpretation"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."/>
+      </extension>
+      <linkId value="Conformance.contained"/>
+      <text value="Contained, inline Resources"/>
+      <required value="false"/>
+      <repeats value="true"/>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="An absolute uri that is used to identify this conformance statement when it is referenced in a specification, model, design or an instance (should be globally unique URI, and an be urn:uuid: or urn:oid:)."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="uri"/>
+      </extension>
+      <linkId value="Conformance.url"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.url.value"/>
+        <text value="Logical uri to reference this statement"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The identifier that is used to identify this version of the conformance statement when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp. There may be multiple different instances of a conformance statement that have the same identifier but different versions."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.version"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.version.value"/>
+        <text value="Logical id for this version of the statement"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A free text natural language name identifying the conformance statement. The name is not expected to be globally unique."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.name"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.name.value"/>
+        <text value="Informal name for this conformance statement"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The name of the individual or organization that published the conformance. Usually an organization, but may be an individual. This item SHOULD be populated unless the information is available from context."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.publisher"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.publisher.value"/>
+        <text value="Name of the publisher (Organization or individual)"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Contacts to assist a user in finding and communicating with the publisher."/>
+      </extension>
+      <linkId value="Conformance.contact"/>
+      <title value="Contact details of the publisher"/>
+      <text value="May be a web site, an email address, a telephone number (tel:), etc."/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.contact.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.contact.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The name of an individual to contact regarding the conformance. If there is no named individual, the telecom is for the organization as a whole."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.contact.name"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.contact.name.value"/>
+          <text value="Name of a individual to contact"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Contact details for individual (if a name was provided) or the publisher."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="ContactPoint"/>
+        </extension>
+        <linkId value="Conformance.contact.telecom"/>
+        <text value="Contact details for individual or publisher"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.contact.telecom.system"/>
+          <text value="type:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Conformance.contact.telecom.value"/>
+          <text value="value:"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+        <question>
+          <linkId value="Conformance.contact.telecom.use"/>
+          <text value="use:"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A free text natural language description of the conformance statement and its use. Typically, this is used when the conformance statement describes a desired rather than an actual solution, for example as a formal expression of requirements as part of an RFP. This field cmay include the purpose of this conformance statement, comments about its context etc. This does not need to be populated if the description is adequately implied by the software or implementation details."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.description"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.description.value"/>
+        <text value="Human description of the conformance statement"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Explains why this conformance statement is needed and why it&#39;s been constrained as it has. This element does not describe the usage of the conformance statement (that&#39;s done in comments), rather it&#39;s for traceability of *why* the element is either needed or why the constraints exist as they do.  This may be used to point to source materials or specifications that drove the structure of this data element."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.requirements"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.requirements.value"/>
+        <text value="Why is this needed?"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A copyright statement relating to the conformamce statement and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the details of the system described by the conformance statement."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.copyright"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.copyright.value"/>
+        <text value="Use and/or Publishing restrictions"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The status of this conformance statement. This is not intended for use with actual conformance statements, but where conformance statements are used to describe possible or desired systems."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Conformance.status"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.status.value"/>
+        <text value="status"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A flag to indicate that this conformance statement is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage. Allows filtering of conformance statements that are appropriate for use vs. not."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="boolean"/>
+      </extension>
+      <linkId value="Conformance.experimental"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.experimental.value"/>
+        <text value="If for testing purposes, not real usage"/>
+        <type value="boolean"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The date  (and optionally time) when the conformance statement was published."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="datetime"/>
+      </extension>
+      <linkId value="Conformance.date"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.date.value"/>
+        <text value="Publication Date(/time)"/>
+        <type value="dateTime"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Software that is covered by this conformance statement.  It is used when the conformance statement describes the capabilities of a particular software version, independent of an installation."/>
+      </extension>
+      <linkId value="Conformance.software"/>
+      <title value="Software that is covered by this conformance statement"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.software.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.software.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Name software is known by."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.software.name"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.software.name.value"/>
+          <text value="A name the software is known by"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="The version identifier for the software covered by this statement. If possible, version should be specified, as statements are likely to be different for different versions of software."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.software.version"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.software.version.value"/>
+          <text value="Version covered by this statement"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Date this version of the software released."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="datetime"/>
+        </extension>
+        <linkId value="Conformance.software.releaseDate"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.software.releaseDate.value"/>
+          <text value="Date this version released"/>
+          <type value="dateTime"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="Identifies a specific implementation instance that is described by the conformance statement - i.e. a particular installation, rather than the capabilities of a software program."/>
+      </extension>
+      <linkId value="Conformance.implementation"/>
+      <title value="If this describes a specific instance"/>
+      <required value="false"/>
+      <repeats value="false"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.implementation.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.implementation.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Information about the specific installation that this conformance statement relates to."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.implementation.description"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.implementation.description.value"/>
+          <text value="Describes this specific instance"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An absolute base URL for the implementation.  This forms the base for REST interfaces as well as the mailbox and document interfaces."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Conformance.implementation.url"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.implementation.url.value"/>
+          <text value="Base URL for the installation"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="The version of the FHIR specification on which this conformance statement is based."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="string"/>
+      </extension>
+      <linkId value="Conformance.fhirVersion"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.fhirVersion.value"/>
+        <text value="FHIR Version"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A flag that indicates whether the application accepts unknown elements as part of a resource. This is not about extensions, but about unknown elements in a resource - these can only arise as later versions of the specification are published, because this is the only place where such elements can be defined. Hence this element is about inter-version compatibility."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="boolean"/>
+      </extension>
+      <linkId value="Conformance.acceptUnknown"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.acceptUnknown.value"/>
+        <text value="True if application accepts unknown elements"/>
+        <type value="boolean"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A list of the formats supported by this implementation using their content types. &quot;xml&quot; or &quot;json&quot; are allowed, which describe the simple encodings described in the specification (and imply appropriate bundle support). Otherwise, mime types are legal here."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="code"/>
+      </extension>
+      <linkId value="Conformance.format"/>
+      <required value="true"/>
+      <repeats value="true"/>
+      <question>
+        <linkId value="Conformance.format.value"/>
+        <text value="format"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A list of profiles supported by the system. For a server, &quot;supported by the system&quot; means the system hosts/produces a set of resources, conformant to a particular profile, and allows its clients to search using this profile and to find appropriate data. For a client, it means the system will search by this profile and process data according to the guidance implicit in the profile. Supported profiles are different to the profiles that apply to a particular resource in rest.resource.profile. The resource profile is a general statement of what features of the resource are supported overall by the system - the sum total of the facilities it supports. A supported profile is a deeper statement about the functionality of the data and services provided by the server (or used by the client). A typical case is a laboratory system that produces a set of different reports- this is the list of types of data that it publishes. A key aspect of declaring profiles here is the question of how the client converts knowledge that the server publishes this data into working with the data; the client can inspect individual resources to determine whether they conform to a particular profile, but how does it find the ones that does? It does so by searching using the _profile parameter, so any resources listed here must be valid values for the _profile resource (using the identifier in the target profile).
+
+Typical supported profiles cross resource types to describe a network of related resources, so they are listed here rather than by resource. However they do not need to describe more than one resource."/>
+      </extension>
+      <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+        <valueString value="Reference"/>
+      </extension>
+      <linkId value="Conformance.profile"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <question>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+          <valueString value="/StructureDefinition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+        </extension>
+        <linkId value="Conformance.profile.value"/>
+        <text value="Profiles supported by the system"/>
+        <type value="reference"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </question>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A definition of the restful capabilities of the solution, if any."/>
+      </extension>
+      <linkId value="Conformance.rest"/>
+      <title value="If the endpoint is a RESTful one"/>
+      <text value="Multiple repetitions allow definition of both client and / or server behaviors or possibly behaviors under different configuration settings (for software or requirements statements)."/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.rest.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.rest.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Identifies whether this portion of the statement is describing ability to initiate or receive restful operations."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="Conformance.rest.mode"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.rest.mode.value"/>
+          <text value="mode"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Information about the system&#39;s restful capabilities that apply across all applications, such as security."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.rest.documentation"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.rest.documentation.value"/>
+          <text value="General description of implementation"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Information about security implementation from an interface perspective - what a client needs to know."/>
+        </extension>
+        <linkId value="Conformance.rest.security"/>
+        <title value="Information about security of implementation"/>
+        <required value="false"/>
+        <repeats value="false"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.security.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.security.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Server adds CORS headers when responding to requests - this enables javascript applications to use the server. The easiest CORS headers to add are Access-Control-Allow-Origin: * &amp; Access-Control-Request-Method: GET, POST, PUT, DELETE. All servers SHOULD support CORS."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Conformance.rest.security.cors"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.security.cors.value"/>
+            <text value="Adds CORS Headers (http://enable-cors.org/)"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Types of security services are supported/required by the system."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="CodeableConcept"/>
+          </extension>
+          <linkId value="Conformance.rest.security.service"/>
+          <text value="OAuth | OAuth2 | NTLM | Basic | Kerberos"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.security.service.coding"/>
+            <text value="code:"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+          <question>
+            <linkId value="Conformance.rest.security.service.text"/>
+            <text value="text:"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="General description of how security works."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.security.description"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.security.description.value"/>
+            <text value="General description of how security works"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Certificates associated with security profiles."/>
+          </extension>
+          <linkId value="Conformance.rest.security.certificate"/>
+          <title value="Certificates associated with security profiles"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.security.certificate.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.security.certificate.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Mime type for certificate."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="Conformance.rest.security.certificate.type"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.security.certificate.type.value"/>
+              <text value="type"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Actual certificate."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="binary"/>
+            </extension>
+            <linkId value="Conformance.rest.security.certificate.blob"/>
+            <text value="Actual certificate"/>
+            <required value="false"/>
+            <repeats value="true"/>
+          </group>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A specification of the restful capabilities of the solution for a specific resource type."/>
+        </extension>
+        <linkId value="Conformance.rest.resource"/>
+        <title value="Resource served on the REST interface"/>
+        <text value="Max of one repetition per resource type."/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A type of resource exposed via the restful interface."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.type"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.type.value"/>
+            <text value="type"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A specification of the profile that describes the solution&#39;s support for the resource, including any constraints on cardinality, bindings, lengths or other limitations. The profile applies to all  resources of this type - i.e. it is the superset of what is supported by the system."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.profile"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/StructureDefinition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.profile.value"/>
+            <text value="What structural features are supported"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Identifies a restful operation supported by the solution."/>
+          </extension>
+          <linkId value="Conformance.rest.resource.interaction"/>
+          <title value="What operations are supported?"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.interaction.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.interaction.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Coded identifier of the operation, supported by the system resource."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.interaction.code"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.interaction.code.value"/>
+              <text value="code"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Guidance specific to the implementation of this operation, such as &#39;delete is a logical delete&#39; or &#39;updates are only allowed with version id&#39; or &#39;creates permitted from pre-authorized certificates only&#39;."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.interaction.documentation"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.interaction.documentation.value"/>
+              <text value="Anything special about operation behavior"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Thi field is set to true to specify that the system does not support (server) or use (client) versioning for this resource type. If this is not set to true, the server must at least correctly track and populate the versionId meta-property on resources. If a server supports versionIds correctly, it should support vread too, but is not required to do so."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.versioning"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.versioning.value"/>
+            <text value="versioning"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A flag for whether the server is able to return past versions as part of the vRead operation. It is useful to support the vRead operation for current operations, even if past versions aren&#39;t available."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.readHistory"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.readHistory.value"/>
+            <text value="Whether vRead can return past versions"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A flag to indicate that the server allows or needs to allow the client to create new identities on the server (e.g. that is, the client PUTs to a location where there is no existing resource). Allowing this operation means that the server allows the client to create new identities on the server. Allowing the clients to create new identities on the server means that the system administrator needs to have confidence that the clients do not create clashing identities between them. Obviously, if there is only one client, this won&#39;t happen. While creating identities on the client means that the clients need to be managed, it&#39;s much more convenient for many scenarios if such management can be put in place."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.updateCreate"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.updateCreate.value"/>
+            <text value="If update can commit to a new identity"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A flag that indicates that the server supports conditional create. Conditional Create is mainly appropriate for interface engine scripts converting from other formats, such as v2."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.conditionalCreate"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.conditionalCreate.value"/>
+            <text value="If allows/uses conditional create"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A flag that indicates that the server supports conditional update. Conditional Update is mainly appropriate for interface engine scripts converting from other formats, such as v2."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.conditionalUpdate"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.conditionalUpdate.value"/>
+            <text value="If allows/uses conditional update"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A flag that indicates that the server supports conditional delete. Conditional Delete is mainly appropriate for interface engine scripts converting from other formats, such as v2."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="boolean"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.conditionalDelete"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.conditionalDelete.value"/>
+            <text value="If allows/uses conditional delete"/>
+            <type value="boolean"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A list of _include values supported by the server. If this list is empty, the server does not support includes."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.resource.searchInclude"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.resource.searchInclude.value"/>
+            <text value="_include values supported by the server"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Search parameters for implementations to support and/or make use of - either references to ones defined in the specification, or additional ones defined for/by the implementation."/>
+          </extension>
+          <linkId value="Conformance.rest.resource.searchParam"/>
+          <title value="Search params supported by implementation"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="unique id for the element within a resource (for internal references)."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.id"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.id.value"/>
+              <text value="xml:id (or equivalent in JSON)"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The name of the search parameter used in the interface. Parameter names cannot overlap with standard parameter names, and standard parameters cannot be redefined."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.name"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.name.value"/>
+              <text value="Name of search parameter"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="An absolute URI that is a formal reference to where this parameter was first defined, so that a client can be confident of the meaning of the search parameter (a reference to [[[SearchParameter.url]]]). This SHOULD be present, and matches SearchParameter.url."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="uri"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.definition"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.definition.value"/>
+              <text value="Source of definition for parameter"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="The type of value a search parameter refers to, and how the content is interpreted. While this can be looked up from the definition, it is included here as a convenience for systems that auto-generate a query interface based on the server conformance statement.  It SHALL be the same as the type in the search parameter definition."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.type"/>
+            <required value="true"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.type.value"/>
+              <text value="type"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="This allows documentation of any distinct behaviors about how the search parameter is used.  For example, text matching algorithms."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.documentation"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.documentation.value"/>
+              <text value="Server-specific usage"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Types of resource (if a resource is referenced). This SHALL be the same as or a proper subset of the resources listed in the search parameter definition."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="code"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.target"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.target.value"/>
+              <text value="target"/>
+              <type value="choice"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+          <group>
+            <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+              <valueString value="Chained names supported."/>
+            </extension>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+              <valueString value="string"/>
+            </extension>
+            <linkId value="Conformance.rest.resource.searchParam.chain"/>
+            <required value="false"/>
+            <repeats value="true"/>
+            <question>
+              <linkId value="Conformance.rest.resource.searchParam.chain.value"/>
+              <text value="Chained names supported"/>
+              <type value="string"/>
+              <required value="false"/>
+              <repeats value="false"/>
+            </question>
+          </group>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A specification of restful operations supported by the system."/>
+        </extension>
+        <linkId value="Conformance.rest.interaction"/>
+        <title value="What operations are supported?"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.interaction.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.interaction.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A coded identifier of the operation, supported by the system."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Conformance.rest.interaction.code"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.interaction.code.value"/>
+            <text value="code"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Guidance specific to the implementation of this operation, such as limitations on the kind of transactions allowed, or information about system wide search is implemented."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.interaction.documentation"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.interaction.documentation.value"/>
+            <text value="Anything special about operation behavior"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Definition of an operation or a named query and with its parameters and their meaning and type."/>
+        </extension>
+        <linkId value="Conformance.rest.operation"/>
+        <title value="Definition of an operation or a custom query"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.operation.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.operation.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The name of a query, which is used in the _query parameter when the query is called. The name here SHOULD be the same as the name in the definition, unless there is a name clash and the name cannot be used."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.rest.operation.name"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.rest.operation.name.value"/>
+            <text value="Name by which the operation/query is invoked"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Where the formal definition can be found. This can be used to build ah HTML form to invoke the operation, for instance."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Conformance.rest.operation.definition"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/OperationDefinition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Conformance.rest.operation.definition.value"/>
+            <text value="The defined operation/query"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A list of absolute URIs that identify profiles that this server implements for accepting documents in the mailbox. If this list is empty, then documents are not accepted. The base specification has the profile identifier &quot;http://hl7.org/fhir/documents/mailbox&quot;. Other specifications can declare their own identifier for this purpose. If a server accepts messages on the /Mailbox end-point, it declares this in the messaging elements."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Conformance.rest.documentMailbox"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.rest.documentMailbox.value"/>
+          <text value="How documents are accepted in /Mailbox"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An absolute URI which is a reference to the definition of a compartment hosted by the system. At present, the only defined compartments are at [[extras.html]]."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Conformance.rest.compartment"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.rest.compartment.value"/>
+          <text value="Compartments served/used by system"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A description of the messaging capabilities of the solution."/>
+      </extension>
+      <linkId value="Conformance.messaging"/>
+      <title value="If messaging is supported"/>
+      <text value="Multiple repetitions allow the documentation of multiple endpoints per solution."/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.messaging.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.messaging.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="An address to which messages and/or replies are to be sent. For solutions that do not use network addresses for routing, it can be just an identifier."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="uri"/>
+        </extension>
+        <linkId value="Conformance.messaging.endpoint"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.messaging.endpoint.value"/>
+          <text value="Actual endpoint being described"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Length if the receiver&#39;s reliable messaging cache in minutes (if a receiver) or how long the cache length on the receiver should be (if a sender). If this value is missing then the application does not implement (receiver) or depend on (sender) reliable messaging."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="integer"/>
+        </extension>
+        <linkId value="Conformance.messaging.reliableCache"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.messaging.reliableCache.value"/>
+          <text value="Reliable Message Cache Length (min)"/>
+          <type value="integer"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Documentation about the system&#39;s messaging capabilities for this endpoint not otherwise documented by the conformance statement.  For example, process for becoming an authorized messaging exchange partner."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.messaging.documentation"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.messaging.documentation.value"/>
+          <text value="Messaging interface behavior details"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A description of the solution&#39;s support for an event at this end point."/>
+        </extension>
+        <linkId value="Conformance.messaging.event"/>
+        <title value="Declare support for this event"/>
+        <text value="The same event may be listed up to two times - once as sender and once as receiver."/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="unique id for the element within a resource (for internal references)."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.id"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.id.value"/>
+            <text value="xml:id (or equivalent in JSON)"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A coded identifier of a supported messaging event."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.code"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.code.value"/>
+            <text value="Event type"/>
+            <type value="open-choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The impact of the content of the message."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.category"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.category.value"/>
+            <text value="category"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="The mode of this event declaration - whether application is sender or receiver."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.mode"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.mode.value"/>
+            <text value="mode"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A list of the messaging transport protocol(s) identifiers, supported by this endpoint."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Coding"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.protocol"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.protocol.value"/>
+            <text value="http | ftp | mllp +"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="A resource associated with the event.  This is the resource that defines the event. This SHALL be provided if the event type supports multiple different resource types."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="code"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.focus"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.focus.value"/>
+            <text value="focus"/>
+            <type value="choice"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Information about the request for this event."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.request"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/StructureDefinition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Conformance.messaging.event.request.value"/>
+            <text value="Profile that describes the request"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Information about the response for this event."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="Reference"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.response"/>
+          <required value="true"/>
+          <repeats value="true"/>
+          <question>
+            <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+              <valueString value="/StructureDefinition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+            </extension>
+            <linkId value="Conformance.messaging.event.response.value"/>
+            <text value="Profile that describes the response"/>
+            <type value="reference"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+        <group>
+          <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+            <valueString value="Guidance on how this event is handled, such as internal system trigger points, business rules, etc."/>
+          </extension>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+            <valueString value="string"/>
+          </extension>
+          <linkId value="Conformance.messaging.event.documentation"/>
+          <required value="false"/>
+          <repeats value="true"/>
+          <question>
+            <linkId value="Conformance.messaging.event.documentation.value"/>
+            <text value="Endpoint-specific event documentation"/>
+            <type value="string"/>
+            <required value="false"/>
+            <repeats value="false"/>
+          </question>
+        </group>
+      </group>
+    </group>
+    <group>
+      <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+        <valueString value="A document definition."/>
+      </extension>
+      <linkId value="Conformance.document"/>
+      <title value="Document definition"/>
+      <required value="false"/>
+      <repeats value="true"/>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="unique id for the element within a resource (for internal references)."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.document.id"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.document.id.value"/>
+          <text value="xml:id (or equivalent in JSON)"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="Mode of this document declaration - whether application is producer or consumer."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="code"/>
+        </extension>
+        <linkId value="Conformance.document.mode"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.document.mode.value"/>
+          <text value="mode"/>
+          <type value="choice"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A description of how the application supports or uses the specified document profile.  For example, when are documents created, what action is taken with consumed documents, etc."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="string"/>
+        </extension>
+        <linkId value="Conformance.document.documentation"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <question>
+          <linkId value="Conformance.document.documentation.value"/>
+          <text value="Description of document support"/>
+          <type value="string"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+      <group>
+        <extension url="http://hl7.org/fhir/Profile/questionnaire-extensions#flyover">
+          <valueString value="A constraint on a resource used in the document. The first resource is the document resource."/>
+        </extension>
+        <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#type">
+          <valueString value="Reference"/>
+        </extension>
+        <linkId value="Conformance.document.profile"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <question>
+          <extension url="http://www.healthintersections.com.au/fhir/Profile/metadata#reference">
+            <valueString value="/StructureDefinition?subject=$subj&amp;patient=$subj&amp;encounter=$encounter"/>
+          </extension>
+          <linkId value="Conformance.document.profile.value"/>
+          <text value="Constraint on a resource used in the document"/>
+          <type value="reference"/>
+          <required value="false"/>
+          <repeats value="false"/>
+        </question>
+      </group>
+    </group>
+  </group>
+</Questionnaire>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-qicore-verification"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 3 concepts</p>
+      <h2>HSPC Verification</h2>
+      <p>Verification Method Value Set</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://cimi.org/vs/patient/verification
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Background Check</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Family Member</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>CIMI placeholder</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:0.00.000.0.000000.0.00.002"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:0.00.000.0.000000.0.00.002"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/qicore-verification"/>
+  <version value="0.4.0"/><!--  
+    CIMI group to provide values
+   -->
+  <name value="HSPC Verification"/>
+  <publisher value="CIMI"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://cimi.org/valueset/verification"/>
+    </telecom>
+  </contact>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.cimi.org/"/>
+    </telecom>
+  </contact>
+  <description value="Verification Method Value Set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://cimi.org/vs/patient/verification"/>
+      <concept>
+        <code value="1"/>
+        <display value="Background Check"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Family Member"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="CIMI placeholder"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

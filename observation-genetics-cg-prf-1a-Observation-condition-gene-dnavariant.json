@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-condition-gene-dnavariant",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-condition-gene-dnavariant",
+  "name": "condition-gene-dnavariant",
+  "base": "Observation",
+  "type": "string",
+  "description": "Condition assessed by genetic testing and HGNC gene symbol and HGVS DNA variant"
+}

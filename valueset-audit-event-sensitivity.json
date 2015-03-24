@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-audit-event-sensitivity",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>Audit Event Object Sensitivity</h2><p>The sensitivity of an object in a secuity event resource. May also encompass confidentiality and rudimentary access control</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include all codes defined in <a href=\"v3/Confidentiality/index.html\">http://hl7.org/fhir/v3/Confidentiality</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1485"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/audit-event-sensitivity",
+  "version": "20100826",
+  "name": "Audit Event Object Sensitivity",
+  "publisher": "HL7",
+  "description": "The sensitivity of an object in a secuity event resource. May also encompass confidentiality and rudimentary access control",
+  "status": "draft",
+  "experimental": true,
+  "date": "2013-06-13",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/v3/Confidentiality"
+      }
+    ]
+  }
+}

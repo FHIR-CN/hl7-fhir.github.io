@@ -1,0 +1,285 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Lifecycle - FHIR v0.4.0</title>
+
+  
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="http://hl7.org/fhir" name="author"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+  <link rel="Prev" href="http://hl7.org/implement/standards/fhir/lifecycle.html"/>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="./assets/css/project.css"/>
+  <link rel="stylesheet" href="./assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- [if lt IE 9]>
+  <script src="./assets/js/html5shiv.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <![endif] -->
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="./assets/ico/favicon.png"/>
+
+</head>
+<body>
+	<div id="segment-header" class="segment">  <!-- segment-header -->	
+		<div class="container">  <!-- container -->
+			<a id="logo" href="http://hl7.org/fhir"><img alt="logo fhir" src="./assets/images/fhir-logo-www.png"/> </a>
+			<div id="hl7-status">
+				<b>Continuous Integration Build</b>
+			</div>       	
+			
+			<div id="hl7-nav">
+				 <a id="hl7-logo" href="http://www.hl7.org">
+					<img height="50" alt="visit the hl7 website" width="42" src="./assets/images/hl7-logo.png"/>
+				</a> 
+			</div>       	
+			  <!-- hl7-search -->
+		</div>
+		<div class="container">  <!-- container -->
+	</div></div>  <!-- /segment-header -->	
+
+
+	<div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+		<div id="stripe"> </div>
+		<div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+ 	      		
+ 	      		      		
+			<nav class="navbar navbar-inverse">
+				<div class="container">
+					<button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand hidden" href="index.html">FHIR</a>
+					<div class="nav-collapse collapse navbar-inverse-collapse">
+						<ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="documentation.html">Documentation</a></li>
+              <li><a href="implementation.html">Implementation</a></li>
+              <li><a href="resourcelist.html">Resources</a></li>
+              <li><a href="clinical.html">Clinical</a></li>
+              <li><a href="administration.html">Administrative</a></li>
+              <li><a href="infrastructure.html">Infrastructure</a></li>
+              <li><a href="financial.html">Financial</a></li>
+
+						</ul>
+					</div>  <!-- /.nav-collapse -->
+				</div>  <!-- /.container -->
+			</nav>  <!-- /.navbar -->
+      		
+				
+  <!-- /HEADER CONTENT -->				
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-navbar -->
+	
+
+	<div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+		<div class="container">  <!-- container -->	
+			<ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+          <!-- lifecycle.html / page / -->
+
+			</ul>	
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-breadcrumb -->
+	
+
+	<div id="segment-content" class="segment">  <!-- segment-content -->
+	<div class="container">  <!-- container -->
+            <div class="row">
+            	<div class="inner-wrapper">
+  <!-- CONTENT CONTENT -->
+
+
+
+<div class="col-9">
+
+<h1><span class="sectioncount">?.?<a name="?.?"> </a></span> FHIR Life Cycle Page</h1>
+<h2><span class="sectioncount">?.?.1<a name="?.?.1"> </a></span> Introduction</h2>
+
+<p>Many FHIR resources have a status element that represents the lifecycle state of the resource or the clinical process represented by the resource. Work groups can specify status values appropriate to the individual resource. Although consistency between resources is not the primary objective, it is helpful to users and developers to have well-crafted value sets that cover all possible states (since the value sets are typically required and non-extensible).</p>
+
+<p>To understand existing status elements, and to help create extensions and resources involving resource states, we note that status value sets follow one of the following patterns:</p>
+<ul>
+	<li>Clinical workflow process pattern</li>
+	<li>Request/Order  pattern</li>
+	<li>Entity status pattern</li>
+	<li>Clinical status pattern</li>
+</ul>
+
+<ul>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+</ul>
+<p> </p>
+
+<h2><span class="sectioncount">?.?.2<a name="?.?.2"> </a></span> Clinical Workflow Process Pattern</h2>
+<p>Describes the lifecycle states of complex activities common in healthcare. Typically, these states follow a chronological pattern that leads from initiation to the conclusion of the action. A characteristic set of states for the clinical workflow process pattern include:</p>
+<ul>
+	<li>planned – resources for the activity are being allocated but the activity has not begun</li>
+	<li>cancelled – the planned activity will not take place</li>
+	<li>in-progress – the activity has begun</li>
+	<li>on-hold (suspended) – the activity has been temporarily interrupted</li>
+	<li>stopped (aborted, failed) – the activity has not been completed but no future action is planned</li>
+	<li>completed (finished) – the activity has been completed</li>
+</ul>
+<p>Examples of the clinical workflow pattern:</p>
+<ul>
+<li>Communication.status: in-progress | completed | suspended | rejected | failed</li>
+<li>Encounter.status:  planned | arrived | in-progress | onleave | finished | cancelled</li>
+<li>Goal.status: proposed | planned | in-progress | achieved | sustaining | cancelled | accepted | rejected</li>
+<li>MedicationAdministration.status: in-progress | on-hold | completed | entered-in-error | stopped</li>
+<li>MedicationDispense.status: in-progress | on-hold | completed | entered-in-error | stopped</li>
+<li>Procedure.status: in-progress | aborted | completed | entered-in-error</li>
+</ul>
+
+<h2><span class="sectioncount">?.?.3<a name="?.?.3"> </a></span> Request/Order Pattern</h2>
+
+<p>Some resources in FHIR that represent orders or requests. The request lifecycle can be generalized in terms of four stages: creating the request, sending the request, receiving acceptance or refusal of the request, and fulfillment of the request. A characteristic set of states for the clinical workflow process pattern include:</p>
+
+<ul>
+<li>proposed: An actor (e.g. a clinical decision support system) has proposed an action to be requested</li>
+<li>draft: The request is in preliminary form, prior to being requested</li>
+<li>requested: The request has been been made</li>
+<li>rejected: The request receiver has declined the request</li>
+<li>accepted: The request receiver has accepted the request</li>
+<li>in-progress: Work to fulfill the request has begun</li>
+<li>on-hold (suspended): Work on the request has been interrupted</li>
+<li>stopped (aborted):  The activity has not been completed but no future action is planned</li>
+<li>completed: Work on the requested task has been completed, and no further action is required</li>
+<li>cancelled: The request has been withdrawn</li>
+</ul>
+<p>Examples of the request/order pattern:</p>
+<ul>
+<li>CommunicationRequest.status:  proposed | planned | requested | received | accepted | in-progress | completed | suspended | rejected | failed</li>
+<li>DeviceUseRequest: proposed | planned | requested | received | accepted | in-progress | completed | suspended | rejected | aborted</li>
+<li>DiagnosticOrder.status: proposed | draft | planned | requested | received | accepted | in-progress | review | completed | cancelled | suspended | rejected | failed</li>
+<li>MedicationPrescription.status: active | on-hold | completed | entered-in-error | stopped | superceded | draft</li>
+<li>ProcedureRequest.status: proposed | draft | requested | received | accepted | in-progress | completed | suspended | rejected | aborted</li>
+<li>ReferralRequest.status: draft | sent | active | cancelled | rejected | completed</li>
+</ul>
+
+<h2><span class="sectioncount">?.?.4<a name="?.?.4"> </a></span> Entity Availability Pattern</h2>
+
+<p>The entity availability pattern indicates if the resource, or the entity described by the resource, is ready for use, not yet ready for use, or has been retired from use. A characteristic set of states for the clinical workflow process pattern include: </p>
+
+<ul>
+<li>draft: The entity is being prepared but is not yet in use</li>
+<li>active: The entity is in use</li>
+<li>suspended: The entity is not in use at the moment, but may return to active status</li>
+<li>amended: The entity has undergone a revision but is still active</li>
+<li>retired (superseded): The entity is no longer in use.</li>
+</ul>
+<p>Examples of the entity availability pattern:</p>
+<ul>
+<li>DiagnosticReport.status: registered | partial | final | corrected | appended | cancelled | entered-in-error</li>
+<li>MedicationStatement.status: in-progress* | completed* | entered-in-error</li>
+<li>DocumentManifest.status: current | superceded | entered-in-error</li>
+<li>Conformance.status: draft | active | retired</li>
+<li>StructureDefinition.status: draft | active | retired</li>
+<li>DataElement: draft | active | retired</li>
+<li>Questionnaire.status: draft | published | retired</li>
+<li>DocumentReference.status:  preliminary | final | appended | amended | entered-in-error</li>
+<li>QuestionnaireResponse.status: in-progress | completed | amended</li>
+<li>Alert.status: active | inactive | entered-in-error</li>
+<li>Location.status: active | suspended | inactive</li>
+<li>Organization.active: true/false</li>
+<li>Patient.active: true/false</li>
+</ul>
+<p>*states reflecting the administration of the medication</p>
+
+
+<h2><span class="sectioncount">?.?.5<a name="?.?.5"> </a></span> Clinical Status Pattern</h2>
+<p>Clinical status is somewhat different that the previous status values, since it does not deal with workflow or lifecycle. Instead, it indicates how evidence is affecting a clinical interpretation. Here are two examples:</p>
+<ul>
+	<li>AllergyIntolerance.status: unconfirmed | confirmed | resolved | refuted</li>
+	<li>Condition.clinicalStatus: provisional | working | confirmed | refuted</li>
+
+</ul>
+
+
+<h2><span class="sectioncount">?.?.6<a name="?.?.6"> </a></span> Entered In Error Summary</h2>
+
+<p>
+The entered-in-error state indicates the resource was created accidentally, and should be ignored. This state can apply to resources created by manual entry. It is usually not associated with the Clinical Workflow Process pattern, but can be associated with the Request/Order and the Entity Availability patterns.</p>
+
+<p>This table summarises what is expected to happen for each resource in the case that the data it contains is subsequently found to be an erroneous entry.
+</p>
+
+  <!-- from relevant task: (5175)
+ need to provide very clear explanation of what "entered in error" means.  I.e. "This fact about the patient/subject was never true.  E.g. wrong patient in the record, etc." -->
+<table class="grid">
+<tr><td><b>Resource</b></td><td><b>Status</b></td></tr><tr><td>Alert</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>AllergyIntolerance</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Appointment</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>AppointmentResponse</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>AuditEvent</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Basic</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Binary</td><td>n/a (This would be handled where the binary is linked from)</td></tr><tr><td>BodySite</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Bundle</td><td>Depends on the type: document - see for Composition; message - see for MessageHeader; transaction / transaction-response / history / searchset - not expected to be stored; collection: just delete it if it's stored, and in error</td></tr><tr><td>CarePlan</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>CarePlan2</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Claim</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ClaimResponse</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ClinicalImpression</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Communication</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>CommunicationRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Composition</td><td>.status = entered-in-error</td></tr><tr><td>ConceptMap</td><td>.status = retired</td></tr><tr><td>Condition</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Conformance</td><td>.status = retired</td></tr><tr><td>Contract</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Contraindication</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Coverage</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DataElement</td><td>.status = retired</td></tr><tr><td>Device</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DeviceComponent</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DeviceMetric</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DeviceUseRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DeviceUseStatement</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DiagnosticOrder</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DiagnosticReport</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DocumentManifest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>DocumentReference</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>EligibilityRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>EligibilityResponse</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Encounter</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>EnrollmentRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>EnrollmentResponse</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>EpisodeOfCare</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ExplanationOfBenefit</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>FamilyHistory</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Goal</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Group</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>HealthcareService</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ImagingObjectSelection</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ImagingStudy</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Immunization</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ImmunizationRecommendation</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>List</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Location</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Media</td><td>n/a - this would be handled whereever the media is linked from</td></tr><tr><td>Medication</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>MedicationAdministration</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>MedicationDispense</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>MedicationPrescription</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>MedicationStatement</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>MessageHeader</td><td>mostly n/a, but in the cases where messages are stored in error, they would simply be deleted</td></tr><tr><td>NamingSystem</td><td>.status = retired</td></tr><tr><td>NutritionOrder</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Observation</td><td>.status = entered-in-error</td></tr><tr><td>OperationDefinition</td><td>.status = retired</td></tr><tr><td>OperationOutcome</td><td>n/a - this resource is not expected to be stored</td></tr><tr><td>Order</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>OrderResponse</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Organization</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Other</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Patient</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>PaymentNotice</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>PaymentReconciliation</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Person</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Practitioner</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Procedure</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ProcedureRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ProcessRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ProcessResponse</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Provenance</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Questionnaire</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>QuestionnaireAnswers</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ReferralRequest</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>RelatedPerson</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>RiskAssessment</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Schedule</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>SearchParameter</td><td>.status = retired</td></tr><tr><td>Slot</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Specimen</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>StructureDefinition</td><td>.status = retired</td></tr><tr><td>Subscription</td><td>.status = off (just turn it off, maybe update the error message)</td></tr><tr><td>Substance</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>Supply</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>SupportingDocumentation</td><td><i>Unknown - not stated by committee</i></td></tr><tr><td>ValueSet</td><td>.status = retired</td></tr><tr><td>VisionPrescription</td><td><i>Unknown - not stated by committee</i></td></tr></table>
+
+
+</div>
+
+
+				</div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+        
+    </div>  <!-- /segment-content -->
+
+
+	<div id="segment-footer" class="segment">  <!-- segment-footer -->
+		<div class="container">  <!-- container -->
+			<div class="inner-wrapper">
+				<p>
+        © HL7.org 2011+. FHIR DSTU (v0.4.0-4833) generated on Tue, Mar 24, 2015 00:04+0000.   <!-- <a href="qa.html">QA Report</a> -->   <!-- achive note -->
+        <br/>
+        <span style="color: #FFFF77">
+        Links: <a style="color: #81BEF7" href="timelines.html">What's a DSTU?</a> | 
+               <a style="color: #81BEF7" href="history.html">Version History</a> | 
+               <a style="color: #81BEF7" href="toc.html">Specification Map</a> | 
+               <a style="color: #81BEF7" href="http://services.w3.org/htmldiff?doc1=http%3A%2F%2Fhl7.org%2Fimplement%2Fstandards%2Ffhir%2Flifecycle.html&amp;doc2=http%3A%2F%2Fhl7-fhir.github.io%2F%2Flifecycle.html">Compare to DSTU</a> | 
+               <a style="color: #81BEF7" rel="license" href="license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> | 
+               <a style="color: #81BEF7" target="_blank" href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">Propose a change</a>   
+        </span>
+        </p>
+			</div>  <!-- /inner-wrapper -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->        
+	
+	<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+		<div class="container">  <!-- container -->
+		</div>  <!-- /container -->
+	</div>  <!-- /segment-post-footer -->
+    
+      <!-- JS and analytics only. -->
+      <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+</body>
+
+</html>

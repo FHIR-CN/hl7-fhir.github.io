@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="imaging-modality"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 36 concepts</p>
+      <h2>ImagingModality</h2>
+      <p>Type of acquired image data in the instance</p>
+      <p>
+        <b>Copyright Statement:</b> These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright 2011 by the National Electrical Manufacturers Association
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://nema.org/dicom/dicm
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>AR</td>
+              <td>A R</td>
+              <td>Autorefraction device</td>
+            </tr>
+            <tr>
+              <td>BMD</td>
+              <td>B M D</td>
+              <td>Bone Mineral Densitometry by X-Ray (modality), including dual-energy X-Ray absorptiometry (DXA) and morphometric X-Ray absorptiometry (MXA)</td>
+            </tr>
+            <tr>
+              <td>BDUS</td>
+              <td>B D U S</td>
+              <td>Ultrasound Bone Densitometry (modality)</td>
+            </tr>
+            <tr>
+              <td>EPS</td>
+              <td>E P S</td>
+              <td>Cardiac Electrophysiology device</td>
+            </tr>
+            <tr>
+              <td>CR</td>
+              <td>C R</td>
+              <td>Computed Radiography device</td>
+            </tr>
+            <tr>
+              <td>CT</td>
+              <td>C T</td>
+              <td>Computed Tomography device</td>
+            </tr>
+            <tr>
+              <td>DX</td>
+              <td>D X</td>
+              <td>Digital Radiography device</td>
+            </tr>
+            <tr>
+              <td>ECG</td>
+              <td>E C G</td>
+              <td>Electrocardiography device</td>
+            </tr>
+            <tr>
+              <td>ES</td>
+              <td>E S</td>
+              <td>Endoscopy device</td>
+            </tr>
+            <tr>
+              <td>XC</td>
+              <td>X C</td>
+              <td>External-camera Photography device</td>
+            </tr>
+            <tr>
+              <td>GM</td>
+              <td>G M</td>
+              <td>General Microscopy device</td>
+            </tr>
+            <tr>
+              <td>HD</td>
+              <td>H D</td>
+              <td>Hemodynamic Waveform acquisition device</td>
+            </tr>
+            <tr>
+              <td>IO</td>
+              <td>I O</td>
+              <td>Intra-oral Radiography device</td>
+            </tr>
+            <tr>
+              <td>IVOCT</td>
+              <td>I V O C T</td>
+              <td>Intravascular Optical Coherence Tomography device</td>
+            </tr>
+            <tr>
+              <td>IVUS</td>
+              <td>I V U S</td>
+              <td>Intravascular Ultrasound device</td>
+            </tr>
+            <tr>
+              <td>KER</td>
+              <td>K E R</td>
+              <td>Keratometry device</td>
+            </tr>
+            <tr>
+              <td>LEN</td>
+              <td>L E N</td>
+              <td>Lensometry device</td>
+            </tr>
+            <tr>
+              <td>MR</td>
+              <td>M R</td>
+              <td>Magnetic Resonance device</td>
+            </tr>
+            <tr>
+              <td>MG</td>
+              <td>M G</td>
+              <td>Mammography device</td>
+            </tr>
+            <tr>
+              <td>NM</td>
+              <td>N M</td>
+              <td>Nuclear Medicine device</td>
+            </tr>
+            <tr>
+              <td>OAM</td>
+              <td>O A M</td>
+              <td>Measurements of the axial length of the eye which are done by various devices</td>
+            </tr>
+            <tr>
+              <td>OCT</td>
+              <td>O C T</td>
+              <td>Modality device that uses an interferometric, non-invasive optical tomographic technique to image 2D slices and 3D volumes of tissue using visible and near visible frequencies.</td>
+            </tr>
+            <tr>
+              <td>OPM</td>
+              <td>O P M</td>
+              <td>Modality device that measures corneal topography, corneal or retinal thickness, and other similar parameters that are typically displayed as maps.</td>
+            </tr>
+            <tr>
+              <td>OP</td>
+              <td>O P</td>
+              <td>Ophthalmic photography modality</td>
+            </tr>
+            <tr>
+              <td>OPR</td>
+              <td>O P R</td>
+              <td>Modality device that measures the refractive characteristics of the eye.</td>
+            </tr>
+            <tr>
+              <td>OPT</td>
+              <td>O P T</td>
+              <td>Tomography of the eye acquired by a modality that is based on light and optical principles.  Tomography based on other principles, such as ultrasound, is excluded.</td>
+            </tr>
+            <tr>
+              <td>OPV</td>
+              <td>O P V</td>
+              <td>Modality device that measures visual fields and perform visual perimetry.</td>
+            </tr>
+            <tr>
+              <td>PX</td>
+              <td>P X</td>
+              <td>Panoramic X-Ray device</td>
+            </tr>
+            <tr>
+              <td>PT</td>
+              <td>P T</td>
+              <td>Positron emission tomography (PET) device</td>
+            </tr>
+            <tr>
+              <td>RF</td>
+              <td>R F</td>
+              <td>Radiofluoroscopy device</td>
+            </tr>
+            <tr>
+              <td>RG</td>
+              <td>R G</td>
+              <td>Radiographic imaging (conventional film/screen)</td>
+            </tr>
+            <tr>
+              <td>SM</td>
+              <td>S M</td>
+              <td>Slide Microscopy</td>
+            </tr>
+            <tr>
+              <td>SRF</td>
+              <td>S R F</td>
+              <td>Subjective Refraction device</td>
+            </tr>
+            <tr>
+              <td>US</td>
+              <td>U S</td>
+              <td>Ultrasound device</td>
+            </tr>
+            <tr>
+              <td>VA</td>
+              <td>V A</td>
+              <td>Visual Acuity device</td>
+            </tr>
+            <tr>
+              <td>XA</td>
+              <td>X A</td>
+              <td>X-Ray Angiography device</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:1.2.840.10008.6.1.19"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/imaging-modality"/>
+  <version value="0.4.0"/>
+  <name value="ImagingModality"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Type of acquired image data in the instance"/>
+  <copyright value="These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright 2011 by the National Electrical Manufacturers Association"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <compose>
+    <include>
+      <system value="http://nema.org/dicom/dicm"/>
+      <concept>
+        <code value="AR"/>
+        <display value="A R"/>
+      </concept>
+      <concept>
+        <code value="BMD"/>
+        <display value="B M D"/>
+      </concept>
+      <concept>
+        <code value="BDUS"/>
+        <display value="B D U S"/>
+      </concept>
+      <concept>
+        <code value="EPS"/>
+        <display value="E P S"/>
+      </concept>
+      <concept>
+        <code value="CR"/>
+        <display value="C R"/>
+      </concept>
+      <concept>
+        <code value="CT"/>
+        <display value="C T"/>
+      </concept>
+      <concept>
+        <code value="DX"/>
+        <display value="D X"/>
+      </concept>
+      <concept>
+        <code value="ECG"/>
+        <display value="E C G"/>
+      </concept>
+      <concept>
+        <code value="ES"/>
+        <display value="E S"/>
+      </concept>
+      <concept>
+        <code value="XC"/>
+        <display value="X C"/>
+      </concept>
+      <concept>
+        <code value="GM"/>
+        <display value="G M"/>
+      </concept>
+      <concept>
+        <code value="HD"/>
+        <display value="H D"/>
+      </concept>
+      <concept>
+        <code value="IO"/>
+        <display value="I O"/>
+      </concept>
+      <concept>
+        <code value="IVOCT"/>
+        <display value="I V O C T"/>
+      </concept>
+      <concept>
+        <code value="IVUS"/>
+        <display value="I V U S"/>
+      </concept>
+      <concept>
+        <code value="KER"/>
+        <display value="K E R"/>
+      </concept>
+      <concept>
+        <code value="LEN"/>
+        <display value="L E N"/>
+      </concept>
+      <concept>
+        <code value="MR"/>
+        <display value="M R"/>
+      </concept>
+      <concept>
+        <code value="MG"/>
+        <display value="M G"/>
+      </concept>
+      <concept>
+        <code value="NM"/>
+        <display value="N M"/>
+      </concept>
+      <concept>
+        <code value="OAM"/>
+        <display value="O A M"/>
+      </concept>
+      <concept>
+        <code value="OCT"/>
+        <display value="O C T"/>
+      </concept>
+      <concept>
+        <code value="OPM"/>
+        <display value="O P M"/>
+      </concept>
+      <concept>
+        <code value="OP"/>
+        <display value="O P"/>
+      </concept>
+      <concept>
+        <code value="OPR"/>
+        <display value="O P R"/>
+      </concept>
+      <concept>
+        <code value="OPT"/>
+        <display value="O P T"/>
+      </concept>
+      <concept>
+        <code value="OPV"/>
+        <display value="O P V"/>
+      </concept>
+      <concept>
+        <code value="PX"/>
+        <display value="P X"/>
+      </concept>
+      <concept>
+        <code value="PT"/>
+        <display value="P T"/>
+      </concept>
+      <concept>
+        <code value="RF"/>
+        <display value="R F"/>
+      </concept>
+      <concept>
+        <code value="RG"/>
+        <display value="R G"/>
+      </concept>
+      <concept>
+        <code value="SM"/>
+        <display value="S M"/>
+      </concept>
+      <concept>
+        <code value="SRF"/>
+        <display value="S R F"/>
+      </concept>
+      <concept>
+        <code value="US"/>
+        <display value="U S"/>
+      </concept>
+      <concept>
+        <code value="VA"/>
+        <display value="V A"/>
+      </concept>
+      <concept>
+        <code value="XA"/>
+        <display value="X A"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

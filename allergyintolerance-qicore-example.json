@@ -1,0 +1,93 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "qicore",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>identifier</b>: 49476534\n      </p>\n      <p>\n        <b>recordedDate</b>: Oct 9, 2014 3:58:00 AM\n      </p>\n      <p>\n        <b>recorder</b>: \n        <a href=\"Practitioner/example\">Generated Summary: 23; Adam Careful </a>\n      </p>\n      <p>\n        <b>patient</b>: \n        <a href=\"Patient/example\">Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>\n      </p>\n      <p>\n        <b>substance</b>: Cashew nuts \n        <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '227493005' = 'Cashew nut (substance)', given as 'Cashew nuts'})</span>\n      </p>\n      <p>\n        <b>status</b>: CONFIRMED\n      </p>\n      <p>\n        <b>criticality</b>: HIGH\n      </p>\n      <p>\n        <b>type</b>: IMMUNE\n      </p>\n      <p>\n        <b>category</b>: FOOD\n      </p>\n      <p>\n        <b>lastOccurence</b>: Jun 1, 2012\n      </p>\n      <blockquote>\n        <p>\n          <b>event</b>\n        </p>\n        <p>\n          <b>substance</b>: cashew nut allergenic extract Injectable Product \n          <span style=\"background: LightGoldenRodYellow \">(Details : {http://www.nlm.nih.gov/research/umls/rxnorm code 'C3214954' = 'C3214954', given as 'cashew nut allergenic extract Injectable Product'})</span>\n        </p>\n        <p>\n          <b>certainty</b>: CONFIRMED\n        </p>\n        <p>\n          <b>manifestation</b>: Anaphylactic reaction \n          <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '39579001' = 'Anaphylactic reaction', given as 'Anaphylactic reaction'})</span>\n        </p>\n        <p>\n          <b>description</b>: Challenge Protocol. Severe Reaction to 1/8 cashew. Epinephrine administered\n        </p>\n        <p>\n          <b>onset</b>: Jun 12, 2012\n        </p>\n        <p>\n          <b>severity</b>: SEVERE\n        </p>\n      </blockquote>\n      <blockquote>\n        <p>\n          <b>event</b>\n        </p>\n        <p>\n          <b>certainty</b>: LIKELY\n        </p>\n        <p>\n          <b>manifestation</b>: Urticaria \n          <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '64305001' = 'Hive', given as 'Urticaria'})</span>\n        </p>\n        <p>\n          <b>onset</b>: Jan 1, 2004\n        </p>\n        <p>\n          <b>severity</b>: MODERATE\n        </p>\n      </blockquote>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/allergyintolerance-reasonRefuted",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v3/ActReason",
+            "code": "MED",
+            "display": "Medical Status Altered"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://acme.com/ids/patients/risks",
+      "value": "49476534"
+    }
+  ],
+  "recordedDate": "2014-10-09T14:58:00+11:00",
+  "recorder": {
+    "reference": "Practitioner/example"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "substance": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "227493005",
+        "display": "Cashew nuts"
+      }
+    ]
+  },
+  "status": "confirmed",
+  "criticality": "high",
+  "type": "immune",
+  "category": "food",
+  "lastOccurence": "2012-06",
+  "event": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "C3214954",
+            "display": "cashew nut allergenic extract Injectable Product"
+          }
+        ]
+      },
+      "certainty": "confirmed",
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39579001",
+              "display": "Anaphylactic reaction"
+            }
+          ]
+        }
+      ],
+      "description": "Challenge Protocol. Severe Reaction to 1/8 cashew. Epinephrine administered",
+      "onset": "2012-06-12",
+      "severity": "severe"
+    },
+    {
+      "certainty": "likely",
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64305001",
+              "display": "Urticaria"
+            }
+          ]
+        }
+      ],
+      "onset": "2004",
+      "severity": "moderate"
+    }
+  ]
+}

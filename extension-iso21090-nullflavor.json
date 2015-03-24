@@ -1,0 +1,209 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "iso21090-nullFlavor",
+  "url": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+  "name": "NI | OTH | NINF | PINF | UNK | ASKU | NAV | NASK | TRC | MSK | NA | QS",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "If the value is not a proper value, indicates the reason.",
+  "status": "draft",
+  "date": "2012-06-24",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "type": "extension",
+  "abstract": false,
+  "contextType": "datatype",
+  "context": [
+    "Any"
+  ],
+  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "NI | OTH | NINF | PINF | UNK | ASKU | NAV | NASK | TRC | MSK | NA | QS",
+        "definition": "If the value is not a proper value, indicates the reason.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "ANY.nullFlavor"
+          }
+        ]
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.valueCode",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "name": "NullFlavor",
+          "strength": "required",
+          "description": "A collection of codes specifying why a valid value is not present",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/v3/vs/NullFlavor"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "NI | OTH | NINF | PINF | UNK | ASKU | NAV | NASK | TRC | MSK | NA | QS",
+        "definition": "If the value is not a proper value, indicates the reason.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "v2",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "ANY.nullFlavor"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
+      },
+      {
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "name": "NullFlavor",
+          "strength": "required",
+          "description": "A collection of codes specifying why a valid value is not present",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/v3/vs/NullFlavor"
+          }
+        }
+      }
+    ]
+  }
+}

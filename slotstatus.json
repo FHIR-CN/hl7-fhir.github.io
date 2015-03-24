@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "slotstatus",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 4 concepts</p><h2>SlotStatus</h2><p>The free/busy status of a slot</p><p>This value set defines its own terms in the system http://hl7.org/fhir/slotstatus</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>BUSY<a name=\"BUSY\"> </a></td><td>B U S Y</td><td>Indicates that the time interval is busy because one  or more events have been scheduled for that interval.</td></tr><tr><td>FREE<a name=\"FREE\"> </a></td><td>F R E E</td><td>Indicates that the time interval is free for scheduling.</td></tr><tr><td>BUSY-UNAVAILABLE<a name=\"BUSY-UNAVAILABLE\"> </a></td><td>B U S Y U N A V A I L A B L E</td><td>Indicates that the time interval is busy and that the interval can not be scheduled.</td></tr><tr><td>BUSY-TENTATIVE<a name=\"BUSY-TENTATIVE\"> </a></td><td>B U S Y T E N T A T I V E</td><td>Indicates that the time interval is busy because one or more events have been tentatively scheduled for that interval.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.365"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/slotstatus",
+  "version": "0.4.0",
+  "name": "SlotStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The free/busy status of a slot",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.365"
+      }
+    ],
+    "system": "http://hl7.org/fhir/slotstatus",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "BUSY",
+        "display": "B U S Y",
+        "definition": "Indicates that the time interval is busy because one  or more events have been scheduled for that interval."
+      },
+      {
+        "code": "FREE",
+        "display": "F R E E",
+        "definition": "Indicates that the time interval is free for scheduling."
+      },
+      {
+        "code": "BUSY-UNAVAILABLE",
+        "display": "B U S Y U N A V A I L A B L E",
+        "definition": "Indicates that the time interval is busy and that the interval can not be scheduled."
+      },
+      {
+        "code": "BUSY-TENTATIVE",
+        "display": "B U S Y T E N T A T I V E",
+        "definition": "Indicates that the time interval is busy because one or more events have been tentatively scheduled for that interval."
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-v3-actreason"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set does not contain a fixed number of concepts</p>
+      <h2>Act Reason Codes</h2>
+      <p>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include all codes defined in 
+          <a href="v3/ActReason/index.html">http://hl7.org/fhir/v3/ActReason</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1820"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/v3-actreason"/>
+  <version value="0.1.0"/>
+  <name value="Act Reason Codes"/>
+  <publisher value="Health Level Seven, Inc. - CQI WG"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/special/committees/CQI"/>
+    </telecom>
+  </contact>
+  <description value="The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or          contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/ActReason"/>
+    </include>
+  </compose>
+</ValueSet>

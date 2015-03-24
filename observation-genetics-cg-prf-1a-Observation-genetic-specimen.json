@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-genetic-specimen",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-genetic-specimen",
+  "name": "genetic-specimen",
+  "base": "Observation",
+  "type": "string",
+  "description": "Genetics laboratory specimen identifier, if different"
+}

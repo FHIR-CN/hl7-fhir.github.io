@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-nutrient-code",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>Nutrient Modifier Codes</h2><p>NutrientModifier :  Codes for types of nutrient that is being modified such as carbohydrate or sodium.  This value set includes all the children of SNOMED CT Concepts from SCTID 226355009 Nutrients (substance), Sodium, Potassium and Fluid and is provided as a suggestive example</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://snomed.info/sct<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>33463005</td><td>Fluid</td><td/></tr><tr><td>39972003</td><td>Sodium</td><td/></tr><tr><td>88480006</td><td>Potassium</td><td/></tr></table>Include codes from http://snomed.info/sct where concept  is-a  226355009</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.418"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/nutrient-code",
+  "version": "0.4.0",
+  "name": "Nutrient Modifier Codes",
+  "publisher": "FHIR NutritionOrder team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "NutrientModifier :  Codes for types of nutrient that is being modified such as carbohydrate or sodium.  This value set includes all the children of SNOMED CT Concepts from SCTID 226355009 Nutrients (substance), Sodium, Potassium and Fluid and is provided as a suggestive example",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "status": "draft",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "33463005",
+            "display": "Fluid"
+          },
+          {
+            "code": "39972003",
+            "display": "Sodium"
+          },
+          {
+            "code": "88480006",
+            "display": "Potassium"
+          }
+        ],
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "226355009"
+          }
+        ]
+      }
+    ]
+  }
+}

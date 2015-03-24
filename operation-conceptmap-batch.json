@@ -1,0 +1,104 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ConceptMap-batch",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Batch Mode Translation</h2><p>OPERATION: Batch Mode Translation</p><div><p>Translate a set of concepts from one value set to another, based on the existing value set and concept maps resources, and/or other additional knowledge available to the server</p>\n</div><p>URL: [base]/ConceptMap/$Batch Mode Translation</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>item</td><td>0..*</td><td></td><td><div><p>An item to be translated</p>\n</div></td></tr><tr><td/><td>concept</td><td>1..1</td><td>CodeableConcept</td><td><div><p>A codeable concept to be translated. If the source is a coding, or a code/system pair, wrap it in a CodeableConcept</p>\n</div></td></tr><tr><td/><td>target</td><td>1..*</td><td>uri</td><td><div><p>Identifies the value set in which a translation is sought. May be a logical id, or an absolute or relative location. If more than one is provided, multiple translations are requested for the concept</p>\n</div></td></tr><tr><td/><td>map</td><td>0..1</td><td>Reference(ConceptMap)</td><td><div><p>A specific concept map to use for the translation. If none is provided, the server chooses which concept map to use</p>\n</div></td></tr><tr><td>OUT</td><td>item</td><td>0..*</td><td></td><td><div><p>The outcome of validating an item. There must be an entry for every item in the same order</p>\n</div></td></tr><tr><td/><td>result</td><td>1..1</td><td>boolean</td><td><div><p>True if the concept could be translated</p>\n</div></td></tr><tr><td/><td>message</td><td>0..1</td><td>string</td><td><div><p>Error details, if result = false. If this is provided when result = true, the message carries hints and wanrings</p>\n</div></td></tr><tr><td/><td>equivalence</td><td>0..1</td><td>code</td><td><div><p>A code indicating the equivalence of the translation, using values from [ConceptMapEquivalence]{concept-equivalence.html}. TODO: what about multiple translations?</p>\n</div></td></tr><tr><td/><td>outcome</td><td>0..1</td><td>CodeableConcept</td><td><div><p>The translation outcome - a CodeableConcept to allow for multiple translations</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/ConceptMap-batch",
+  "name": "Batch Mode Translation",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Translate a set of concepts from one value set to another, based on the existing value set and concept maps resources, and/or other additional knowledge available to the server",
+  "status": "draft",
+  "date": "2015-03-23T23:56:59+00:00",
+  "kind": "operation",
+  "code": "batch",
+  "system": false,
+  "type": [
+    "ConceptMap"
+  ],
+  "instance": false,
+  "parameter": [
+    {
+      "name": "item",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "An item to be translated",
+      "part": [
+        {
+          "name": "concept",
+          "min": 1,
+          "max": "1",
+          "documentation": "A codeable concept to be translated. If the source is a coding, or a code/system pair, wrap it in a CodeableConcept",
+          "type": "CodeableConcept"
+        },
+        {
+          "name": "target",
+          "min": 1,
+          "max": "*",
+          "documentation": "Identifies the value set in which a translation is sought. May be a logical id, or an absolute or relative location. If more than one is provided, multiple translations are requested for the concept",
+          "type": "uri"
+        },
+        {
+          "name": "map",
+          "min": 0,
+          "max": "1",
+          "documentation": "A specific concept map to use for the translation. If none is provided, the server chooses which concept map to use",
+          "type": "Reference(ConceptMap)"
+        }
+      ]
+    },
+    {
+      "name": "item",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "The outcome of validating an item. There must be an entry for every item in the same order",
+      "part": [
+        {
+          "name": "result",
+          "min": 1,
+          "max": "1",
+          "documentation": "True if the concept could be translated",
+          "type": "boolean"
+        },
+        {
+          "name": "message",
+          "min": 0,
+          "max": "1",
+          "documentation": "Error details, if result = false. If this is provided when result = true, the message carries hints and wanrings",
+          "type": "string"
+        },
+        {
+          "name": "equivalence",
+          "min": 0,
+          "max": "1",
+          "documentation": "A code indicating the equivalence of the translation, using values from [ConceptMapEquivalence]{concept-equivalence.html}. TODO: what about multiple translations?",
+          "type": "code"
+        },
+        {
+          "name": "outcome",
+          "min": 0,
+          "max": "1",
+          "documentation": "The translation outcome - a CodeableConcept to allow for multiple translations",
+          "type": "CodeableConcept"
+        }
+      ]
+    }
+  ]
+}

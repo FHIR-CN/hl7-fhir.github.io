@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-security-labels",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>All concepts in the following value sets:</p>\n      <ul>\n        <li>Confidentiality</li>\n        <li>InformationSensitivityPolicy</li>\n        <li>Compartment</li>\n        <li>SecurityIntegrityObservationValue</li>\n        <li>SecurityControlObservationValue</li>\n        <li>ActUSPrivacyLaw</li>\n      </ul>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1770"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/security-labels",
+  "version": "0.4.0",
+  "name": "All Security Labels",
+  "publisher": "FHIR project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "A single value set for all security labels defined by FHIR",
+  "status": "draft",
+  "experimental": true,
+  "date": "2014-07-28",
+  "compose": {
+    "import": [
+      "http://hl7.org/fhir/v3/vs/Confidentiality",
+      "http://hl7.org/fhir/v3/vs/InformationSensitivityPolicy",
+      "http://hl7.org/fhir/v3/vs/Compartment",
+      "http://hl7.org/fhir/v3/vs/SecurityIntegrityObservationValue",
+      "http://hl7.org/fhir/v3/vs/SecurityControlObservationValue",
+      "http://hl7.org/fhir/v3/vs/ActUSPrivacyLaw"
+    ]
+  }
+}

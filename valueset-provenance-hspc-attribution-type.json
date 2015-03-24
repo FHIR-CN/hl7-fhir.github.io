@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-provenance-hspc-attribution-type",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>Attribution Code</h2><p>Type codes for HSPC Attribution provenance construct</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://cimi.org/vs/patient/attribution-type<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Observed</td><td/></tr><tr><td>2</td><td>Updated</td><td/></tr><tr><td>3</td><td>Verified</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:0.00.000.0.000000.0.00.003"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:0.00.000.0.000000.0.00.003"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/provenance-hspc-attribution-type",
+  "version": "0.4.0",
+  "name": "Attribution Code",
+  "publisher": "CIMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://cimi.org/valueset/attribution"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.cimi.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Type codes for HSPC Attribution provenance construct",
+  "status": "active",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://cimi.org/vs/patient/attribution-type",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Observed"
+          },
+          {
+            "code": "2",
+            "display": "Updated"
+          },
+          {
+            "code": "3",
+            "display": "Verified"
+          }
+        ]
+      }
+    ]
+  }
+}

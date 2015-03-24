@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="observation-genetics-cg-prf-1a-Observation-condition-gene-dnavariant"/>
+  <url value="http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-condition-gene-dnavariant"/>
+  <name value="condition-gene-dnavariant"/>
+  <base value="Observation"/>
+  <type value="string"/>
+  <description value="Condition assessed by genetic testing and HGNC gene symbol and HGVS DNA variant"/>
+</SearchParameter>

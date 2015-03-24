@@ -1,0 +1,96 @@
+{
+  "resourceType": "Encounter",
+  "id": "f002",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>identifier</b>: v3251 (OFFICIAL)\n      </p>\n      <p>\n        <b>status</b>: FINISHED\n      </p>\n      <p>\n        <b>class</b>: OUTPATIENT\n      </p>\n      <p>\n        <b>type</b>: Patient-initiated encounter \n        <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '270427003' = 'Patient-initiated encounter', given as 'Patient-initiated encounter'})</span>\n      </p>\n      <p>\n        <b>patient</b>: \n        <a href=\"Patient/f001\">P. van de Heuvel. Generated Summary: 738472983 (USUAL), ?? (USUAL); Pieter van de Heuvel ; ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME); MALE; birthDate: Nov 17, 1944; \n          <span title=\"Codes: {http://hl7.org/fhir/v3/MaritalStatus M}\">Getrouwd</span>; multipleBirth; active\n        </a>\n      </p>\n      <h3>Participants</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Period</b>\n          </td>\n          <td>\n            <b>Individual</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td>\n            <a href=\"Practitioner/f003\">M.I.M Versteegh. Generated Summary: 846100293 (OFFICIAL), 243HID3RT938 (USUAL); Marc Versteegh (OFFICIAL); ph: 0205562431(WORK), m.versteegh@bmc.nl(WORK), fax: 0205662948(WORK); MALE; birthDate: Jul 1, 1963; \n              <span title=\"Codes: {urn:oid:2.16.840.1.113883.6.121 nl}\">Dutch</span>\n            </a>\n          </td>\n        </tr>\n      </table>\n      <p>\n        <b>length</b>: 140 min\n        <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code min = 'min')</span>\n      </p>\n      <p>\n        <b>reason</b>: Partial lobectomy of lung \n        <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '34068001' = 'Heart valve replacement', given as 'Partial lobectomy of lung'})</span>\n      </p>\n      <p>\n        <b>priority</b>: Urgent \n        <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '103391001' = 'Urgent', given as 'Urgent'})</span>\n      </p>\n      <h3>Hospitalizations</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>PreAdmissionIdentifier</b>\n          </td>\n          <td>\n            <b>Origin</b>\n          </td>\n          <td>\n            <b>AdmitSource</b>\n          </td>\n          <td>\n            <b>Diet</b>\n          </td>\n          <td>\n            <b>SpecialCourtesy</b>\n          </td>\n          <td>\n            <b>SpecialArrangement</b>\n          </td>\n          <td>\n            <b>Destination</b>\n          </td>\n          <td>\n            <b>DischargeDisposition</b>\n          </td>\n          <td>\n            <b>DischargeDiagnosis</b>\n          </td>\n          <td>\n            <b>ReAdmission</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>98682 (OFFICIAL)</td>\n          <td> </td>\n          <td>Referral by radiologist \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '305997006' = 'Referral by radiologist', given as 'Referral by radiologist'})</span>\n          </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td>Discharge to home \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '306689006' = 'Discharge to home', given as 'Discharge to home'})</span>\n          </td>\n          <td> </td>\n          <td>false</td>\n        </tr>\n      </table>\n      <p>\n        <b>serviceProvider</b>: \n        <a href=\"Organization/f001\">BMC. Generated Summary: 91654 (OFFICIAL), 17-0112278 (USUAL); name: Burgers University Medical Center; \n          <span title=\"Codes: {urn:oid:2.16.840.1.113883.2.4.15.1060 V6}, {http://hl7.org/fhir/organization-type prov}\">University Medical Hospital</span>; ph: 022-655 2300(WORK)\n        </a>\n      </p>\n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.bmc.nl/zorgportal/identifiers/encounters",
+      "value": "v3251"
+    }
+  ],
+  "status": "finished",
+  "class": "outpatient",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "270427003",
+          "display": "Patient-initiated encounter"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/f001",
+    "display": "P. van de Heuvel"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/f003",
+        "display": "M.I.M Versteegh"
+      }
+    }
+  ],
+  "length": {
+    "value": 140,
+    "units": "min",
+    "system": "http://unitsofmeasure.org",
+    "code": "min"
+  },
+  "reason": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "34068001",
+          "display": "Partial lobectomy of lung"
+        }
+      ]
+    }
+  ],
+  "priority": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "103391001",
+        "display": "Urgent"
+      }
+    ]
+  },
+  "hospitalization": {
+    "preAdmissionIdentifier": {
+      "use": "official",
+      "system": "http://www.bmc.nl/zorgportal/identifiers/pre-admissions",
+      "value": "98682"
+    },
+    "admitSource": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "305997006",
+          "display": "Referral by radiologist"
+        }
+      ]
+    },
+    "dischargeDisposition": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "306689006",
+          "display": "Discharge to home"
+        }
+      ]
+    },
+    "reAdmission": false
+  },
+  "serviceProvider": {
+    "reference": "Organization/f001",
+    "display": "BMC"
+  }
+}

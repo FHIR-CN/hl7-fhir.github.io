@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?><Bundle xmlns="http://hl7.org/fhir"><id value="father"/><meta><lastUpdated value="2013-05-28T22:12:21Z"/><tag><system value="http://hl7.org/fhir/tag"/><code value="document"/></tag></meta><type value="document"/><base value="http://fhir.healthintersections.com.au/open"/><!--    The Composition resource    --><entry><base value="urn:uuid:"/><resource><Composition><id value="180f219f-97a8-486d-99d9-ed631fe4fc57"/><meta><lastUpdated value="2013-05-28T22:12:21Z"/></meta><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>date</b>: Feb 1, 2013 12:30:02 PM
+            </p>
+            <p>
+              <b>type</b>: Discharge Summary from Responsible Clinician 
+              <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;28655-9&#39; = &#39;Physician attending Discharge summary)</span>
+            </p>
+            <p>
+              <b>status</b>: FINAL
+            </p>
+            <p>
+              <b>confidentiality</b>: N
+            </p>
+            <p>
+              <b>author</b>: 
+              <a href="Practitioner/example">Doctor Dave. Generated Summary: 23; Adam Careful </a>
+            </p>
+            <p>
+              <b>encounter</b>: 
+              <a href="http://fhir.healthintersections.com.au/open/Encounter/doc-example">http://fhir.healthintersections.com.au/open/Encounter/doc-example</a>
+            </p>
+          </div></text><date value="2013-02-01T12:30:02Z"/><type><coding><system value="http://loinc.org"/><code value="28655-9"/></coding><text value="Discharge Summary from Responsible Clinician"/></type><status value="final"/><confidentiality value="N"/><subject><reference value="http://fhir.healthintersections.com.au/open/Patient/d1"/><display value="Eve Everywoman"/></subject><author><reference value="Practitioner/example"/><display value="Doctor Dave"/></author><!--    The Encounter resource. Points directly to an Encounter resource. Contains the dates of admission, specialtyu etc.    --><encounter><reference value="http://fhir.healthintersections.com.au/open/Encounter/doc-example"/></encounter><section><title value="Reason for admission"/><content><reference value="urn:uuid:d0dd51d3-3ab2-4c84-b697-a630c3e40e7a"/></content></section><!--    Points to the list that groups the medications on discharge    --><section><title value="Medications on Discharge"/><content><reference value="urn:uuid:673f8db5-0ffd-4395-9657-6da00420bbc1"/></content></section><!--    Points to the list that groups the allergies    --><section><title value="Known allergies"/><content><reference value="urn:uuid:68f86194-e6e1-4f65-b64a-5314256f8d7b"/></content></section></Composition></resource></entry><!--    The Practitioner Resource. In this document they are the author of the document
+    (There is a reference from the document resource). Note that, strictly, it doesn't need to be within the document as the
+    recipient knows where to go and get it if they need it - assuming it is available on-line of course.   --><entry><resource><Practitioner><id value="example"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            
+            
+            <p>Dr Adam Careful is a Referring Practitioner for Acme Hospital from 1-Jan 2012 to 31-Mar
+              2012</p>
+          
+          
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>identifier</b>: 23
+            </p>
+            <p>
+              <b>name</b>: Adam Careful 
+            </p>
+            <h3>PractitionerRoles</h3>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Id</b>
+                </td>
+                <td>
+                  <b>ManagingOrganization</b>
+                </td>
+                <td>
+                  <b>Role</b>
+                </td>
+                <td>
+                  <b>Specialty</b>
+                </td>
+                <td>
+                  <b>Period</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>HealthcareService</b>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td>
+                  <a href="Organization/1">Generated Summary: Gastro; name: Gastroenterology; ph: +1 555 234 3523(MOBILE), gastro@acme.org(WORK)</a>
+                </td>
+                <td>Referring Provider 
+                  <span style="background: LightGoldenRodYellow ">(Details : {http://hl7.org/fhir/v2/0286 code &#39;RP&#39; = &#39;Referring Provider)</span>
+                </td>
+                <td> </td>
+                <td>Jan 1, 2012 --&gt; Mar 31, 2012</td>
+                <td> </td>
+                <td> </td>
+              </tr>
+            </table>
+          </div></text><identifier><system value="http://www.acme.org/practitioners"/><value value="23"/></identifier><name><family value="Careful"/><given value="Adam"/><prefix value="Dr"/></name><practitionerRole><managingOrganization><reference value="Organization/1"/></managingOrganization><!--      Referring Practitioner for the first 3 months of 2012      --><role><coding><system value="http://hl7.org/fhir/v2/0286"/><code value="RP"/></coding></role><period><start value="2012-01-01"/><end value="2012-03-31"/></period></practitionerRole></Practitioner></resource></entry><!--    The Patient who is the subject of the document. Same coments as practitioner.    --><entry><resource><Patient><id value="d1"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            
+            <h1>Eve Everywoman</h1>
+          
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>name</b>: Eve Everywoman
+            </p>
+            <p>
+              <b>telecom</b>: ph: 555-555-2003(WORK)
+            </p>
+            <p>
+              <b>gender</b>: FEMALE
+            </p>
+            <p>
+              <b>birthDate</b>: Jan 6, 1955
+            </p>
+            <p>
+              <b>address</b>: 2222 Home Street (HOME)
+            </p>
+            <p>
+              <b>active</b>: true
+            </p>
+          </div></text><name><text value="Eve Everywoman"/><family value="Everywoman1"/><given value="Eve"/></name><telecom><system value="phone"/><value value="555-555-2003"/><use value="work"/></telecom><gender value="female"/><birthDate value="1955-01-06"/><address><use value="home"/><line value="2222 Home Street"/></address><active value="true"/></Patient></resource></entry><!--    The encounter that is being documented.   --><entry><resource><Encounter><id value="doc-example"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"> Admitted to Orthopedics Service,
+                        Middlemore Hospital between Jan 20 and Feb ist 2013 
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>identifier</b>: S100
+            </p>
+            <p>
+              <b>status</b>: FINISHED
+            </p>
+            <p>
+              <b>class</b>: INPATIENT
+            </p>
+            <p>
+              <b>type</b>: Orthopedic Admission 
+              <span style="background: LightGoldenRodYellow ">(Details )</span>
+            </p>
+            <p>
+              <b>patient</b>: 
+              <a href="Patient/d1">Patient/d1</a>
+            </p>
+            <p>
+              <b>period</b>: Jan 20, 2013 12:30:02 PM --&gt; Feb 1, 2013 12:30:02 PM
+            </p>
+            <h3>Hospitalizations</h3>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Id</b>
+                </td>
+                <td>
+                  <b>PreAdmissionIdentifier</b>
+                </td>
+                <td>
+                  <b>Origin</b>
+                </td>
+                <td>
+                  <b>AdmitSource</b>
+                </td>
+                <td>
+                  <b>Diet</b>
+                </td>
+                <td>
+                  <b>SpecialCourtesy</b>
+                </td>
+                <td>
+                  <b>SpecialArrangement</b>
+                </td>
+                <td>
+                  <b>Destination</b>
+                </td>
+                <td>
+                  <b>DischargeDisposition</b>
+                </td>
+                <td>
+                  <b>DischargeDiagnosis</b>
+                </td>
+                <td>
+                  <b>ReAdmission</b>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>Discharged to care of GP 
+                  <span style="background: LightGoldenRodYellow ">(Details )</span>
+                </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+            </table>
+          </div></text><identifier><value value="S100"/></identifier><status value="finished"/><class value="inpatient"/><type><text value="Orthopedic Admission"/></type><patient><reference value="Patient/d1"/></patient><period><start value="2013-01-20T12:30:02Z"/><end value="2013-02-01T12:30:02Z"/></period><hospitalization><dischargeDisposition><text value="Discharged to care of GP"/></dischargeDisposition></hospitalization></Encounter></resource></entry><!--    The Reason for admission.   --><entry><base value="urn:uuid:"/><resource><List><id value="d0dd51d3-3ab2-4c84-b697-a630c3e40e7a"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
+            
+            <table>
+              
+              <thead>
+                
+                <tr>
+                  
+                  <td>Details</td>
+                  
+                  <td/>
+                
+                </tr>
+              
+              </thead>
+              
+              <tbody>
+                
+                <tr>
+                  
+                  <td>Acute Asthmatic attack. Was wheezing
+                        for days prior to admission.</td>
+                  
+                  <td/>
+                
+                </tr>
+              
+              </tbody>
+            
+            </table>
+          
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>code</b>: Hospital admission diagnosis 
+              <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;8646-2&#39; = &#39;Hospital admission diagnosis&#39;, given as &#39;Hospital admission diagnosis&#39;})</span>
+            </p>
+            <p>
+              <b>mode</b>: WORKING
+            </p>
+            <h3>Entries</h3>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Id</b>
+                </td>
+                <td>
+                  <b>Flag</b>
+                </td>
+                <td>
+                  <b>Deleted</b>
+                </td>
+                <td>
+                  <b>Date</b>
+                </td>
+                <td>
+                  <b>Item</b>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>
+                  <a href="urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81">urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81</a>
+                </td>
+              </tr>
+            </table>
+          </div></text><code><coding><system value="http://loinc.org"/><code value="8646-2"/><display value="Hospital admission diagnosis"/></coding></code><mode value="working"/><!--    This is an entry that refers to an Observation resource in this document.    --><entry><item><reference value="urn:uuid:541a72a8-df75-4484-ac89-ac4923f03b81"/></item></entry></List></resource></entry><entry><base value="urn:uuid:"/><resource><Observation><id value="541a72a8-df75-4484-ac89-ac4923f03b81"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml"> Acute Asthmatic attack. Was wheezing
+                        for days prior to admission. 
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>code</b>: Reason for admission 
+              <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;46241-6&#39; = &#39;Hospital admission diagnosis Narrative - Reported)</span>
+            </p>
+            <p>
+              <b>value</b>: Acute Asthmatic attack. Was wheezing for days prior to admission.
+            </p>
+            <p>
+              <b>status</b>: FINAL
+            </p>
+            <p>
+              <b>reliability</b>: OK
+            </p>
+          </div></text><code><coding><system value="http://loinc.org"/><code value="46241-6"/></coding><text value="Reason for admission"/></code><valueString value="Acute Asthmatic attack. Was wheezing for days prior to admission."/><status value="final"/><reliability value="ok"/></Observation></resource></entry><!--    The list of medications on discharge   --><entry><base value="urn:uuid:"/><resource><List><id value="673f8db5-0ffd-4395-9657-6da00420bbc1"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
+            
+            <table>
+              
+              <thead>
+                
+                <tr>
+                  
+                  <td>Medication</td>
+                  
+                  <td>Last Change</td>
+                  
+                  <td>Last ChangeReason</td>
+                
+                </tr>
+              
+              </thead>
+              
+              <tbody>
+                
+                <tr>
+                  
+                  <td>Theophylline 200mg BD after meals</td>
+                  
+                  <td>continued</td>
+                
+                </tr>
+                
+                <tr>
+                  
+                  <td>Ventolin Inhaler</td>
+                  
+                  <td>stopped</td>
+                  
+                  <td>Getting side effect of tremor</td>
+                
+                </tr>
+              
+              </tbody>
+            
+            </table>
+          
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>code</b>: Hospital discharge medications 
+              <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;10183-2&#39; = &#39;Hospital discharge medications Narrative&#39;, given as &#39;Hospital discharge medications&#39;})</span>
+            </p>
+            <p>
+              <b>mode</b>: WORKING
+            </p>
+            <blockquote>
+              <p>
+                <b>entry</b>
+              </p>
+              <p>
+                <b>flag</b>: started 
+                <span style="background: LightGoldenRodYellow ">(Details : {http://www.ithealthboard.health.nz/fhir/ValueSet/medicationStatus code &#39;started&#39; = &#39;started)</span>
+              </p>
+              <p>
+                <b>item</b>: 
+                <a href="urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86">urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86</a>
+              </p>
+            </blockquote>
+            <blockquote>
+              <p>
+                <b>entry</b>
+              </p>
+              <p>
+                <b>flag</b>: stopped 
+                <span style="background: LightGoldenRodYellow ">(Details : {http://www.ithealthboard.health.nz/fhir/ValueSet/medicationStatus code &#39;stopped&#39; = &#39;stopped)</span>
+              </p>
+              <p>
+                <b>deleted</b>: true
+              </p>
+              <p>
+                <b>item</b>: 
+                <a href="MedicationPrescription/1">use of Ventolin Inhaler was discontinued</a>
+              </p>
+            </blockquote>
+          </div></text><code><coding><system value="http://loinc.org"/><code value="10183-2"/><display value="Hospital discharge medications"/></coding></code><mode value="working"/><!--    This is an entry that refers to a MedicationPrescription resource in this document.
+                It is a new medication (as indicated by the flag)   --><entry><flag><coding><!--    The flag refers to the valueset containing permissable codes for changes
+                            to medication status that occurred during this encounter. Possible values are started,
+                            continued, stopped, changed   --><system value="http://www.ithealthboard.health.nz/fhir/ValueSet/medicationStatus"/><code value="started"/></coding></flag><item><reference value="urn:uuid:124a6916-5d84-4b8c-b250-10cefb8e6e86"/></item></entry><!--    This is an entry that refers to a medicationPrescription that is available on an external server.
+                In practice, you may still want an entry in the document as well, but it's not necessary. The medication
+                was stopped on this admission. Note that the deleted element is also true. Because the resource is
+                no longer active, we assume that it was deleted on the server, so following the link would result
+                in an http status code of 410 (Though you can always use the history to get previous versions)   --><entry><flag><coding><system value="http://www.ithealthboard.health.nz/fhir/ValueSet/medicationStatus"/><code value="stopped"/></coding></flag><deleted value="true"/><item><reference value="MedicationPrescription/1"/><display value="use of Ventolin Inhaler was discontinued"/></item></entry></List></resource></entry><!--    The first medication in the medications list    --><entry><base value="urn:uuid:"/><resource><MedicationPrescription><id value="124a6916-5d84-4b8c-b250-10cefb8e6e86"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><!--    The Human readible version of the script    --><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            
+            <p>Theophylline 200mg twice a day</p>
+          
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>contained</b>: 
+            </p>
+            <p>
+              <b>patient</b>: 
+              <a href="http://fhir.healthintersections.com.au/open/Patient/d1">Peter Patient</a>
+            </p>
+            <p>
+              <b>prescriber</b>: 
+              <a href="Practitioner/example">Peter Practitioner. Generated Summary: 23; Adam Careful </a>
+            </p>
+            <p>
+              <b>reason</b>: Management of Asthma 
+              <span style="background: LightGoldenRodYellow ">(Details )</span>
+            </p>
+            <p>
+              <b>medication</b>: Theophylline 200mg BD. Generated Summary: name: Theophylline 200mg; 66493003 
+              <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;66493003&#39; = &#39;66493003)</span>
+            </p>
+            <h3>DosageInstructions</h3>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Id</b>
+                </td>
+                <td>
+                  <b>Text</b>
+                </td>
+                <td>
+                  <b>AdditionalInstructions</b>
+                </td>
+                <td>
+                  <b>Scheduled[x]</b>
+                </td>
+                <td>
+                  <b>AsNeeded[x]</b>
+                </td>
+                <td>
+                  <b>Site</b>
+                </td>
+                <td>
+                  <b>Route</b>
+                </td>
+                <td>
+                  <b>Method</b>
+                </td>
+                <td>
+                  <b>Dose[x]</b>
+                </td>
+                <td>
+                  <b>Rate</b>
+                </td>
+                <td>
+                  <b>MaxDosePerPeriod</b>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td>Take with Food 
+                  <span style="background: LightGoldenRodYellow ">(Details )</span>
+                </td>
+                <td>Do 2 per 1days</td>
+                <td> </td>
+                <td> </td>
+                <td>oral administration of treatment 
+                  <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;394899003&#39; = &#39;Treatment administered orally&#39;, given as &#39;oral administration of treatment&#39;})</span>
+                </td>
+                <td> </td>
+                <td>1 tablet
+                  <span style="background: LightGoldenRodYellow "> (Details: http://unitsofmeasure.org code tbl = &#39;tbl&#39;)</span>
+                </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+            </table>
+          </div></text><contained><Medication><!--    This text section can be exctly the same as CDA    --><!--    The medication. This is currently modelled as a contained resource within the prescription, but could also be a separate
+                    resource either within the document bundle, or a reference to the medication on a server. The latter
+                    (i.e. where the medication terminology is hosted on a publically available server and simply referenced from the
+                MedicationPrescription resource is particularly attractive...    --><id value="med1"/><name value="Theophylline 200mg"/><code><coding><system value="http://snomed.info/sct"/><code value="66493003"/></coding></code></Medication></contained><!--    The patient details will generally be in the Document resource in the Document bundle, but could just as easily
+        point to a patient resource on a server   --><patient><reference value="http://fhir.healthintersections.com.au/open/Patient/d1"/><display value="Peter Patient"/></patient><!--    The prescriber details could also be within the bundle, but has the same options as patient   --><prescriber><reference value="Practitioner/example"/><display value="Peter Practitioner"/></prescriber><reasonCodeableConcept><text value="Management of Asthma"/></reasonCodeableConcept><!--    a reference to the medication being prescribed. As described earlier, this could be contained (as is the example here), separately
+        within the document bundle or simply a reference to a remote server. See comment in the contained resource   --><medication><reference value="#med1"/><display value="Theophylline 200mg BD"/></medication><dosageInstruction><additionalInstructions><text value="Take with Food"/></additionalInstructions><!--    twice a day    --><scheduledTiming><repeat><frequency value="2"/><period value="1"/><periodUnits value="d"/></repeat></scheduledTiming><!--    Orally    --><route><coding><system value="http://snomed.info/sct"/><code value="394899003"/><display value="oral administration of treatment"/></coding></route><doseQuantity><value value="1"/><units value="tablet"/><system value="http://unitsofmeasure.org"/><code value="tbl"/></doseQuantity></dosageInstruction></MedicationPrescription></resource></entry><!--    The list of known allergies   --><entry><base value="urn:uuid:"/><resource><List><id value="68f86194-e6e1-4f65-b64a-5314256f8d7b"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="additional"/><div xmlns="http://www.w3.org/1999/xhtml">
+            
+            <table>
+              
+              <thead>
+                
+                <tr>
+                  
+                  <td>Allergen</td>
+                  
+                  <td>Reaction</td>
+                
+                </tr>
+              
+              </thead>
+              
+              <tbody>
+                
+                <tr>
+                  
+                  <td>Doxycycline</td>
+                  
+                  <td>Hives</td>
+                
+                </tr>
+              
+              </tbody>
+            
+            </table>
+          
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>code</b>: Allergies and adverse reactions Document 
+              <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;48765-2&#39; = &#39;Allergies and adverse reactions Document&#39;, given as &#39;Allergies and adverse reactions Document&#39;})</span>
+            </p>
+            <p>
+              <b>mode</b>: WORKING
+            </p>
+            <h3>Entries</h3>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Id</b>
+                </td>
+                <td>
+                  <b>Flag</b>
+                </td>
+                <td>
+                  <b>Deleted</b>
+                </td>
+                <td>
+                  <b>Date</b>
+                </td>
+                <td>
+                  <b>Item</b>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>
+                  <a href="urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637">urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637</a>
+                </td>
+              </tr>
+            </table>
+          </div></text><code><coding><system value="http://loinc.org"/><code value="48765-2"/><display value="Allergies and adverse reactions Document"/></coding></code><mode value="working"/><!--    This is an entry that refers to an allergy resource in this document.    --><entry><item><reference value="urn:uuid:47600e0f-b6b5-4308-84b5-5dec157f7637"/></item></entry></List></resource></entry><!--    The Allergy.   --><entry><base value="urn:uuid:"/><resource><AllergyIntolerance><id value="47600e0f-b6b5-4308-84b5-5dec157f7637"/><meta><lastUpdated value="2013-05-05T16:13:03Z"/></meta><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Sensitivity to Doxycycline :
+                        Hives
+            <hr/>
+            <p>
+              <b>Generated Narrative with Details</b>
+            </p>
+            <p>
+              <b>text</b>: 
+            </p>
+            <p>
+              <b>recordedDate</b>: Sep 17, 2012
+            </p>
+            <p>
+              <b>patient</b>: 
+              <a href="http://fhir.healthintersections.com.au/open/Patient/d1">Eve Everywoman</a>
+            </p>
+            <p>
+              <b>substance</b>: Doxycycline 
+              <span style="background: LightGoldenRodYellow ">(Details )</span>
+            </p>
+            <p>
+              <b>status</b>: CONFIRMED
+            </p>
+            <p>
+              <b>criticality</b>: HIGH
+            </p>
+            <p>
+              <b>type</b>: IMMUNE
+            </p>
+            <h3>Events</h3>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Id</b>
+                </td>
+                <td>
+                  <b>Substance</b>
+                </td>
+                <td>
+                  <b>Certainty</b>
+                </td>
+                <td>
+                  <b>Manifestation</b>
+                </td>
+                <td>
+                  <b>Description</b>
+                </td>
+                <td>
+                  <b>Onset</b>
+                </td>
+                <td>
+                  <b>Duration</b>
+                </td>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>ExposureRoute</b>
+                </td>
+                <td>
+                  <b>Comment</b>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>Hives 
+                  <span style="background: LightGoldenRodYellow ">(Details : {http://example.org/system code &#39;xxx&#39; = &#39;xxx&#39;, given as &#39;Hives&#39;})</span>
+                </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+              </tr>
+            </table>
+          </div></text><recordedDate value="2012-09-17"/><patient><reference value="http://fhir.healthintersections.com.au/open/Patient/d1"/><display value="Eve Everywoman"/></patient><substance><text value="Doxycycline"/></substance><status value="confirmed"/><criticality value="high"/><type value="immune"/><event><manifestation><coding><system value="http://example.org/system"/><code value="xxx"/><display value="Hives"/></coding><text value="Hives"/></manifestation></event></AllergyIntolerance></resource></entry></Bundle>

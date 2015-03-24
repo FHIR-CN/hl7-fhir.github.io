@@ -1,0 +1,53 @@
+{
+  "resourceType": "Procedure",
+  "id": "example-implant",
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "status": "completed",
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "25267002",
+        "display": "Insertion of intracardiac pacemaker (procedure)"
+      }
+    ],
+    "text": "Implant Pacemaker"
+  },
+  "indication": [
+    {
+      "text": "Bradycardia"
+    }
+  ],
+  "performer": [
+    {
+      "person": {
+        "reference": "Practitioner/example",
+        "display": "Dr Cecil Surgeon"
+      }
+    }
+  ],
+  "performedDateTime": "2015-04-05",
+  "followUp": [
+    {
+      "text": "ROS 5 days  - 2013-04-10"
+    }
+  ],
+  "notes": "Routine Appendectomy. Appendix was inflamed and in retro-caecal position",
+  "device": [
+    {
+      "action": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/device-action",
+            "code": "implanted"
+          }
+        ]
+      },
+      "manipulated": {
+        "reference": "Device/example-pacemaker"
+      }
+    }
+  ]
+}

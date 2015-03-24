@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="observation-genetics-cg-prf-1a-Observation-genetic-specimen"/>
+  <url value="http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-genetic-specimen"/>
+  <name value="genetic-specimen"/>
+  <base value="Observation"/>
+  <type value="string"/>
+  <description value="Genetics laboratory specimen identifier, if different"/>
+</SearchParameter>

@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-reason-medication-given-codes",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or \n        contains concepts to support the medication process.</p>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.966"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/reason-medication-given-codes",
+  "version": "0.4.0",
+  "name": "Reason Medication Given Codes",
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set is provided as an exemplar",
+  "status": "draft",
+  "experimental": true,
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:null"
+      }
+    ],
+    "system": "http://hl7.org/fhir/reason-medication-given",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "a",
+        "display": "None",
+        "definition": "No reason known"
+      },
+      {
+        "code": "b",
+        "display": "Given as Ordered",
+        "definition": "The administration was following an ordered protocol"
+      },
+      {
+        "code": "c",
+        "display": "Emergency",
+        "definition": "The administration was needed to treat an emergency"
+      }
+    ]
+  }
+}

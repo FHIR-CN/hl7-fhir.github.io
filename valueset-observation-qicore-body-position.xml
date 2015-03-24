@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-observation-qicore-body-position"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set does not contain a fixed number of concepts</p>
+      <h2>Body Position Value Set Definition</h2>
+      <p>SNOMED CT code system values descending from the following:&#39;body position finding&#39; 9851009</p>
+      <p>
+        <b>Copyright Statement:</b> TBD
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include codes from http://snomed.info/sct where concept  is-a  9851009</li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1571"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/observation-qicore-body-position"/>
+  <version value="0.01"/>
+  <name value="Body Position Value Set Definition"/>
+  <immutable value="true"/>
+  <publisher value="Health Services Platform Consortium (HSPC)"/>
+  <description value="SNOMED CT code system values descending from the following:&#39;body position finding&#39; 9851009"/>
+  <copyright value="TBD"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <extensible value="true"/>
+  <date value="2015-02-10"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="9851009"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "binding-conformance",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>BindingConformance</h2><p>Binding conformance for applications</p><p>This value set defines its own terms in the system http://hl7.org/fhir/binding-conformance</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>required<a name=\"required\"> </a></td><td>Required</td><td>Only codes in the specified set are allowed.  If the binding is extensible, other codes may be used for concepts not covered by the bound set of codes.</td></tr><tr><td>preferred<a name=\"preferred\"> </a></td><td>Preferred</td><td>For greater interoperability, implementers are strongly encouraged to use the bound set of codes, however alternate codes may be used in derived profiles and implementations if necessary without being considered non-conformant.</td></tr><tr><td>example<a name=\"example\"> </a></td><td>Example</td><td>The codes in the set are an example to illustrate the meaning of the field. There is no particular preference for its use nor any assertion that the provided values are sufficient to meet implementation needs.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.144"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/binding-conformance",
+  "version": "0.4.0",
+  "name": "BindingConformance",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Binding conformance for applications",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.144"
+      }
+    ],
+    "system": "http://hl7.org/fhir/binding-conformance",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "required",
+        "display": "Required",
+        "definition": "Only codes in the specified set are allowed.  If the binding is extensible, other codes may be used for concepts not covered by the bound set of codes."
+      },
+      {
+        "code": "preferred",
+        "display": "Preferred",
+        "definition": "For greater interoperability, implementers are strongly encouraged to use the bound set of codes, however alternate codes may be used in derived profiles and implementations if necessary without being considered non-conformant."
+      },
+      {
+        "code": "example",
+        "display": "Example",
+        "definition": "The codes in the set are an example to illustrate the meaning of the field. There is no particular preference for its use nor any assertion that the provided values are sufficient to meet implementation needs."
+      }
+    ]
+  }
+}

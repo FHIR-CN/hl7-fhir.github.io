@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "valueset-extensions-ValueSet-keyword",
+  "url": "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-keyword",
+  "name": "keyword",
+  "base": "ValueSet",
+  "type": "string",
+  "description": ""
+}

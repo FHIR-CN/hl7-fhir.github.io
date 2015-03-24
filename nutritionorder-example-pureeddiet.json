@@ -1,0 +1,111 @@
+{
+  "resourceType": "NutritionOrder",
+  "id": "pureeddiet",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t\t\n      <h3>Nutrition Order Pureed Diet Canonical Example</h3>\n\t\t\t\n      <ul>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Patient: </b>Peter Chalmers\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Orderer: </b>Dr Adam Careful\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Date: </b>2014-09-17\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Known Allergies: </b>Cashew Nuts\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Food Preferences: </b>dairy-free:  Excludes dairy products\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Oral Diet Type: </b>Pureed Diet\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Texture: </b>Pureed\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Fluid Consistency: </b>Nectar thick liquids\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Schedule: </b>three times a day starting at breakfast on 2/10\n        </li>\n\t\t\t\n      </ul>\n\t\t\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example",
+    "display": "Peter Chalmers"
+  },
+  "orderer": {
+    "reference": "Practitioner/example",
+    "display": "Dr Adam Careful"
+  },
+  "identifier": [
+    {
+      "system": "http://goodhealthhospital.org/nutrition-orders",
+      "value": "123"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/example",
+    "display": "Inpatient"
+  },
+  "dateTime": "2014-09-17",
+  "status": "active",
+  "allergyIntolerance": [
+    {
+      "reference": "AllergyIntolerance/example",
+      "display": "Cashew Nuts"
+    }
+  ],
+  "foodPreferenceModifier": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/diet",
+          "code": "dairy-free"
+        }
+      ]
+    }
+  ],
+  "excludeFoodModifier": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "20140730",
+          "code": "227493005",
+          "display": "Cashew Nut"
+        }
+      ]
+    }
+  ],
+  "oralDiet": {
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "226211001",
+            "display": "Pureed diet"
+          },
+          {
+            "system": "http://goodhealthhospital.org/diet-type-codes",
+            "code": "1010",
+            "display": "Pureed diet"
+          }
+        ],
+        "text": "Pureed diet"
+      }
+    ],
+    "scheduled": {
+      "repeat": {
+        "bounds": {
+          "start": "2015-02-10"
+        },
+        "frequency": 3,
+        "period": 1,
+        "periodUnits": "d"
+      }
+    },
+    "texture": [
+      {
+        "modifier": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "228055009",
+              "display": "Liquidized food"
+            }
+          ],
+          "text": "Pureed"
+        }
+      }
+    ],
+    "fluidConsistencyType": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "439021000124105",
+            "display": "Dietary liquid consistency - nectar thick liquid"
+          }
+        ],
+        "text": "Nectar thick liquids"
+      }
+    ]
+  }
+}

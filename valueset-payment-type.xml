@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-payment-type"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample Payment Type codes.
+    
+      <hr/>
+      <p>This value set contains 3 concepts</p>
+      <h2>Payment Type Codes</h2>
+      <p>This value set includes sample Contract Type codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/contracttypecodes</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>payment
+            <a name="payment"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>adjustment
+            <a name="adjustment"> </a>
+          </td>
+          <td/>
+        </tr>
+        <tr>
+          <td>advance
+            <a name="advance"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.527"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/payment-type"/>
+  <version value="0.4.0"/>
+  <name value="Payment Type Codes"/>
+  <publisher value="Financial Management"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes sample Contract Type codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/contracttypecodes"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="payment"/>
+    </concept>
+    <concept>
+      <code value="adjustment"/>
+    </concept>
+    <concept>
+      <code value="advance"/>
+    </concept>
+  </define>
+</ValueSet>

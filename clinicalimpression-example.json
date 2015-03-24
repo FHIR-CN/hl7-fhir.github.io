@@ -1,0 +1,58 @@
+{
+  "resourceType": "ClinicalImpression",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>patient</b>: \n        <a href=\"Patient/example\">Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>\n      </p>\n      <p>\n        <b>assessor</b>: \n        <a href=\"Practitioner/example\">Generated Summary: 23; Adam Careful </a>\n      </p>\n      <p>\n        <b>date</b>: Dec 6, 2014 11:33:00 AM\n      </p>\n      <p>\n        <b>description</b>: This 26 yo male patient is brought into ER by ambulance after being involved in a motor vehicle accident\n      </p>\n      <p>\n        <b>problem</b>: MVA\n      </p>\n      <h3>Investigations</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Code</b>\n          </td>\n          <td>\n            <b>Item</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>Initial Examination \n            <span style=\"background: LightGoldenRodYellow \">(Details )</span>\n          </td>\n          <td>deep laceration of the scalp (left temporo-occipital)</td>\n        </tr>\n      </table>\n      <p>\n        <b>summary</b>: provisional diagnoses of laceration of head and traumatic brain injury (TBI)\n      </p>\n      <h3>Findings</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Item</b>\n          </td>\n          <td>\n            <b>Cause</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>850.0 \n            <span style=\"background: LightGoldenRodYellow \">(Details : {http://hl7.org/fhir/sid/icd-9 code '850.0' = '850.0)</span>\n          </td>\n          <td> </td>\n        </tr>\n      </table>\n      <p>\n        <b>plan</b>: hospital standard closed head injury management protocol \n      </p>\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "assessor": {
+    "reference": "Practitioner/example"
+  },
+  "date": "2014-12-06T22:33:00+11:00",
+  "description": "This 26 yo male patient is brought into ER by ambulance after being involved in a motor vehicle accident",
+  "problem": [
+    {
+      "display": "MVA"
+    }
+  ],
+  "investigations": [
+    {
+      "code": {
+        "text": "Initial Examination"
+      },
+      "item": [
+        {
+          "display": "deep laceration of the scalp (left temporo-occipital)"
+        },
+        {
+          "display": "decreased level of consciousness"
+        },
+        {
+          "display": "disoriented to time and place"
+        },
+        {
+          "display": "restless"
+        }
+      ]
+    }
+  ],
+  "summary": "provisional diagnoses of laceration of head and traumatic brain injury (TBI)",
+  "finding": [
+    {
+      "item": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-9",
+            "code": "850.0"
+          }
+        ]
+      }
+    }
+  ],
+  "plan": {
+    "display": "hospital standard closed head injury management protocol "
+  }
+}

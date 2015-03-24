@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-daf-encounter-reason",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div>\n     <p>\n     This value set includes all terms in <a href=\"snomedct.html\">SNOMED CT</a>, IDC-10-AM, and CPT-4.\n     </p>\n     <p>\n       <b>Open Issue</b>: Due to CPT license conditions, the correct use of CPT-4 in FHIR cannot be described.\n     </p>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.571"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/daf-encounter-reason",
+  "version": "0.4.0",
+  "name": "DAF Encounter Diagnoses",
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "Encounter Diagnoses: a specific code indicating type of service provided: SNOMED CT, ICD-10-AM, or CPT",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "status": "draft",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      },
+      {
+        "system": "http://www.dont.use/cpt4"
+      }
+    ]
+  }
+}

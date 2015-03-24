@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="type-restful-interaction"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 9 concepts</p>
+      <h2>TypeRestfulInteraction</h2>
+      <p>Operations supported by REST at the type or instance level</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://hl7.org/fhir/restful-interaction
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>read</td>
+              <td>Read</td>
+              <td>Read the current state of the resource</td>
+            </tr>
+            <tr>
+              <td>vread</td>
+              <td>Vread</td>
+              <td>Read the state of a specific version of the resource</td>
+            </tr>
+            <tr>
+              <td>update</td>
+              <td>Update</td>
+              <td>Update an existing resource by its id (or create it if it is new)</td>
+            </tr>
+            <tr>
+              <td>delete</td>
+              <td>Delete</td>
+              <td>Delete a resource</td>
+            </tr>
+            <tr>
+              <td>history-instance</td>
+              <td>History Instance</td>
+              <td>Retrieve the update history for a particular resource</td>
+            </tr>
+            <tr>
+              <td>validate</td>
+              <td>Validate</td>
+              <td>Check that the content would be acceptable as an update</td>
+            </tr>
+            <tr>
+              <td>history-type</td>
+              <td>History Type</td>
+              <td>Retrieve the update history for a all resources of a particular type</td>
+            </tr>
+            <tr>
+              <td>create</td>
+              <td>Create</td>
+              <td>Create a new resource with a server assigned id</td>
+            </tr>
+            <tr>
+              <td>search-type</td>
+              <td>Search Type</td>
+              <td>Search all resources of the specified type based on some filter criteria</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.406"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/type-restful-interaction"/>
+  <version value="0.4.0"/>
+  <name value="TypeRestfulInteraction"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Operations supported by REST at the type or instance level"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/restful-interaction"/>
+      <concept>
+        <code value="read"/>
+        <display value="Read"/>
+      </concept>
+      <concept>
+        <code value="vread"/>
+        <display value="Vread"/>
+      </concept>
+      <concept>
+        <code value="update"/>
+        <display value="Update"/>
+      </concept>
+      <concept>
+        <code value="delete"/>
+        <display value="Delete"/>
+      </concept>
+      <concept>
+        <code value="history-instance"/>
+        <display value="History Instance"/>
+      </concept>
+      <concept>
+        <code value="validate"/>
+        <display value="Validate"/>
+      </concept>
+      <concept>
+        <code value="history-type"/>
+        <display value="History Type"/>
+      </concept>
+      <concept>
+        <code value="create"/>
+        <display value="Create"/>
+      </concept>
+      <concept>
+        <code value="search-type"/>
+        <display value="Search Type"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-ConceptStatus",
+  "meta": {
+    "lastUpdated": "2015-03-23T00:00:00.000+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>Release Date: 2015-03-23</p>\r\n<p>OID for code system: 2.16.840.1.113883.5.1086</p>\r\n<h2>Description</h2>\r\n<p>\n                  \n                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.<br/>\r\n\n               </p>\r\n<hr/>\r\n<table class=\"grid\">\r\n <tr><td><b>Level</b></td><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>\r\n <tr><td>1</td><td>A<a name=\"A\"> </a></td><td>Active</td><td>\n                        Concept code is active and in use<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td>D<a name=\"D\"> </a></td><td>Deleted</td><td>\n                        Concept code is not longer in use anywhere.<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td>P<a name=\"P\"> </a></td><td>Proposed</td><td>\n                        Proposed but not yet in general use<br/>\r\n\n                     </td></tr>\r\n <tr><td>1</td><td>R<a name=\"R\"> </a></td><td>Retired</td><td>\n                        Concept code has been used previously, but is no longer value for new use.<br/>\r\n\n                     </td></tr>\r\n</table>\r\n</div>"
+  },
+  "url": "http://hl7.org/fhir/v3/vs/ConceptStatus",
+  "version": "2015-03-23",
+  "name": "v3 Code System ConceptStatus",
+  "publisher": "HL7, Inc",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "  Deprecation Comment:\r\nDeprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.",
+  "status": "active",
+  "experimental": false,
+  "date": "2015-03-23",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.5.1086"
+      }
+    ],
+    "system": "http://hl7.org/fhir/v3/ConceptStatus",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "A",
+        "abstract": false,
+        "display": "Active",
+        "definition": "Concept code is active and in use"
+      },
+      {
+        "code": "D",
+        "abstract": false,
+        "display": "Deleted",
+        "definition": "Concept code is not longer in use anywhere."
+      },
+      {
+        "code": "P",
+        "abstract": false,
+        "display": "Proposed",
+        "definition": "Proposed but not yet in general use"
+      },
+      {
+        "code": "R",
+        "abstract": false,
+        "display": "Retired",
+        "definition": "Concept code has been used previously, but is no longer value for new use."
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "us-core-Patient-ethnicity",
+  "url": "http://hl7.org/fhir/SearchParameter/us-core-Patient-ethnicity",
+  "name": "ethnicity",
+  "base": "Patient",
+  "type": "token",
+  "description": "Returns patients with an ethnicity extension matching the specified code."
+}

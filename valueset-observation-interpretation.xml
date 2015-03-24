@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-observation-interpretation"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set does not contain a fixed number of concepts</p>
+      <h2>Observation Interpretation Codes</h2>
+      <p>This value set defines the set of codes that can be used to indicate the meaning/use of a reference range</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include all codes defined in 
+          <a href="v2/0078/index.html">http://hl7.org/fhir/v2/0078</a>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.117"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/observation-interpretation"/>
+  <version value="0.4.0"/>
+  <name value="Observation Interpretation Codes"/>
+  <publisher value="FHIR Project team"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines the set of codes that can be used to indicate the meaning/use of a reference range"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v2/0078"/>
+    </include>
+  </compose>
+</ValueSet>

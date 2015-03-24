@@ -1,0 +1,25 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>url</b>: \n        <a href=\"http://hl7.org/fhir/SearchParameter/example\">http://hl7.org/fhir/SearchParameter/example</a>\n      </p>\n      <p>\n        <b>name</b>: Example Search Parameter\n      </p>\n      <p>\n        <b>publisher</b>: HL7 FHIR Project\n      </p>\n      <h3>Contacts</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Telecom</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td> </td>\n          <td>http://hl7.org/fhir</td>\n        </tr>\n      </table>\n      <p>\n        <b>base</b>: Resource\n      </p>\n      <p>\n        <b>type</b>: TOKEN\n      </p>\n      <p>\n        <b>description</b>: Search by resource identifier - e.g. same as the read interaction, but can return included resources\n      </p>\n      <p>\n        <b>xpath</b>: f:id\n      </p>\n    </div>"
+  },
+  "url": "http://hl7.org/fhir/SearchParameter/example",
+  "name": "Example Search Parameter",
+  "publisher": "HL7 FHIR Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "base": "Resource",
+  "type": "token",
+  "description": "Search by resource identifier - e.g. same as the read interaction, but can return included resources",
+  "xpath": "f:id"
+}

@@ -1,0 +1,84 @@
+{
+  "resourceType": "ValueSet",
+  "id": "referralstatus",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 6 concepts</p><h2>ReferralStatus</h2><p>The status of the referral</p><p>This value set defines its own terms in the system http://hl7.org/fhir/referralstatus</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>draft<a name=\"draft\"> </a></td><td>Draft</td><td>A draft referral that has yet to be send.</td></tr><tr><td>sent<a name=\"sent\"> </a></td><td>Sent</td><td>The referral has been transmitted, but not yet acknowledged by the recipient.</td></tr><tr><td>active<a name=\"active\"> </a></td><td>Active</td><td>The referral has been acknowledged by the recipient, and is in the process of being actioned.</td></tr><tr><td>cancelled<a name=\"cancelled\"> </a></td><td>Cancelled</td><td>The referral has been cancelled without being completed. For example it is no longer needed.</td></tr><tr><td>rejected<a name=\"rejected\"> </a></td><td>Rejected</td><td>The recipient has declined to accept the referral.</td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>Completed</td><td>The referral has been completely actioned.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.412"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/referralstatus",
+  "version": "0.4.0",
+  "name": "ReferralStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The status of the referral",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.412"
+      }
+    ],
+    "system": "http://hl7.org/fhir/referralstatus",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "draft",
+        "display": "Draft",
+        "definition": "A draft referral that has yet to be send."
+      },
+      {
+        "code": "sent",
+        "display": "Sent",
+        "definition": "The referral has been transmitted, but not yet acknowledged by the recipient."
+      },
+      {
+        "code": "active",
+        "display": "Active",
+        "definition": "The referral has been acknowledged by the recipient, and is in the process of being actioned."
+      },
+      {
+        "code": "cancelled",
+        "display": "Cancelled",
+        "definition": "The referral has been cancelled without being completed. For example it is no longer needed."
+      },
+      {
+        "code": "rejected",
+        "display": "Rejected",
+        "definition": "The recipient has declined to accept the referral."
+      },
+      {
+        "code": "completed",
+        "display": "Completed",
+        "definition": "The referral has been completely actioned."
+      }
+    ]
+  }
+}

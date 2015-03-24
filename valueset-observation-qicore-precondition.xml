@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-observation-qicore-precondition"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 3 concepts</p>
+      <h2>Observation Precondition</h2>
+      <p>The condition, state, or problem that the patient is in or has prior to a therapy or procedure. This captures temporal (temporary circumstances) that          have bearing on the data that it qualifies but will not necessarily modify its meaning. Things like &#39;after activity&#39;, &#39;at rest&#39;, or &#39;post-op&#39;. </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://need.a.uri.org/observation/precondition
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>After activity</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>At rest</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Post-op</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1572"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/observation-qicore-precondition"/>
+  <version value="0.4.0"/>
+  <name value="Observation Precondition"/>
+  <publisher value="Health Services Platform Consortium (HSPC)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hspc.gov/"/>
+    </telecom>
+  </contact>
+  <description value="The condition, state, or problem that the patient is in or has prior to a therapy or procedure. This captures temporal (temporary circumstances) that          have bearing on the data that it qualifies but will not necessarily modify its meaning. Things like &#39;after activity&#39;, &#39;at rest&#39;, or &#39;post-op&#39;. "/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://need.a.uri.org/observation/precondition"/>
+      <concept>
+        <code value="1"/>
+        <display value="After activity"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="At rest"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Post-op"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "diagnostic-report-status",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 7 concepts</p><h2>DiagnosticReportStatus</h2><p>The status of the diagnostic report as a whole</p><p>This value set defines its own terms in the system http://hl7.org/fhir/diagnostic-report-status</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>registered<a name=\"registered\"> </a></td><td>Registered</td><td>The existence of the report is registered, but there is nothing yet available.</td></tr><tr><td>partial<a name=\"partial\"> </a></td><td>Partial</td><td>This is a partial (e.g. initial, interim or preliminary) report: data in the report may be incomplete or unverified.</td></tr><tr><td>final<a name=\"final\"> </a></td><td>Final</td><td>The report is complete and verified by an authorized person.</td></tr><tr><td>corrected<a name=\"corrected\"> </a></td><td>Corrected</td><td>The report has been modified subsequent to being Final, and is complete and verified by an authorized person.</td></tr><tr><td>appended<a name=\"appended\"> </a></td><td>Appended</td><td>The report has been modified subsequent to being Final, and is complete and verified by an authorized person. New content has been added, but existing content hasn't changed.</td></tr><tr><td>cancelled<a name=\"cancelled\"> </a></td><td>Cancelled</td><td>The report is unavailable because the measurement was not started or not completed (also sometimes called &quot;aborted&quot;).</td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered In Error</td><td>The report has been withdrawn following previous Final release.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.341"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/diagnostic-report-status",
+  "version": "0.4.0",
+  "name": "DiagnosticReportStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The status of the diagnostic report as a whole",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.341"
+      }
+    ],
+    "system": "http://hl7.org/fhir/diagnostic-report-status",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "registered",
+        "display": "Registered",
+        "definition": "The existence of the report is registered, but there is nothing yet available."
+      },
+      {
+        "code": "partial",
+        "display": "Partial",
+        "definition": "This is a partial (e.g. initial, interim or preliminary) report: data in the report may be incomplete or unverified."
+      },
+      {
+        "code": "final",
+        "display": "Final",
+        "definition": "The report is complete and verified by an authorized person."
+      },
+      {
+        "code": "corrected",
+        "display": "Corrected",
+        "definition": "The report has been modified subsequent to being Final, and is complete and verified by an authorized person."
+      },
+      {
+        "code": "appended",
+        "display": "Appended",
+        "definition": "The report has been modified subsequent to being Final, and is complete and verified by an authorized person. New content has been added, but existing content hasn't changed."
+      },
+      {
+        "code": "cancelled",
+        "display": "Cancelled",
+        "definition": "The report is unavailable because the measurement was not started or not completed (also sometimes called \"aborted\")."
+      },
+      {
+        "code": "entered-in-error",
+        "display": "Entered In Error",
+        "definition": "The report has been withdrawn following previous Final release."
+      }
+    ]
+  }
+}

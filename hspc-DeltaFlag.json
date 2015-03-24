@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hspc-DeltaFlag",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>DeltaFlag</h2><p>SNOMED CT* SELECT SNOMED CT code system values descending from 'change values' (288533004).</p><p><b>Copyright Statement:</b> IHC</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include codes from http://snomed.info/sct where concept  is-a  288533004</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1286"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/hspc-DeltaFlag",
+  "version": "0.01",
+  "name": "DeltaFlag",
+  "publisher": "Intermountain Healthcare",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.clinicaleleement.com"
+        }
+      ]
+    }
+  ],
+  "description": "SNOMED CT* SELECT SNOMED CT code system values descending from 'change values' (288533004).",
+  "copyright": "IHC",
+  "status": "draft",
+  "experimental": true,
+  "date": "2014-06-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "288533004"
+          }
+        ]
+      }
+    ]
+  }
+}

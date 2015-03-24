@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Other xmlns="http://hl7.org/fhir">
+  <id value="qicore"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>code</b>: ADVEVENT 
+        <span style="background: LightGoldenRodYellow ">(Details : {http://hl7.org/fhir/other-resource-type code &#39;ADVEVENT&#39; = &#39;ADVEVENT)</span>
+      </p>
+      <p>
+        <b>subject</b>: 
+        <a href="Patient/example">Peter Patient. Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>
+      </p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-cause">
+    <extension url="http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-cause-item">
+      <valueReference>
+        <reference value="Medication/example"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-cause-certainty">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="415684004"/>
+          <display value="Suspected (qualifier)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-code">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="28926001"/>
+        <display value="Eruption due to drug (disorder)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-period">
+    <valuePeriod>
+      <start value="2014-01-14"/>
+      <end value="2014-01-15"/>
+    </valuePeriod>
+  </extension>
+  <modifierExtension url="http://hl7.org/fhir/StructureDefinition/adverseevent-qicore-didNotOccur">
+    <valueBoolean value="false"/>
+  </modifierExtension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/other-resource-type"/>
+      <code value="ADVEVENT"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+    <display value="Peter Patient"/>
+  </subject>
+</Other>

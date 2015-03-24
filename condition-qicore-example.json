@@ -1,0 +1,86 @@
+{
+  "resourceType": "Condition",
+  "id": "qicore",
+  "text": {
+    "status": "generated",
+    "div": "<div>Severe burn of left ear (Date: 24-May 2012)</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-contributionToDeath",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "410591008",
+            "display": "Definitely present (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-criticality",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/vs/condition-severity",
+            "code": "399166001",
+            "display": "Fatal"
+          }
+        ]
+      }
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/vs/daf-problem",
+        "code": "39065001",
+        "display": "Burn of ear"
+      }
+    ],
+    "text": "Burnt Ear"
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/condition-category",
+        "code": "diagnosis",
+        "display": "Diagnosis"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "439401001",
+        "display": "Diagnosis"
+      }
+    ]
+  },
+  "clinicalStatus": "confirmed",
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24484000",
+        "display": "Severe"
+      }
+    ]
+  },
+  "onsetDateTime": "2012-05-24",
+  "location": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "49521004",
+            "display": "Left external ear structure"
+          }
+        ],
+        "text": "Left Ear"
+      }
+    }
+  ]
+}

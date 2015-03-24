@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-observation-qicore-verification"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 2 concepts</p>
+      <h2>Observation Verification Method</h2>
+      <p>Code for method by which the observation result was validated, e.g., human review, sliding average.</p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://need.a.uri.org/observation/verification-method
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Human review</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sliding average</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1573"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/observation-qicore-verification"/>
+  <version value="0.4.0"/>
+  <name value="Observation Verification Method"/>
+  <publisher value="Health Services Platform Consortium (HSPC)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hspc.org/"/>
+    </telecom>
+  </contact>
+  <description value="Code for method by which the observation result was validated, e.g., human review, sliding average."/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://need.a.uri.org/observation/verification-method"/>
+      <concept>
+        <code value="1"/>
+        <display value="Human review"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Sliding average"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="object-lifecycle"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 15 concepts</p>
+      <h2>AuditEventObjectLifecycle</h2>
+      <p>Identifier for the data life-cycle stage for the participant object</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/object-lifecycle</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>1
+            <a name="1"> </a>
+          </td>
+          <td> </td>
+          <td>Origination / Creation.</td>
+        </tr>
+        <tr>
+          <td>2
+            <a name="2"> </a>
+          </td>
+          <td> </td>
+          <td>Import / Copy from original.</td>
+        </tr>
+        <tr>
+          <td>3
+            <a name="3"> </a>
+          </td>
+          <td> </td>
+          <td>Amendment.</td>
+        </tr>
+        <tr>
+          <td>4
+            <a name="4"> </a>
+          </td>
+          <td> </td>
+          <td>Verification.</td>
+        </tr>
+        <tr>
+          <td>5
+            <a name="5"> </a>
+          </td>
+          <td> </td>
+          <td>Translation.</td>
+        </tr>
+        <tr>
+          <td>6
+            <a name="6"> </a>
+          </td>
+          <td> </td>
+          <td>Access / Use.</td>
+        </tr>
+        <tr>
+          <td>7
+            <a name="7"> </a>
+          </td>
+          <td> </td>
+          <td>De-identification.</td>
+        </tr>
+        <tr>
+          <td>8
+            <a name="8"> </a>
+          </td>
+          <td> </td>
+          <td>Aggregation, summarization, derivation.</td>
+        </tr>
+        <tr>
+          <td>9
+            <a name="9"> </a>
+          </td>
+          <td> </td>
+          <td>Report.</td>
+        </tr>
+        <tr>
+          <td>10
+            <a name="10"> </a>
+          </td>
+          <td>  </td>
+          <td>Export / Copy to target.</td>
+        </tr>
+        <tr>
+          <td>11
+            <a name="11"> </a>
+          </td>
+          <td>  </td>
+          <td>Disclosure.</td>
+        </tr>
+        <tr>
+          <td>12
+            <a name="12"> </a>
+          </td>
+          <td>  </td>
+          <td>Receipt of disclosure.</td>
+        </tr>
+        <tr>
+          <td>13
+            <a name="13"> </a>
+          </td>
+          <td>  </td>
+          <td>Archiving.</td>
+        </tr>
+        <tr>
+          <td>14
+            <a name="14"> </a>
+          </td>
+          <td>  </td>
+          <td>Logical deletion.</td>
+        </tr>
+        <tr>
+          <td>15
+            <a name="15"> </a>
+          </td>
+          <td>  </td>
+          <td>Permanent erasure / Physical destruction.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1481"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/object-lifecycle"/>
+  <version value="0.4.0"/>
+  <name value="AuditEventObjectLifecycle"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Identifier for the data life-cycle stage for the participant object"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.1481"/>
+    </extension>
+    <system value="http://hl7.org/fhir/object-lifecycle"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="1"/>
+      <display value=" "/>
+      <definition value="Origination / Creation."/>
+    </concept>
+    <concept>
+      <code value="2"/>
+      <display value=" "/>
+      <definition value="Import / Copy from original."/>
+    </concept>
+    <concept>
+      <code value="3"/>
+      <display value=" "/>
+      <definition value="Amendment."/>
+    </concept>
+    <concept>
+      <code value="4"/>
+      <display value=" "/>
+      <definition value="Verification."/>
+    </concept>
+    <concept>
+      <code value="5"/>
+      <display value=" "/>
+      <definition value="Translation."/>
+    </concept>
+    <concept>
+      <code value="6"/>
+      <display value=" "/>
+      <definition value="Access / Use."/>
+    </concept>
+    <concept>
+      <code value="7"/>
+      <display value=" "/>
+      <definition value="De-identification."/>
+    </concept>
+    <concept>
+      <code value="8"/>
+      <display value=" "/>
+      <definition value="Aggregation, summarization, derivation."/>
+    </concept>
+    <concept>
+      <code value="9"/>
+      <display value=" "/>
+      <definition value="Report."/>
+    </concept>
+    <concept>
+      <code value="10"/>
+      <display value="  "/>
+      <definition value="Export / Copy to target."/>
+    </concept>
+    <concept>
+      <code value="11"/>
+      <display value="  "/>
+      <definition value="Disclosure."/>
+    </concept>
+    <concept>
+      <code value="12"/>
+      <display value="  "/>
+      <definition value="Receipt of disclosure."/>
+    </concept>
+    <concept>
+      <code value="13"/>
+      <display value="  "/>
+      <definition value="Archiving."/>
+    </concept>
+    <concept>
+      <code value="14"/>
+      <display value="  "/>
+      <definition value="Logical deletion."/>
+    </concept>
+    <concept>
+      <code value="15"/>
+      <display value="  "/>
+      <definition value="Permanent erasure / Physical destruction."/>
+    </concept>
+  </define>
+</ValueSet>

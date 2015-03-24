@@ -1,0 +1,68 @@
+{
+  "resourceType": "Practitioner",
+  "id": "f204",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>identifier</b>: UZI-nummer = 12345678904 (OFFICIAL)\n      </p>\n      <p>\n        <b>name</b>: Carla Espinosa\n      </p>\n      <p>\n        <b>telecom</b>: ph: +31715262169(WORK)\n      </p>\n      <p>\n        <b>address</b>: Walvisbaai 3 Den helder 2333ZA NLD (WORK)\n      </p>\n      <p>\n        <b>gender</b>: FEMALE\n      </p>\n      <p>\n        <b>birthDate</b>: Nov 5, 1967\n      </p>\n      <h3>PractitionerRoles</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>ManagingOrganization</b>\n          </td>\n          <td>\n            <b>Role</b>\n          </td>\n          <td>\n            <b>Specialty</b>\n          </td>\n          <td>\n            <b>Period</b>\n          </td>\n          <td>\n            <b>Location</b>\n          </td>\n          <td>\n            <b>HealthcareService</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>\n            <a href=\"Organization/f201\">AUMC. Generated Summary: Zorginstelling naam = Artis University Medical Center (OFFICIAL); name: Artis University Medical Center (AUMC); \n              <span title=\"Codes: {http://snomed.info/sct 405608006}, {urn:oid:2.16.840.1.113883.2.4.15.1060 V6}, {http://hl7.org/fhir/organization-type prov}\">Academic Medical Center</span>; ph: +31715269111(WORK); active\n            </a>\n          </td>\n          <td>Renal nurse \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '224565004' = 'Renal nurse', given as 'Renal nurse'})</span>\n          </td>\n          <td>Nursing procedure \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '9632001' = 'Nursing procedure', given as 'Nursing procedure'})</span>\n          </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n        </tr>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "label": "UZI-nummer",
+      "system": "urn:oid:2.16.528.1.1007.3.1",
+      "value": "12345678904"
+    }
+  ],
+  "name": {
+    "use": "usual",
+    "text": "Carla Espinosa"
+  },
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+31715262169",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "Walvisbaai 3"
+      ],
+      "city": "Den helder",
+      "postalCode": "2333ZA",
+      "country": "NLD"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1967-11-05",
+  "practitionerRole": [
+    {
+      "managingOrganization": {
+        "reference": "Organization/f201",
+        "display": "AUMC"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "224565004",
+            "display": "Renal nurse"
+          }
+        ]
+      },
+      "specialty": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "9632001",
+              "display": "Nursing procedure"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

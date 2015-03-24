@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-qicore-verification",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>HSPC Verification</h2><p>Verification Method Value Set</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://cimi.org/vs/patient/verification<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Background Check</td><td/></tr><tr><td>2</td><td>Family Member</td><td/></tr><tr><td>3</td><td>CIMI placeholder</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:0.00.000.0.000000.0.00.002"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:0.00.000.0.000000.0.00.002"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/qicore-verification",
+  "version": "0.4.0",
+  "name": "HSPC Verification",
+  "publisher": "CIMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://cimi.org/valueset/verification"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.cimi.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Verification Method Value Set",
+  "status": "active",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://cimi.org/vs/patient/verification",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Background Check"
+          },
+          {
+            "code": "2",
+            "display": "Family Member"
+          },
+          {
+            "code": "3",
+            "display": "CIMI placeholder"
+          }
+        ]
+      }
+    ]
+  }
+}

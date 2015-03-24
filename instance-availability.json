@@ -1,0 +1,92 @@
+{
+  "resourceType": "ValueSet",
+  "id": "instance-availability",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div><p>This value set contains 4 concepts</p><h2>InstanceAvailability</h2><p>Availability of the resource</p><p><b>Copyright Statement:</b> These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright 2011 by the National Electrical Manufacturers Association</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://nema.org/dicom/dicm<table><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>ONLINE</td><td>O N L I N E</td><td>Resources are immediately available,.</td></tr><tr><td>OFFLINE</td><td>O F F L I N E</td><td>Resources need to be retrieved by manual intervention.</td></tr><tr><td>NEARLINE</td><td>N E A R L I N E</td><td>Resources need to be retrieved from relatively slow media.</td></tr><tr><td>UNAVAILABLE</td><td>U N A V A I L A B L E</td><td>Resources cannot be retrieved.</td></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.76"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/instance-availability",
+  "version": "0.4.0",
+  "name": "InstanceAvailability",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Availability of the resource",
+  "copyright": "These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright 2011 by the National Electrical Manufacturers Association",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://nema.org/dicom/dicm",
+        "concept": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "Resources are immediately available,."
+              }
+            ],
+            "code": "ONLINE",
+            "display": "O N L I N E"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "Resources need to be retrieved by manual intervention."
+              }
+            ],
+            "code": "OFFLINE",
+            "display": "O F F L I N E"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "Resources need to be retrieved from relatively slow media."
+              }
+            ],
+            "code": "NEARLINE",
+            "display": "N E A R L I N E"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "Resources cannot be retrieved."
+              }
+            ],
+            "code": "UNAVAILABLE",
+            "display": "U N A V A I L A B L E"
+          }
+        ]
+      }
+    ]
+  }
+}

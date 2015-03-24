@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "questionnaire-extensions-Questionnaire-category",
+  "url": "http://hl7.org/fhir/SearchParameter/questionnaire-extensions-Questionnaire-category",
+  "name": "category",
+  "base": "Questionnaire",
+  "type": "token",
+  "description": "Code categorizing the questionnaire"
+}

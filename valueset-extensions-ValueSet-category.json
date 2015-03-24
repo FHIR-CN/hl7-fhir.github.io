@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "valueset-extensions-ValueSet-category",
+  "url": "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-category",
+  "name": "category",
+  "base": "ValueSet",
+  "type": "token",
+  "description": ""
+}

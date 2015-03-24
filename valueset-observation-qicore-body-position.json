@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-observation-qicore-body-position",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>Body Position Value Set Definition</h2><p>SNOMED CT code system values descending from the following:'body position finding' 9851009</p><p><b>Copyright Statement:</b> TBD</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include codes from http://snomed.info/sct where concept  is-a  9851009</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1571"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/observation-qicore-body-position",
+  "version": "0.01",
+  "name": "Body Position Value Set Definition",
+  "immutable": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "description": "SNOMED CT code system values descending from the following:'body position finding' 9851009",
+  "copyright": "TBD",
+  "status": "draft",
+  "experimental": true,
+  "extensible": true,
+  "date": "2015-02-10",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "9851009"
+          }
+        ]
+      }
+    ]
+  }
+}

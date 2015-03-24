@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-procedure-type",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>Procedure Type Codes (SNOMED CT)</h2><p>Procedure Type code: All SNOMED CT procedure codes</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include codes from http://snomed.info/sct where concept  is-a  71388002</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1877"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/procedure-type",
+  "version": "0.4.0",
+  "name": "Procedure Type Codes (SNOMED CT)",
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "Procedure Type code: All SNOMED CT procedure codes",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "status": "draft",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "71388002"
+          }
+        ]
+      }
+    ]
+  }
+}

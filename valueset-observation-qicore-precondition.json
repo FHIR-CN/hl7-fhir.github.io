@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-observation-qicore-precondition",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>Observation Precondition</h2><p>The condition, state, or problem that the patient is in or has prior to a therapy or procedure. This captures temporal (temporary circumstances) that          have bearing on the data that it qualifies but will not necessarily modify its meaning. Things like 'after activity', 'at rest', or 'post-op'. </p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://need.a.uri.org/observation/precondition<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>After activity</td><td/></tr><tr><td>2</td><td>At rest</td><td/></tr><tr><td>3</td><td>Post-op</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1572"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/observation-qicore-precondition",
+  "version": "0.4.0",
+  "name": "Observation Precondition",
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hspc.gov/"
+        }
+      ]
+    }
+  ],
+  "description": "The condition, state, or problem that the patient is in or has prior to a therapy or procedure. This captures temporal (temporary circumstances) that          have bearing on the data that it qualifies but will not necessarily modify its meaning. Things like 'after activity', 'at rest', or 'post-op'. ",
+  "status": "active",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://need.a.uri.org/observation/precondition",
+        "concept": [
+          {
+            "code": "1",
+            "display": "After activity"
+          },
+          {
+            "code": "2",
+            "display": "At rest"
+          },
+          {
+            "code": "3",
+            "display": "Post-op"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-udi"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes sample UDI codes.
+    
+      <hr/>
+      <p>This value set contains 1 concepts</p>
+      <h2>UDI Codes</h2>
+      <p>This value set includes sample UDI codes.</p>
+      <p>
+        <b>Copyright Statement:</b> This is an example set
+      </p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/ex-udi</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>{01}123456789
+            <a name=".12301.125123456789"> </a>
+          </td>
+          <td/>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.465"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/udi"/>
+  <version value="0.4.0"/>
+  <name value="UDI Codes"/>
+  <publisher value="Financial Management"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes sample UDI codes."/>
+  <copyright value="This is an example set"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:null"/>
+    </extension>
+    <system value="http://hl7.org/fhir/ex-udi"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="{01}123456789"/>
+    </concept>
+  </define>
+</ValueSet>

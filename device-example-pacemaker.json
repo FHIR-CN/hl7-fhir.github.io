@@ -1,0 +1,32 @@
+{
+  "resourceType": "Device",
+  "id": "example-pacemaker",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>identifier</b>: 1234-5678-90AB-CDEF\n      </p>\n      <p>\n        <b>type</b>: Performance pace maker for high octane patients \n        <span style=\"background: LightGoldenRodYellow \">(Details : {http://acme.com/devices code 'octane2014' = 'octane2014', given as 'Performance pace maker for high octane patients'})</span>\n      </p>\n      <p>\n        <b>manufacturer</b>: Acme Devices, Inc\n      </p>\n      <p>\n        <b>model</b>: PM/Octane 2014\n      </p>\n      <p>\n        <b>lotNumber</b>: 1234-5678\n      </p>\n      <p>\n        <b>contact</b>: ph: ext 4352\n      </p>\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.com/devices/pacemakers/octane/serial",
+      "value": "1234-5678-90AB-CDEF"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://acme.com/devices",
+        "code": "octane2014",
+        "display": "Performance pace maker for high octane patients"
+      }
+    ]
+  },
+  "manufacturer": "Acme Devices, Inc",
+  "model": "PM/Octane 2014",
+  "lotNumber": "1234-5678",
+  "contact": [
+    {
+      "system": "phone",
+      "value": "ext 4352"
+    }
+  ]
+}

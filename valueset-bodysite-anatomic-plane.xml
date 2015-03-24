@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-bodysite-anatomic-plane"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 5 concepts</p>
+      <h2>AnatomicPlane</h2>
+      <p>AnatomicPlane: SNOMED-CT concepts describing the anatomic planes of body</p>
+      <p>
+        <b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://snomed.info/sct
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>279239001</td>
+              <td>Median plane</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>279240004</td>
+              <td>Parasagittal plane</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>279238009</td>
+              <td>Coronal plane</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>416820004</td>
+              <td>Frontal plane</td>
+              <td/>
+            </tr>
+            <tr>
+              <td>243899009</td>
+              <td>Transverse plane</td>
+              <td/>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1093"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/bodysite-anatomic-plane"/>
+  <version value="0.4.0"/>
+  <name value="AnatomicPlane"/>
+  <publisher value="Order and Observation Workgroup"/><!--  author Eric Haas, Health eData Inc. -->
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="AnatomicPlane: SNOMED-CT concepts describing the anatomic planes of body"/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="279239001"/>
+        <display value="Median plane"/>
+      </concept>
+      <concept>
+        <code value="279240004"/>
+        <display value="Parasagittal plane"/>
+      </concept>
+      <concept>
+        <code value="279238009"/>
+        <display value="Coronal plane"/>
+      </concept>
+      <concept>
+        <code value="416820004"/>
+        <display value="Frontal plane"/>
+      </concept>
+      <concept>
+        <code value="243899009"/>
+        <display value="Transverse plane"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

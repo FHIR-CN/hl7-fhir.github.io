@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "namingsystem-identifier-type",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 4 concepts</p><h2>NamingSystemIdentifierType</h2><p>Identifies the style of unique identifier used to identify a namepace</p><p>This value set defines its own terms in the system http://hl7.org/fhir/namingsystem-identifier-type</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>oid<a name=\"oid\"> </a></td><td>Oid</td><td>An ISO object identifier.  E.g. 1.2.3.4.5.</td></tr><tr><td>uuid<a name=\"uuid\"> </a></td><td>Uuid</td><td>A universally unique identifier of the form a5afddf4-e880-459b-876e-e4591b0acc11.</td></tr><tr><td>uri<a name=\"uri\"> </a></td><td>Uri</td><td>A uniform resource identifier (ideally a URL - uniform resource locator).  E.g. http://unitsofmeasure.org.</td></tr><tr><td>other<a name=\"other\"> </a></td><td>Other</td><td>Some other type of unique identifier.  E.g HL7-assigned reserved string such as LN for LOINC.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.477"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/namingsystem-identifier-type",
+  "version": "0.4.0",
+  "name": "NamingSystemIdentifierType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Identifies the style of unique identifier used to identify a namepace",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.477"
+      }
+    ],
+    "system": "http://hl7.org/fhir/namingsystem-identifier-type",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "oid",
+        "display": "Oid",
+        "definition": "An ISO object identifier.  E.g. 1.2.3.4.5."
+      },
+      {
+        "code": "uuid",
+        "display": "Uuid",
+        "definition": "A universally unique identifier of the form a5afddf4-e880-459b-876e-e4591b0acc11."
+      },
+      {
+        "code": "uri",
+        "display": "Uri",
+        "definition": "A uniform resource identifier (ideally a URL - uniform resource locator).  E.g. http://unitsofmeasure.org."
+      },
+      {
+        "code": "other",
+        "display": "Other",
+        "definition": "Some other type of unique identifier.  E.g HL7-assigned reserved string such as LN for LOINC."
+      }
+    ]
+  }
+}

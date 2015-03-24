@@ -1,0 +1,624 @@
+{
+  "resourceType": "ValueSet",
+  "id": "v3-DataType",
+  "meta": {
+    "lastUpdated": "2015-03-23T00:00:00.000+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>Release Date: 2015-03-23</p>\r\n<p>OID for code system: 2.16.840.1.113883.5.1007</p>\r\n<h2>Description</h2>\r\n<p>\n                  Code system retired.<br/>\r\n\n               </p>\r\n<hr/>\r\n<table class=\"grid\">\r\n <tr><td><b>Level</b></td><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>\r\n <tr><td>1</td><td>ANY<a name=\"ANY\"> </a></td><td>ANY</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;ANT&lt;ANY&gt;<a name=\"ANT.60ANY.62\"> </a></td><td>Annotated</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;ANT&lt;CD&gt;<a name=\"ANT.60CD.62\"> </a></td><td>Annotated Concept Descriptor</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;ANT&lt;PQ&gt;<a name=\"ANT.60PQ.62\"> </a></td><td>Annotated Physical Quantity</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;BAG&lt;ANY&gt;<a name=\"BAG.60ANY.62\"> </a></td><td>Bag</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;BAG&lt;CD&gt;<a name=\"BAG.60CD.62\"> </a></td><td>Bag Of Concept Descriptors</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;BAG&lt;PQ&gt;<a name=\"BAG.60PQ.62\"> </a></td><td>Bag Of Physical Quantities</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;BL<a name=\"BL\"> </a></td><td>Boolean</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;CD<a name=\"CD\"> </a></td><td>Concept Descriptor</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;CE<a name=\"CE\"> </a></td><td>Coded With Equivalents</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;CS<a name=\"CS\"> </a></td><td>Coded Simple Value</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;CV<a name=\"CV\"> </a></td><td>Coded Value</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;CR<a name=\"CR\"> </a></td><td>Concept Role</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;HXIT&lt;ANY&gt;<a name=\"HXIT.60ANY.62\"> </a></td><td>Historical</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;HXIT&lt;AD&gt;<a name=\"HXIT.60AD.62\"> </a></td><td>Historical Address</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;II<a name=\"II\"> </a></td><td>Instance Identifier</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;IVL&lt;QTY&gt;<a name=\"IVL.60QTY.62\"> </a></td><td>Interval</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;IVL&lt;INT&gt;<a name=\"IVL.60INT.62\"> </a></td><td>Interval Of Integer Numbers</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;IVL&lt;PQ&gt;<a name=\"IVL.60PQ.62\"> </a></td><td>Interval Of Physical Quantities</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UVP&lt;IVL&lt;PQ&gt;&gt;<a name=\"UVP.60IVL.60PQ.62.62\"> </a></td><td>Uncertain Probabilistic Interval Of Physical Quant</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;IVL&lt;REAL&gt;<a name=\"IVL.60REAL.62\"> </a></td><td>Interval Of Real Numbers</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;IVL&lt;TS&gt;<a name=\"IVL.60TS.62\"> </a></td><td>Interval Of Points In Time</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;TS&gt;<a name=\"SET.60TS.62\"> </a></td><td>Set Of Points In Time</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EIVL&lt;TS&gt;<a name=\"EIVL.60TS.62\"> </a></td><td>Event Related Interval</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GTS<a name=\"GTS\"> </a></td><td>General Timing Specification</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PIVL&lt;TS&gt;<a name=\"PIVL.60TS.62\"> </a></td><td>Periodic Interval Of Time</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;LIST&lt;ANY&gt;<a name=\"LIST.60ANY.62\"> </a></td><td>Sequence</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;BL&gt;<a name=\"LIST.60BL.62\"> </a></td><td>Sequence Of Booleans</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIN<a name=\"BIN\"> </a></td><td>Binary Data</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ED<a name=\"ED\"> </a></td><td>Encoded Data</td><td/></tr>\r\n <tr><td>6</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ST<a name=\"ST\"> </a></td><td>Character String</td><td/></tr>\r\n <tr><td>7</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADXP<a name=\"ADXP\"> </a></td><td>Address Part</td><td/></tr>\r\n <tr><td>7</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ON<a name=\"ON\"> </a></td><td>Organization Name</td><td/></tr>\r\n <tr><td>7</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PNXP<a name=\"PNXP\"> </a></td><td>Person Name Part</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;LIST&lt;ANY&gt;&gt;<a name=\"LIST.60LIST.60ANY.62.62\"> </a></td><td>Sequence Of Sequences Of Data Values</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;LIST&lt;BL&gt;&gt;<a name=\"LIST.60LIST.60BL.62.62\"> </a></td><td>Sequence Of Sequence Of Booleans</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;BIN&gt;<a name=\"LIST.60BIN.62\"> </a></td><td>Sequence Of Binary Data</td><td/></tr>\r\n <tr><td>6</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;ED&gt;<a name=\"LIST.60ED.62\"> </a></td><td>Sequence Of Encoded Data</td><td/></tr>\r\n <tr><td>7</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;ST&gt;<a name=\"LIST.60ST.62\"> </a></td><td>Sequence Of Character Strings</td><td/></tr>\r\n <tr><td>8</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;ADXP&gt;<a name=\"LIST.60ADXP.62\"> </a></td><td>Sequence Of Postal Address Parts</td><td/></tr>\r\n <tr><td>9</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AD<a name=\"AD\"> </a></td><td>Postal And Residential Address</td><td/></tr>\r\n <tr><td>8</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIST&lt;PNXP&gt;<a name=\"LIST.60PNXP.62\"> </a></td><td>Sequence Of Person Name Parts</td><td/></tr>\r\n <tr><td>9</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PN<a name=\"PN\"> </a></td><td>Person Name Type</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;OID<a name=\"OID\"> </a></td><td>Object Identifier</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;QTY<a name=\"QTY\"> </a></td><td>Quantity</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;INT<a name=\"INT\"> </a></td><td>Integer Number</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;MO<a name=\"MO\"> </a></td><td>Monetary Amount</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;PPD&lt;QTY&gt;<a name=\"PPD.60QTY.62\"> </a></td><td>Parametric Probability Distribution</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;PQ<a name=\"PQ\"> </a></td><td>Physical Quantity</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PPD&lt;PQ&gt;<a name=\"PPD.60PQ.62\"> </a></td><td>Parametric Probability Distribution Of Physical Quantity</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;REAL<a name=\"REAL\"> </a></td><td>Real Number</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PPD&lt;REAL&gt;<a name=\"PPD.60REAL.62\"> </a></td><td>Parametric Probability Distribution Of Real Number</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;RTO<a name=\"RTO\"> </a></td><td>Ratio</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;TS<a name=\"TS\"> </a></td><td>Point In Time</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;SET&lt;ANY&gt;<a name=\"SET.60ANY.62\"> </a></td><td>Set</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;CD&gt;<a name=\"SET.60CD.62\"> </a></td><td>Set Of Concept Descriptors</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;UVP&lt;CD&gt;&gt;<a name=\"SET.60UVP.60CD.62.62\"> </a></td><td>Set Of Uncertain Probabilistic Concept Descriptor</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPPD&lt;CD&gt;<a name=\"NPPD.60CD.62\"> </a></td><td>Non Parametric Probability Distribution Of Concept Descriptors</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;CE&gt;<a name=\"SET.60CE.62\"> </a></td><td>Set Of Coded With Equivalents</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;CS&gt;<a name=\"SET.60CS.62\"> </a></td><td>Set Of Coded Simple Value</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;CV&gt;<a name=\"SET.60CV.62\"> </a></td><td>Set Of Coded Value</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;IVL&lt;PQ&gt;&gt;<a name=\"SET.60IVL.60PQ.62.62\"> </a></td><td>Set Of Intervals Of Physical Quantity</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;UVP&lt;IVL&lt;PQ&gt;&gt;&gt;<a name=\"SET.60UVP.60IVL.60PQ.62.62.62\"> </a></td><td>Set Of Uncertain Probabilistic Interval Of Physical Quantities</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPPD&lt;IVL&lt;PQ&gt;&gt;<a name=\"NPPD.60IVL.60PQ.62.62\"> </a></td><td>Non Parametric Probability Distribution Of Intervals of Physical Quantities</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;LIST&lt;ST&gt;&gt;<a name=\"SET.60LIST.60ST.62.62\"> </a></td><td>Set Of Sequences Of Character Strings</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;AD&gt;<a name=\"SET.60AD.62\"> </a></td><td>Set Of Addresses</td><td/></tr>\r\n <tr><td>5</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;HXIT&lt;AD&gt;&gt;<a name=\"SET.60HXIT.60AD.62.62\"> </a></td><td>Set Of Historical Addresses</td><td/></tr>\r\n <tr><td>6</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HIST&lt;AD&gt;<a name=\"HIST.60AD.62\"> </a></td><td>History Of Address</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;PQ&gt;<a name=\"SET.60PQ.62\"> </a></td><td>Set Of Physical Quantities</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;ST&gt;<a name=\"SET.60ST.62\"> </a></td><td>Set Of Character Strings</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;SET&lt;UVP&lt;ANY&gt;&gt;<a name=\"SET.60UVP.60ANY.62.62\"> </a></td><td>Set Of Uncertain Value Probabilistic</td><td/></tr>\r\n <tr><td>4</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NPPD&lt;ANY&gt;<a name=\"NPPD.60ANY.62\"> </a></td><td>Non Parametric Probability Distribution</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"#SET.60UVP.60CD.62.62\">SET&lt;UVP&lt;CD&gt;&gt;</a></td><td/><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"#SET.60UVP.60IVL.60PQ.62.62.62\">SET&lt;UVP&lt;IVL&lt;PQ&gt;&gt;&gt;</a></td><td/><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;URL<a name=\"URL\"> </a></td><td>Universal Resource Locator</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;TEL<a name=\"TEL\"> </a></td><td>Telecommunication Address</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;UVN&lt;ANY&gt;<a name=\"UVN.60ANY.62\"> </a></td><td>Uncertain Value Narrative</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;UVN&lt;CD&gt;<a name=\"UVN.60CD.62\"> </a></td><td>Uncertain Narrative Concept Descriptor</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;UVP&lt;ANY&gt;<a name=\"UVP.60ANY.62\"> </a></td><td>Uncertain Value Probabilistic</td><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"#UVP.60IVL.60PQ.62.62\">UVP&lt;IVL&lt;PQ&gt;&gt;</a></td><td/><td/></tr>\r\n <tr><td>3</td><td>&nbsp;&nbsp;&nbsp;&nbsp;UVP&lt;CD&gt;<a name=\"UVP.60CD.62\"> </a></td><td>Uncertain Probabilistic Concept Descriptor</td><td/></tr>\r\n <tr><td>1</td><td>SET&lt;INT&gt;<a name=\"SET.60INT.62\"> </a></td><td>Set Of Integer Numbers</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;<a href=\"#IVL.60INT.62\">IVL&lt;INT&gt;</a></td><td/><td/></tr>\r\n <tr><td>1</td><td>SET&lt;REAL&gt;<a name=\"SET.60REAL.62\"> </a></td><td>Set Of Real Numbers</td><td/></tr>\r\n <tr><td>2</td><td>&nbsp;&nbsp;<a href=\"#IVL.60REAL.62\">IVL&lt;REAL&gt;</a></td><td/><td/></tr>\r\n</table>\r\n</div>"
+  },
+  "url": "http://hl7.org/fhir/v3/vs/DataType",
+  "version": "2015-03-23",
+  "name": "v3 Code System DataType",
+  "publisher": "HL7, Inc",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": " Code system retired.",
+  "status": "active",
+  "experimental": false,
+  "date": "2015-03-23",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.5.1007"
+      }
+    ],
+    "system": "http://hl7.org/fhir/v3/DataType",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "ANY",
+        "abstract": false,
+        "display": "ANY",
+        "definition": "ANY",
+        "concept": [
+          {
+            "code": "ANT<ANY>",
+            "abstract": false,
+            "display": "Annotated",
+            "definition": "Annotated",
+            "concept": [
+              {
+                "code": "ANT<CD>",
+                "abstract": false,
+                "display": "Annotated Concept Descriptor",
+                "definition": "Annotated Concept Descriptor"
+              },
+              {
+                "code": "ANT<PQ>",
+                "abstract": false,
+                "display": "Annotated Physical Quantity",
+                "definition": "Annotated Physical Quantity"
+              }
+            ]
+          },
+          {
+            "code": "BAG<ANY>",
+            "abstract": false,
+            "display": "Bag",
+            "definition": "Bag",
+            "concept": [
+              {
+                "code": "BAG<CD>",
+                "abstract": false,
+                "display": "Bag Of Concept Descriptors",
+                "definition": "Bag Of Concept Descriptors"
+              },
+              {
+                "code": "BAG<PQ>",
+                "abstract": false,
+                "display": "Bag Of Physical Quantities",
+                "definition": "Bag Of Physical Quantities"
+              }
+            ]
+          },
+          {
+            "code": "BL",
+            "abstract": false,
+            "display": "Boolean",
+            "definition": "Boolean"
+          },
+          {
+            "code": "CD",
+            "abstract": false,
+            "display": "Concept Descriptor",
+            "definition": "Concept Descriptor",
+            "concept": [
+              {
+                "code": "CE",
+                "abstract": false,
+                "display": "Coded With Equivalents",
+                "definition": "Coded With Equivalents"
+              },
+              {
+                "code": "CS",
+                "abstract": false,
+                "display": "Coded Simple Value",
+                "definition": "Coded Simple Value"
+              },
+              {
+                "code": "CV",
+                "abstract": false,
+                "display": "Coded Value",
+                "definition": "Coded Value"
+              }
+            ]
+          },
+          {
+            "code": "CR",
+            "abstract": false,
+            "display": "Concept Role",
+            "definition": "Concept Role"
+          },
+          {
+            "code": "HXIT<ANY>",
+            "abstract": false,
+            "display": "Historical",
+            "definition": "Historical",
+            "concept": [
+              {
+                "code": "HXIT<AD>",
+                "abstract": false,
+                "display": "Historical Address",
+                "definition": "Historical Address"
+              }
+            ]
+          },
+          {
+            "code": "II",
+            "abstract": false,
+            "display": "Instance Identifier",
+            "definition": "Instance Identifier"
+          },
+          {
+            "code": "IVL<QTY>",
+            "abstract": false,
+            "display": "Interval",
+            "definition": "Interval",
+            "concept": [
+              {
+                "code": "IVL<INT>",
+                "abstract": false,
+                "display": "Interval Of Integer Numbers",
+                "definition": "Interval Of Integer Numbers"
+              },
+              {
+                "code": "IVL<PQ>",
+                "abstract": false,
+                "display": "Interval Of Physical Quantities",
+                "definition": "Interval Of Physical Quantities",
+                "concept": [
+                  {
+                    "code": "UVP<IVL<PQ>>",
+                    "abstract": false,
+                    "display": "Uncertain Probabilistic Interval Of Physical Quant",
+                    "definition": "Uncertain Probabilistic Interval Of Physical Quant"
+                  }
+                ]
+              },
+              {
+                "code": "IVL<REAL>",
+                "abstract": false,
+                "display": "Interval Of Real Numbers",
+                "definition": "Interval Of Real Numbers"
+              },
+              {
+                "code": "IVL<TS>",
+                "abstract": false,
+                "display": "Interval Of Points In Time",
+                "definition": "Interval Of Points In Time",
+                "concept": [
+                  {
+                    "code": "SET<TS>",
+                    "abstract": false,
+                    "display": "Set Of Points In Time",
+                    "definition": "Set Of Points In Time",
+                    "concept": [
+                      {
+                        "code": "EIVL<TS>",
+                        "abstract": false,
+                        "display": "Event Related Interval",
+                        "definition": "Event Related Interval"
+                      },
+                      {
+                        "code": "GTS",
+                        "abstract": false,
+                        "display": "General Timing Specification",
+                        "definition": "General Timing Specification"
+                      },
+                      {
+                        "code": "PIVL<TS>",
+                        "abstract": false,
+                        "display": "Periodic Interval Of Time",
+                        "definition": "Periodic Interval Of Time"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "LIST<ANY>",
+            "abstract": false,
+            "display": "Sequence",
+            "definition": "Sequence",
+            "concept": [
+              {
+                "code": "LIST<BL>",
+                "abstract": false,
+                "display": "Sequence Of Booleans",
+                "definition": "Sequence Of Booleans",
+                "concept": [
+                  {
+                    "code": "BIN",
+                    "abstract": false,
+                    "display": "Binary Data",
+                    "definition": "Binary Data",
+                    "concept": [
+                      {
+                        "code": "ED",
+                        "abstract": false,
+                        "display": "Encoded Data",
+                        "definition": "Encoded Data",
+                        "concept": [
+                          {
+                            "code": "ST",
+                            "abstract": false,
+                            "display": "Character String",
+                            "definition": "Character String",
+                            "concept": [
+                              {
+                                "code": "ADXP",
+                                "abstract": false,
+                                "display": "Address Part",
+                                "definition": "Address Part"
+                              },
+                              {
+                                "code": "ON",
+                                "abstract": false,
+                                "display": "Organization Name",
+                                "definition": "Organization Name"
+                              },
+                              {
+                                "code": "PNXP",
+                                "abstract": false,
+                                "display": "Person Name Part",
+                                "definition": "Person Name Part"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "LIST<LIST<ANY>>",
+                "abstract": false,
+                "display": "Sequence Of Sequences Of Data Values",
+                "definition": "Sequence Of Sequences Of Data Values",
+                "concept": [
+                  {
+                    "code": "LIST<LIST<BL>>",
+                    "abstract": false,
+                    "display": "Sequence Of Sequence Of Booleans",
+                    "definition": "Sequence Of Sequence Of Booleans",
+                    "concept": [
+                      {
+                        "code": "LIST<BIN>",
+                        "abstract": false,
+                        "display": "Sequence Of Binary Data",
+                        "definition": "Sequence Of Binary Data",
+                        "concept": [
+                          {
+                            "code": "LIST<ED>",
+                            "abstract": false,
+                            "display": "Sequence Of Encoded Data",
+                            "definition": "Sequence Of Encoded Data",
+                            "concept": [
+                              {
+                                "code": "LIST<ST>",
+                                "abstract": false,
+                                "display": "Sequence Of Character Strings",
+                                "definition": "Sequence Of Character Strings",
+                                "concept": [
+                                  {
+                                    "code": "LIST<ADXP>",
+                                    "abstract": false,
+                                    "display": "Sequence Of Postal Address Parts",
+                                    "definition": "Sequence Of Postal Address Parts",
+                                    "concept": [
+                                      {
+                                        "code": "AD",
+                                        "abstract": false,
+                                        "display": "Postal And Residential Address",
+                                        "definition": "Postal And Residential Address"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "code": "LIST<PNXP>",
+                                    "abstract": false,
+                                    "display": "Sequence Of Person Name Parts",
+                                    "definition": "Sequence Of Person Name Parts",
+                                    "concept": [
+                                      {
+                                        "code": "PN",
+                                        "abstract": false,
+                                        "display": "Person Name Type",
+                                        "definition": "Person Name Type"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "OID",
+            "abstract": false,
+            "display": "Object Identifier",
+            "definition": "Object Identifier"
+          },
+          {
+            "code": "QTY",
+            "abstract": false,
+            "display": "Quantity",
+            "definition": "Quantity",
+            "concept": [
+              {
+                "code": "INT",
+                "abstract": false,
+                "display": "Integer Number",
+                "definition": "Integer Number"
+              },
+              {
+                "code": "MO",
+                "abstract": false,
+                "display": "Monetary Amount",
+                "definition": "Monetary Amount"
+              },
+              {
+                "code": "PPD<QTY>",
+                "abstract": false,
+                "display": "Parametric Probability Distribution",
+                "definition": "Parametric Probability Distribution"
+              },
+              {
+                "code": "PQ",
+                "abstract": false,
+                "display": "Physical Quantity",
+                "definition": "Physical Quantity",
+                "concept": [
+                  {
+                    "code": "PPD<PQ>",
+                    "abstract": false,
+                    "display": "Parametric Probability Distribution Of Physical Quantity",
+                    "definition": "Parametric Probability Distribution Of Physical Quantity"
+                  }
+                ]
+              },
+              {
+                "code": "REAL",
+                "abstract": false,
+                "display": "Real Number",
+                "definition": "Real Number",
+                "concept": [
+                  {
+                    "code": "PPD<REAL>",
+                    "abstract": false,
+                    "display": "Parametric Probability Distribution Of Real Number",
+                    "definition": "Parametric Probability Distribution Of Real Number"
+                  }
+                ]
+              },
+              {
+                "code": "RTO",
+                "abstract": false,
+                "display": "Ratio",
+                "definition": "Ratio"
+              },
+              {
+                "code": "TS",
+                "abstract": false,
+                "display": "Point In Time",
+                "definition": "Point In Time"
+              }
+            ]
+          },
+          {
+            "modifierExtension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-subsumes",
+                "valueCode": "SET<UVP<CD>>"
+              },
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-subsumes",
+                "valueCode": "SET<UVP<IVL<PQ>>>"
+              }
+            ],
+            "code": "SET<ANY>",
+            "abstract": false,
+            "display": "Set",
+            "definition": "Set",
+            "concept": [
+              {
+                "code": "SET<CD>",
+                "abstract": false,
+                "display": "Set Of Concept Descriptors",
+                "definition": "Set Of Concept Descriptors",
+                "concept": [
+                  {
+                    "code": "SET<UVP<CD>>",
+                    "abstract": false,
+                    "display": "Set Of Uncertain Probabilistic Concept Descriptor",
+                    "definition": "Set Of Uncertain Probabilistic Concept Descriptor",
+                    "concept": [
+                      {
+                        "code": "NPPD<CD>",
+                        "abstract": false,
+                        "display": "Non Parametric Probability Distribution Of Concept Descriptors",
+                        "definition": "Non Parametric Probability Distribution Of Concept Descriptors"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "SET<CE>",
+                    "abstract": false,
+                    "display": "Set Of Coded With Equivalents",
+                    "definition": "Set Of Coded With Equivalents"
+                  },
+                  {
+                    "code": "SET<CS>",
+                    "abstract": false,
+                    "display": "Set Of Coded Simple Value",
+                    "definition": "Set Of Coded Simple Value"
+                  },
+                  {
+                    "code": "SET<CV>",
+                    "abstract": false,
+                    "display": "Set Of Coded Value",
+                    "definition": "Set Of Coded Value"
+                  }
+                ]
+              },
+              {
+                "code": "SET<IVL<PQ>>",
+                "abstract": false,
+                "display": "Set Of Intervals Of Physical Quantity",
+                "definition": "Set Of Intervals Of Physical Quantity",
+                "concept": [
+                  {
+                    "code": "SET<UVP<IVL<PQ>>>",
+                    "abstract": false,
+                    "display": "Set Of Uncertain Probabilistic Interval Of Physical Quantities",
+                    "definition": "Set Of Uncertain Probabilistic Interval Of Physical Quantities",
+                    "concept": [
+                      {
+                        "code": "NPPD<IVL<PQ>>",
+                        "abstract": false,
+                        "display": "Non Parametric Probability Distribution Of Intervals of Physical Quantities",
+                        "definition": "Non Parametric Probability Distribution Of Intervals of Physical Quantities"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "SET<LIST<ST>>",
+                "abstract": false,
+                "display": "Set Of Sequences Of Character Strings",
+                "definition": "Set Of Sequences Of Character Strings",
+                "concept": [
+                  {
+                    "code": "SET<AD>",
+                    "abstract": false,
+                    "display": "Set Of Addresses",
+                    "definition": "Set Of Addresses",
+                    "concept": [
+                      {
+                        "code": "SET<HXIT<AD>>",
+                        "abstract": false,
+                        "display": "Set Of Historical Addresses",
+                        "definition": "Set Of Historical Addresses",
+                        "concept": [
+                          {
+                            "code": "HIST<AD>",
+                            "abstract": false,
+                            "display": "History Of Address",
+                            "definition": "History Of Address"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "code": "SET<PQ>",
+                "abstract": false,
+                "display": "Set Of Physical Quantities",
+                "definition": "Set Of Physical Quantities"
+              },
+              {
+                "code": "SET<ST>",
+                "abstract": false,
+                "display": "Set Of Character Strings",
+                "definition": "Set Of Character Strings"
+              },
+              {
+                "code": "SET<UVP<ANY>>",
+                "abstract": false,
+                "display": "Set Of Uncertain Value Probabilistic",
+                "definition": "Set Of Uncertain Value Probabilistic",
+                "concept": [
+                  {
+                    "code": "NPPD<ANY>",
+                    "abstract": false,
+                    "display": "Non Parametric Probability Distribution",
+                    "definition": "Non Parametric Probability Distribution"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "code": "URL",
+            "abstract": false,
+            "display": "Universal Resource Locator",
+            "definition": "Universal Resource Locator",
+            "concept": [
+              {
+                "code": "TEL",
+                "abstract": false,
+                "display": "Telecommunication Address",
+                "definition": "Telecommunication Address"
+              }
+            ]
+          },
+          {
+            "code": "UVN<ANY>",
+            "abstract": false,
+            "display": "Uncertain Value Narrative",
+            "definition": "Uncertain Value Narrative",
+            "concept": [
+              {
+                "code": "UVN<CD>",
+                "abstract": false,
+                "display": "Uncertain Narrative Concept Descriptor",
+                "definition": "Uncertain Narrative Concept Descriptor"
+              }
+            ]
+          },
+          {
+            "modifierExtension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-subsumes",
+                "valueCode": "UVP<IVL<PQ>>"
+              }
+            ],
+            "code": "UVP<ANY>",
+            "abstract": false,
+            "display": "Uncertain Value Probabilistic",
+            "definition": "Uncertain Value Probabilistic",
+            "concept": [
+              {
+                "code": "UVP<CD>",
+                "abstract": false,
+                "display": "Uncertain Probabilistic Concept Descriptor",
+                "definition": "Uncertain Probabilistic Concept Descriptor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "modifierExtension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-subsumes",
+            "valueCode": "IVL<INT>"
+          }
+        ],
+        "code": "SET<INT>",
+        "abstract": false,
+        "display": "Set Of Integer Numbers",
+        "definition": "Set Of Integer Numbers"
+      },
+      {
+        "modifierExtension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-subsumes",
+            "valueCode": "IVL<REAL>"
+          }
+        ],
+        "code": "SET<REAL>",
+        "abstract": false,
+        "display": "Set Of Real Numbers",
+        "definition": "Set Of Real Numbers"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-admin-status",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 5 concepts</p><h2>MedicationAdministrationStatus</h2><p>A set of codes indicating the current status of a MedicationAdministration</p><p>This value set defines its own terms in the system http://hl7.org/fhir/medication-admin-status</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b><a href=\"v3/ActStatus/index.html\">v3 Map (ActStatus)</a></b></td></tr><tr><td>in-progress<a name=\"in-progress\"> </a></td><td>In Progress</td><td>The administration has started but has not yet completed.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#active\">active</a></td></tr><tr><td>on-hold<a name=\"on-hold\"> </a></td><td>On Hold</td><td>Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called &quot;suspended&quot;.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#suspended\">suspended</a></td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>Completed</td><td>All actions that are implied by the administration have occurred.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#completed\">completed</a></td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered In Error</td><td>The administration was entered in error and therefore nullified.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#nullified\">nullified</a></td></tr><tr><td>stopped<a name=\"stopped\"> </a></td><td>Stopped</td><td>Actions implied by the administration have been permanently halted, before all of them occurred.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#aborted\">aborted</a></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.92"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/medication-admin-status",
+  "version": "0.4.0",
+  "name": "MedicationAdministrationStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes indicating the current status of a MedicationAdministration",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.92"
+      }
+    ],
+    "system": "http://hl7.org/fhir/medication-admin-status",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "in-progress",
+        "display": "In Progress",
+        "definition": "The administration has started but has not yet completed."
+      },
+      {
+        "code": "on-hold",
+        "display": "On Hold",
+        "definition": "Actions implied by the administration have been temporarily halted, but are expected to continue later. May also be called \"suspended\"."
+      },
+      {
+        "code": "completed",
+        "display": "Completed",
+        "definition": "All actions that are implied by the administration have occurred."
+      },
+      {
+        "code": "entered-in-error",
+        "display": "Entered In Error",
+        "definition": "The administration was entered in error and therefore nullified."
+      },
+      {
+        "code": "stopped",
+        "display": "Stopped",
+        "definition": "Actions implied by the administration have been permanently halted, before all of them occurred."
+      }
+    ]
+  }
+}

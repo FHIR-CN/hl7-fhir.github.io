@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "operation-parameter-use",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 2 concepts</p><h2>OperationParameterUse</h2><p>Whether an operation parameter is an input or an output parameter</p><p>This value set defines its own terms in the system http://hl7.org/fhir/operation-parameter-use</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>in<a name=\"in\"> </a></td><td>In</td><td>This is an input parameter.</td></tr><tr><td>out<a name=\"out\"> </a></td><td>Out</td><td>This is an output parameter.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.409"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/operation-parameter-use",
+  "version": "0.4.0",
+  "name": "OperationParameterUse",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Whether an operation parameter is an input or an output parameter",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.409"
+      }
+    ],
+    "system": "http://hl7.org/fhir/operation-parameter-use",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "in",
+        "display": "In",
+        "definition": "This is an input parameter."
+      },
+      {
+        "code": "out",
+        "display": "Out",
+        "definition": "This is an output parameter."
+      }
+    ]
+  }
+}

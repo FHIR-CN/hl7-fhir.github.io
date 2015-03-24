@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="procedure-status"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>ProcedureStatus</h2>
+      <p>A code specifying the state of the procedure record</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/procedure-status</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+          <td>
+            <b>
+              <a href="v3/ActStatus/index.html">v3 Map (ActStatus)</a>
+            </b>
+          </td>
+        </tr>
+        <tr>
+          <td>in-progress
+            <a name="in-progress"> </a>
+          </td>
+          <td>In Progress</td>
+          <td>The procedure is still occurring.</td>
+          <td>
+            <span title="equal">=</span>
+            <a href="v3/ActStatus/index.html#active">active</a>
+          </td>
+        </tr>
+        <tr>
+          <td>aborted
+            <a name="aborted"> </a>
+          </td>
+          <td>Aborted</td>
+          <td>The procedure was terminated without completing successfully.</td>
+          <td>
+            <span title="equal">=</span>
+            <a href="v3/ActStatus/index.html#aborted">aborted</a>
+          </td>
+        </tr>
+        <tr>
+          <td>completed
+            <a name="completed"> </a>
+          </td>
+          <td>Completed</td>
+          <td>All actions involved in the procedure have taken place.</td>
+          <td>
+            <span title="equal">=</span>
+            <a href="v3/ActStatus/index.html#completed">completed</a>
+          </td>
+        </tr>
+        <tr>
+          <td>entered-in-error
+            <a name="entered-in-error"> </a>
+          </td>
+          <td>Entered In Error</td>
+          <td>The statement was entered in error and Is not valid.</td>
+          <td>
+            <span title="equal">=</span>
+            <a href="v3/ActStatus/index.html#nullified">nullified</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.1470"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/procedure-status"/>
+  <version value="0.4.0"/>
+  <name value="ProcedureStatus"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="A code specifying the state of the procedure record"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.1470"/>
+    </extension>
+    <system value="http://hl7.org/fhir/procedure-status"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="in-progress"/>
+      <display value="In Progress"/>
+      <definition value="The procedure is still occurring."/>
+    </concept>
+    <concept>
+      <code value="aborted"/>
+      <display value="Aborted"/>
+      <definition value="The procedure was terminated without completing successfully."/>
+    </concept>
+    <concept>
+      <code value="completed"/>
+      <display value="Completed"/>
+      <definition value="All actions involved in the procedure have taken place."/>
+    </concept>
+    <concept>
+      <code value="entered-in-error"/>
+      <display value="Entered In Error"/>
+      <definition value="The statement was entered in error and Is not valid."/>
+    </concept>
+  </define>
+</ValueSet>

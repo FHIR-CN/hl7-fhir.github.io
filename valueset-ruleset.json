@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-ruleset",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      This value set includes sample ruleset codes.\n    <hr/><p>This value set contains 6 concepts</p><h2>Ruleset Codes</h2><p>This value set includes sample ruleset codes.</p><p><b>Copyright Statement:</b> This is an example set</p><p>This value set defines its own terms in the system http://hl7.org/fhir/ruleset</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td></tr><tr><td>x12-4010<a name=\"x12-4010\"> </a></td><td/></tr><tr><td>x12-5010<a name=\"x12-5010\"> </a></td><td/></tr><tr><td>x12-7010<a name=\"x12-7010\"> </a></td><td/></tr><tr><td>cdanet-v2<a name=\"cdanet-v2\"> </a></td><td/></tr><tr><td>cdanet-v4<a name=\"cdanet-v4\"> </a></td><td/></tr><tr><td>cpha-3<a name=\"cpha-3\"> </a></td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.458"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/ruleset",
+  "version": "0.4.0",
+  "name": "Ruleset Codes",
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes sample ruleset codes.",
+  "copyright": "This is an example set",
+  "status": "draft",
+  "experimental": true,
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:null"
+      }
+    ],
+    "system": "http://hl7.org/fhir/ruleset",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "x12-4010"
+      },
+      {
+        "code": "x12-5010"
+      },
+      {
+        "code": "x12-7010"
+      },
+      {
+        "code": "cdanet-v2"
+      },
+      {
+        "code": "cdanet-v4"
+      },
+      {
+        "code": "cpha-3"
+      }
+    ]
+  }
+}

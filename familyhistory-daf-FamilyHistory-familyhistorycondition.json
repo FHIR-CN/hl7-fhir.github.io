@@ -1,0 +1,10 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "familyhistory-daf-FamilyHistory-familyhistorycondition",
+  "url": "http://hl7.org/fhir/SearchParameter/familyhistory-daf-FamilyHistory-familyhistorycondition",
+  "name": "familyhistorycondition",
+  "base": "FamilyHistory",
+  "type": "token",
+  "description": "Search for a history of a particular condition within a patient's family.",
+  "xpath": "f:FamilyHistory/f:relation/f:condition/f:type"
+}

@@ -1,0 +1,129 @@
+{
+  "resourceType": "ValueSet",
+  "id": "object-lifecycle",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 15 concepts</p><h2>AuditEventObjectLifecycle</h2><p>Identifier for the data life-cycle stage for the participant object</p><p>This value set defines its own terms in the system http://hl7.org/fhir/object-lifecycle</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td> </td><td>Origination / Creation.</td></tr><tr><td>2<a name=\"2\"> </a></td><td> </td><td>Import / Copy from original.</td></tr><tr><td>3<a name=\"3\"> </a></td><td> </td><td>Amendment.</td></tr><tr><td>4<a name=\"4\"> </a></td><td> </td><td>Verification.</td></tr><tr><td>5<a name=\"5\"> </a></td><td> </td><td>Translation.</td></tr><tr><td>6<a name=\"6\"> </a></td><td> </td><td>Access / Use.</td></tr><tr><td>7<a name=\"7\"> </a></td><td> </td><td>De-identification.</td></tr><tr><td>8<a name=\"8\"> </a></td><td> </td><td>Aggregation, summarization, derivation.</td></tr><tr><td>9<a name=\"9\"> </a></td><td> </td><td>Report.</td></tr><tr><td>10<a name=\"10\"> </a></td><td>  </td><td>Export / Copy to target.</td></tr><tr><td>11<a name=\"11\"> </a></td><td>  </td><td>Disclosure.</td></tr><tr><td>12<a name=\"12\"> </a></td><td>  </td><td>Receipt of disclosure.</td></tr><tr><td>13<a name=\"13\"> </a></td><td>  </td><td>Archiving.</td></tr><tr><td>14<a name=\"14\"> </a></td><td>  </td><td>Logical deletion.</td></tr><tr><td>15<a name=\"15\"> </a></td><td>  </td><td>Permanent erasure / Physical destruction.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1481"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/object-lifecycle",
+  "version": "0.4.0",
+  "name": "AuditEventObjectLifecycle",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Identifier for the data life-cycle stage for the participant object",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1481"
+      }
+    ],
+    "system": "http://hl7.org/fhir/object-lifecycle",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "1",
+        "display": " ",
+        "definition": "Origination / Creation."
+      },
+      {
+        "code": "2",
+        "display": " ",
+        "definition": "Import / Copy from original."
+      },
+      {
+        "code": "3",
+        "display": " ",
+        "definition": "Amendment."
+      },
+      {
+        "code": "4",
+        "display": " ",
+        "definition": "Verification."
+      },
+      {
+        "code": "5",
+        "display": " ",
+        "definition": "Translation."
+      },
+      {
+        "code": "6",
+        "display": " ",
+        "definition": "Access / Use."
+      },
+      {
+        "code": "7",
+        "display": " ",
+        "definition": "De-identification."
+      },
+      {
+        "code": "8",
+        "display": " ",
+        "definition": "Aggregation, summarization, derivation."
+      },
+      {
+        "code": "9",
+        "display": " ",
+        "definition": "Report."
+      },
+      {
+        "code": "10",
+        "display": "  ",
+        "definition": "Export / Copy to target."
+      },
+      {
+        "code": "11",
+        "display": "  ",
+        "definition": "Disclosure."
+      },
+      {
+        "code": "12",
+        "display": "  ",
+        "definition": "Receipt of disclosure."
+      },
+      {
+        "code": "13",
+        "display": "  ",
+        "definition": "Archiving."
+      },
+      {
+        "code": "14",
+        "display": "  ",
+        "definition": "Logical deletion."
+      },
+      {
+        "code": "15",
+        "display": "  ",
+        "definition": "Permanent erasure / Physical destruction."
+      }
+    ]
+  }
+}

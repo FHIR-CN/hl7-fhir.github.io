@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-MaterialType"/>
+  <meta>
+    <lastUpdated value="2015-03-23T00:00:00.000+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Release Date: 2015-03-23</p>
+
+      <p>OID for code system: 2.16.840.1.113883.5.73</p>
+
+      <h2>Description</h2>
+
+      <p>
+                  
+                     Deprecation Comment: Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  This is outside the hierarchy and there&#39;s already an equivalent domain MaterialEntityClass in the right hierarchy.  The corresponding code system is empty.
+        <br/>
+
+               
+      </p>
+
+      <hr/>
+
+      <table class="grid">
+ 
+        <tr>
+          <td>
+            <b>Level</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/v3/vs/MaterialType"/>
+  <version value="2015-03-23"/>
+  <name value="v3 Code System MaterialType"/>
+  <publisher value="HL7, Inc"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="  Deprecation Comment:
+Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.  This is outside the hierarchy and there&#39;s already an equivalent domain MaterialEntityClass in the right hierarchy.  The corresponding code system is empty."/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2015-03-23"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.5.73"/>
+    </extension>
+    <system value="http://hl7.org/fhir/v3/MaterialType"/>
+    <caseSensitive value="true"/>
+  </define>
+</ValueSet>

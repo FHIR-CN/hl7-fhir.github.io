@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-observation-qicore-verification",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 2 concepts</p><h2>Observation Verification Method</h2><p>Code for method by which the observation result was validated, e.g., human review, sliding average.</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://need.a.uri.org/observation/verification-method<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Human review</td><td/></tr><tr><td>2</td><td>Sliding average</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1573"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/observation-qicore-verification",
+  "version": "0.4.0",
+  "name": "Observation Verification Method",
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hspc.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Code for method by which the observation result was validated, e.g., human review, sliding average.",
+  "status": "active",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://need.a.uri.org/observation/verification-method",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Human review"
+          },
+          {
+            "code": "2",
+            "display": "Sliding average"
+          }
+        ]
+      }
+    ]
+  }
+}

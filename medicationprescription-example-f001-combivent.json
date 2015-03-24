@@ -1,0 +1,104 @@
+{
+  "resourceType": "MedicationPrescription",
+  "id": "f001",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>identifier</b>: order9837293 (OFFICIAL)\n      </p>\n      <p>\n        <b>dateWritten</b>: May 25, 2013 6:32:52 PM\n      </p>\n      <p>\n        <b>status</b>: ACTIVE\n      </p>\n      <p>\n        <b>patient</b>: \n        <a href=\"Patient/f001\">P. van den Heuvel. Generated Summary: 738472983 (USUAL), ?? (USUAL); Pieter van de Heuvel ; ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME); MALE; birthDate: Nov 17, 1944; \n          <span title=\"Codes: {http://hl7.org/fhir/v3/MaritalStatus M}\">Getrouwd</span>; multipleBirth; active\n        </a>\n      </p>\n      <p>\n        <b>prescriber</b>: \n        <a href=\"Practitioner/f006\">R.A. van den Berk. Generated Summary: 937223645 (OFFICIAL), 134IDY41W988 (USUAL); Rob van den Berk (OFFICIAL); ph: 0205569288(WORK), R.A.vandenberk@bmc.nl(WORK), fax: 0205664987(WORK); MALE; birthDate: Dec 7, 1975</a>\n      </p>\n      <p>\n        <b>encounter</b>: \n        <a href=\"Encounter/f001\">visit who leads to this priscription. Generated Summary: v1451 (OFFICIAL); FINISHED; OUTPATIENT; \n          <span title=\"Codes: {http://snomed.info/sct 270427003}\">Patient-initiated encounter</span>; 140 min; \n          <span title=\"Codes: {http://snomed.info/sct 34068001}\">Heart valve replacement</span>; \n          <span title=\"Codes: {http://snomed.info/sct 310361003}\">Non-urgent cardiological admission</span>\n        </a>\n      </p>\n      <p>\n        <b>reason</b>: Chronic obstructive pulmonary disease \n        <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '13645005' = 'COLD', given as 'Chronic obstructive pulmonary disease'})</span>\n      </p>\n      <p>\n        <b>medication</b>: \n        <a href=\"Medication/f001\">prescribed medication. Generated Summary: name: Combivent; \n          <span title=\"Codes: {http://snomed.info/sct 320442002}\">Salbutamol+ipratropium bromide 100micrograms/20micrograms inhaler</span>; isBrand; PRODUCT\n        </a>\n      </p>\n      <h3>DosageInstructions</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Text</b>\n          </td>\n          <td>\n            <b>AdditionalInstructions</b>\n          </td>\n          <td>\n            <b>Scheduled[x]</b>\n          </td>\n          <td>\n            <b>AsNeeded[x]</b>\n          </td>\n          <td>\n            <b>Site</b>\n          </td>\n          <td>\n            <b>Route</b>\n          </td>\n          <td>\n            <b>Method</b>\n          </td>\n          <td>\n            <b>Dose[x]</b>\n          </td>\n          <td>\n            <b>Rate</b>\n          </td>\n          <td>\n            <b>MaxDosePerPeriod</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>3 tot 4 maal daags 1 flacon</td>\n          <td>for use during pregnancy, contact physician \n            <span style=\"background: LightGoldenRodYellow \">(Details )</span>\n          </td>\n          <td>Starting Aug 4, 2013, Do 3 per 1days, Until Nov 5, 2013</td>\n          <td> </td>\n          <td>Entire oral cavity \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '181220002' = 'Mouth', given as 'Entire oral cavity'})</span>\n          </td>\n          <td>oral administration of treatment \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '394899003' = 'Treatment administered orally', given as 'oral administration of treatment'})</span>\n          </td>\n          <td> </td>\n          <td>10 ml\n            <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org code ml = 'ml')</span>\n          </td>\n          <td> </td>\n          <td> </td>\n        </tr>\n      </table>\n      <h3>Dispenses</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Medication</b>\n          </td>\n          <td>\n            <b>ValidityPeriod</b>\n          </td>\n          <td>\n            <b>NumberOfRepeatsAllowed</b>\n          </td>\n          <td>\n            <b>Quantity</b>\n          </td>\n          <td>\n            <b>ExpectedSupplyDuration</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td> </td>\n          <td>Apr 8, 2013 --&gt; May 30, 2013</td>\n          <td>20</td>\n          <td>100 mcg\n            <span style=\"background: LightGoldenRodYellow \"> (Details: urn:oid:2.16.840.1.113883.6.8 code ug = 'ug')</span>\n          </td>\n          <td>40 days\n            <span style=\"background: LightGoldenRodYellow \"> (Details: urn:oid:2.16.840.1.113883.6.8 code d = 'd')</span>\n          </td>\n        </tr>\n      </table>\n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.bmc/portal/prescriptions",
+      "value": "order9837293"
+    }
+  ],
+  "dateWritten": "2013-05-25T19:32:52+01:00",
+  "status": "active",
+  "patient": {
+    "reference": "Patient/f001",
+    "display": "P. van den Heuvel"
+  },
+  "prescriber": {
+    "reference": "Practitioner/f006",
+    "display": "R.A. van den Berk"
+  },
+  "encounter": {
+    "reference": "Encounter/f001",
+    "display": "visit who leads to this priscription"
+  },
+  "reasonCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "13645005",
+        "display": "Chronic obstructive pulmonary disease"
+      }
+    ]
+  },
+  "medication": {
+    "reference": "Medication/f001",
+    "display": "prescribed medication"
+  },
+  "dosageInstruction": [
+    {
+      "text": "3 tot 4 maal daags 1 flacon",
+      "additionalInstructions": {
+        "text": "for use during pregnancy, contact physician"
+      },
+      "scheduledTiming": {
+        "repeat": {
+          "bounds": {
+            "start": "2013-08-04",
+            "end": "2013-11-05"
+          },
+          "frequency": 3,
+          "period": 1,
+          "periodUnits": "d"
+        }
+      },
+      "site": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "181220002",
+            "display": "Entire oral cavity"
+          }
+        ]
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "394899003",
+            "display": "oral administration of treatment"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 10,
+        "units": "ml",
+        "system": "http://unitsofmeasure.org",
+        "code": "ml"
+      }
+    }
+  ],
+  "dispense": {
+    "validityPeriod": {
+      "start": "2013-04-08",
+      "end": "2013-05-30"
+    },
+    "numberOfRepeatsAllowed": 20,
+    "quantity": {
+      "value": 100,
+      "units": "mcg",
+      "system": "urn:oid:2.16.840.1.113883.6.8",
+      "code": "ug"
+    },
+    "expectedSupplyDuration": {
+      "value": 40,
+      "units": "days",
+      "system": "urn:oid:2.16.840.1.113883.6.8",
+      "code": "d"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-qicore-importance",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 9 concepts</p><h2>Importance</h2><p>Importance Value Set for Patient</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://cimi.org/vs/patient/importance<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>19266</td><td>Board Member</td><td/></tr><tr><td>19268</td><td>Financial Donor</td><td/></tr><tr><td>19274</td><td>Foreign Dignitary</td><td/></tr><tr><td>19270</td><td>Government Dignitary</td><td/></tr><tr><td>19269</td><td>Physician Family Member</td><td/></tr><tr><td>19271</td><td>Staff Family Member</td><td/></tr><tr><td>19272</td><td>Staff Member</td><td/></tr><tr><td>19267</td><td>Staff Physician</td><td/></tr><tr><td>19273</td><td>Very Important Person</td><td/></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:0.00.000.0.000000.0.00.001"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:0.00.000.0.000000.0.00.001"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/qicore-importance",
+  "version": "0.4.0",
+  "name": "Importance",
+  "publisher": "CIMI",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://cimi.org/valueset/importance"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.cimi.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Importance Value Set for Patient",
+  "status": "active",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://cimi.org/vs/patient/importance",
+        "concept": [
+          {
+            "code": "19266",
+            "display": "Board Member"
+          },
+          {
+            "code": "19268",
+            "display": "Financial Donor"
+          },
+          {
+            "code": "19274",
+            "display": "Foreign Dignitary"
+          },
+          {
+            "code": "19270",
+            "display": "Government Dignitary"
+          },
+          {
+            "code": "19269",
+            "display": "Physician Family Member"
+          },
+          {
+            "code": "19271",
+            "display": "Staff Family Member"
+          },
+          {
+            "code": "19272",
+            "display": "Staff Member"
+          },
+          {
+            "code": "19267",
+            "display": "Staff Physician"
+          },
+          {
+            "code": "19273",
+            "display": "Very Important Person"
+          }
+        ]
+      }
+    ]
+  }
+}

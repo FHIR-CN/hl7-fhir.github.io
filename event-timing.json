@@ -1,0 +1,191 @@
+{
+  "resourceType": "ValueSet",
+  "id": "event-timing",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div><p>This value set contains 14 concepts</p><h2>EventTiming</h2><p>Real world event that the schedule relates to</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in <a href=\"v3/TimingEvent/index.html\">http://hl7.org/fhir/v3/TimingEvent</a><table><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>HS</td><td>H S</td><td>event occurs [duration] before the hour of sleep (or trying to).</td></tr><tr><td>WAKE</td><td>W A K E</td><td>event occurs [duration] after waking.</td></tr><tr><td>C</td><td>C</td><td>event occurs at a meal (from the Latin cibus).</td></tr><tr><td>CM</td><td>C M</td><td>event occurs at breakfast (from the Latin cibus matutinus).</td></tr><tr><td>CD</td><td>C D</td><td>event occurs at lunch (from the Latin cibus diurnus).</td></tr><tr><td>CV</td><td>C V</td><td>event occurs at dinner (from the Latin ante cibus vespertinus).</td></tr><tr><td>AC</td><td>A C</td><td>event occurs [duration] before a meal (from the Latin ante cibus).</td></tr><tr><td>ACM</td><td>A C M</td><td>event occurs [duration] before breakfast (from the Latin ante cibus matutinus).</td></tr><tr><td>ACD</td><td>A C D</td><td>event occurs [duration] before lunch (from the Latin ante cibus diurnus).</td></tr><tr><td>ACV</td><td>A C V</td><td>event occurs [duration] before dinner (from the Latin ante cibus vespertinus).</td></tr><tr><td>PC</td><td>P C</td><td>event occurs [duration] after a meal (from the Latin post cibus).</td></tr><tr><td>PCM</td><td>P C M</td><td>event occurs [duration] after breakfast (from the Latin post cibus matutinus).</td></tr><tr><td>PCD</td><td>P C D</td><td>event occurs [duration] after lunch (from the Latin post cibus diurnus).</td></tr><tr><td>PCV</td><td>P C V</td><td>event occurs [duration] after dinner (from the Latin post cibus vespertinus).</td></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.19"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/event-timing",
+  "version": "0.4.0",
+  "name": "EventTiming",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Real world event that the schedule relates to",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/v3/TimingEvent",
+        "concept": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] before the hour of sleep (or trying to)."
+              }
+            ],
+            "code": "HS",
+            "display": "H S"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] after waking."
+              }
+            ],
+            "code": "WAKE",
+            "display": "W A K E"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs at a meal (from the Latin cibus)."
+              }
+            ],
+            "code": "C",
+            "display": "C"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs at breakfast (from the Latin cibus matutinus)."
+              }
+            ],
+            "code": "CM",
+            "display": "C M"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs at lunch (from the Latin cibus diurnus)."
+              }
+            ],
+            "code": "CD",
+            "display": "C D"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs at dinner (from the Latin ante cibus vespertinus)."
+              }
+            ],
+            "code": "CV",
+            "display": "C V"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] before a meal (from the Latin ante cibus)."
+              }
+            ],
+            "code": "AC",
+            "display": "A C"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] before breakfast (from the Latin ante cibus matutinus)."
+              }
+            ],
+            "code": "ACM",
+            "display": "A C M"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] before lunch (from the Latin ante cibus diurnus)."
+              }
+            ],
+            "code": "ACD",
+            "display": "A C D"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] before dinner (from the Latin ante cibus vespertinus)."
+              }
+            ],
+            "code": "ACV",
+            "display": "A C V"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] after a meal (from the Latin post cibus)."
+              }
+            ],
+            "code": "PC",
+            "display": "P C"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] after breakfast (from the Latin post cibus matutinus)."
+              }
+            ],
+            "code": "PCM",
+            "display": "P C M"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] after lunch (from the Latin post cibus diurnus)."
+              }
+            ],
+            "code": "PCD",
+            "display": "P C D"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+                "valueString": "event occurs [duration] after dinner (from the Latin post cibus vespertinus)."
+              }
+            ],
+            "code": "PCV",
+            "display": "P C V"
+          }
+        ]
+      }
+    ]
+  }
+}

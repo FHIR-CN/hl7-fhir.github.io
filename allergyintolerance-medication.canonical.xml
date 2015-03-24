@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><AllergyIntolerance xmlns="http://hl7.org/fhir"><id value="medication"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>recordedDate</b>: Mar 1, 2010
+      </p>
+      <p>
+        <b>recorder</b>: 
+        <a href="Practitioner/13">Practitioner/13</a>
+      </p>
+      <p>
+        <b>patient</b>: 
+        <a href="Patient/example">Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>
+      </p>
+      <p>
+        <b>substance</b>: ALLERGENIC EXTRACT, PENICILLIN 
+        <span style="background: LightGoldenRodYellow ">(Details : {http://www.nlm.nih.gov/research/umls/rxnorm code &#39;314422&#39; = &#39;314422&#39;, given as &#39;ALLERGENIC EXTRACT, PENICILLIN&#39;})</span>
+      </p>
+      <p>
+        <b>status</b>: UNCONFIRMED
+      </p>
+      <p>
+        <b>criticality</b>: HIGH
+      </p>
+      <p>
+        <b>category</b>: MEDICATION
+      </p>
+      <h3>Events</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Substance</b>
+          </td>
+          <td>
+            <b>Certainty</b>
+          </td>
+          <td>
+            <b>Manifestation</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Onset</b>
+          </td>
+          <td>
+            <b>Duration</b>
+          </td>
+          <td>
+            <b>Severity</b>
+          </td>
+          <td>
+            <b>ExposureRoute</b>
+          </td>
+          <td>
+            <b>Comment</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>Hives 
+            <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;247472004&#39; = &#39;Weal (disorder)&#39;, given as &#39;Hives&#39;})</span>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </table>
+    </div></text><!--    the date that this entry was recorded    --><recordedDate value="2010-03-01"/><!--    who made the record / last updated it    --><recorder><reference value="Practitioner/13"/></recorder><!--    the patient that actually has the risk of adverse reaction    --><patient><reference value="Patient/example"/></patient><!--    subtance, coded from RxNorm    --><substance><coding><system value="http://www.nlm.nih.gov/research/umls/rxnorm"/><code value="314422"/><display value="ALLERGENIC EXTRACT, PENICILLIN"/></coding></substance><status value="unconfirmed"/><criticality value="high"/><category value="medication"/><event><manifestation><coding><system value="http://snomed.info/sct"/><code value="247472004"/><display value="Hives"/></coding></manifestation></event></AllergyIntolerance>

@@ -1,0 +1,1140 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2015-03-23T23:56:59+00:00",
+  "publisher": "HL7 FHIR Project (Patient Administration)",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "The details of a Healthcare Service available at a location."
+      }
+    ],
+    "linkId": "HealthcareService",
+    "title": "The details of a Healthcare Service available at a location",
+    "required": true,
+    "repeats": false,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the url for the resoure. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.id.value",
+            "text": "Logical id of this artefact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "HealthcareService.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "HealthcareService.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource\n\nNot all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "HealthcareService.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."
+          }
+        ],
+        "linkId": "HealthcareService.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."
+          }
+        ],
+        "linkId": "HealthcareService.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "External Ids for this item."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "HealthcareService.identifier",
+        "text": "External Ids for this item",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The location where this healthcare service may be provided."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "HealthcareService.location",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Location?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "HealthcareService.location.value",
+            "text": "The location where this healthcare service may be provided",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Identifies the broad category of service being performed or delivered. Selecting a Service Category then determines the list of relevant service types that can be selected in the Primary Service Type."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.serviceCategory",
+        "text": "Identifies the broad category of service being performed or delivered. Selecting a Service Category then determines the list of relevant service types that can be selected in the Primary Service Type",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.serviceCategory.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.serviceCategory.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A specific type of service that may be delivered or performed."
+          }
+        ],
+        "linkId": "HealthcareService.serviceType",
+        "title": "A specific type of service that may be delivered or performed",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "HealthcareService.serviceType.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.serviceType.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The specific type of service being delivered or performed. Change to serviceType?"
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "HealthcareService.serviceType.type",
+            "text": "The specific type of service being delivered or performed",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.serviceType.type.coding",
+                "text": "code:",
+                "type": "open-choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "HealthcareService.serviceType.type.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Collection of Specialties handled by the Service Site. This is more of a Medical Term."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "HealthcareService.serviceType.specialty",
+            "text": "Collection of Specialties handled by the Service Site. This is more of a Medical Term",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.serviceType.specialty.coding",
+                "text": "code:",
+                "type": "open-choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "HealthcareService.serviceType.specialty.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Further description of the service as it would be presented to a consumer while searching."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.serviceName",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.serviceName.value",
+            "text": "Further description of the service as it would be presented to a consumer while searching",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Additional description of the  or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.comment",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.comment.value",
+            "text": "Additional description of the  or any specific issues not covered by the other attributes, which can be displayed as further detail under the serviceName",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Extra details about the service that can't be placed in the other fields. Can this just be removed, and extension if needed?"
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.extraDetails",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.extraDetails.value",
+            "text": "Extra details about the service that can't be placed in the other fields",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The free provision code provides a link to the Free Provision reference entity to enable the selection of one free provision type. Name of this field should be more generic."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.freeProvisionCode",
+        "text": "The free provision code provides a link to the Free Provision reference entity to enable the selection of one free provision type",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.freeProvisionCode.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.freeProvisionCode.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Does this service have specific eligibility requirements that need to be met in order to use the service."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.eligibility",
+        "text": "Does this service have specific eligibility requirements that need to be met in order to use the service",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.eligibility.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.eligibility.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The description of service eligibility should, in general, not exceed one or two paragraphs. It should be sufficient for a prospective consumer to determine if they are likely to be eligible or not. Where eligibility requirements and conditions are complex, it may simply be noted that an eligibility assessment is required. Where eligibility is determined by an outside source, such as an Act of Parliament, this should be noted, preferably with a reference to a commonly available copy of the source document such as a web page."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.eligibilityNote",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.eligibilityNote.value",
+            "text": "Describes the eligibility conditions for the service",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Indicates whether or not a prospective consumer will require an appointment for a particular service at a Site to be provided by the Organization. Indicates if an appointment is required for access to this service. If this flag is 'NotDefined', then this flag is overridden by the Site's availability flag. (ConditionalIndicator Enum)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.appointmentRequired",
+        "text": "Indicates whether or not a prospective consumer will require an appointment for a particular service at a Site to be provided by the Organization. Indicates if an appointment is required for access to this service. If this flag is 'NotDefined', then this flag is overridden by the Site's availability flag. (ConditionalIndicator Enum)",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.appointmentRequired.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.appointmentRequired.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "If there is an image associated with this Service Site, its URI can be included here."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "HealthcareService.imageURI",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.imageURI.value",
+            "text": "If there is an image associated with this Service Site, its URI can be included here",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A Collection of times that the Service Site is available."
+          }
+        ],
+        "linkId": "HealthcareService.availableTime",
+        "title": "A Collection of times that the Service Site is available",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "HealthcareService.availableTime.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.availableTime.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Indicates which Days of the week are available between the Start and End Times."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "CodeableConcept"
+              }
+            ],
+            "linkId": "HealthcareService.availableTime.daysOfWeek",
+            "text": "Indicates which Days of the week are available between the Start and End Times",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.availableTime.daysOfWeek.coding",
+                "text": "code:",
+                "type": "open-choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "HealthcareService.availableTime.daysOfWeek.text",
+                "text": "text:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Is this always available? (hence times are irrelevant) e.g. 24 hour service."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "boolean"
+              }
+            ],
+            "linkId": "HealthcareService.availableTime.allDay",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.availableTime.allDay.value",
+                "text": "Is this always available? (hence times are irrelevant) e.g. 24 hour service",
+                "type": "boolean",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The opening time of day (the date is not included). Note: If the AllDay flag is set, then this time is ignored."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "HealthcareService.availableTime.availableStartTime",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.availableTime.availableStartTime.value",
+                "text": "The opening time of day (the date is not included). Note: If the AllDay flag is set, then this time is ignored",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The closing time of day (the date is not included). Note: If the AllDay flag is set, then this time is ignored."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "HealthcareService.availableTime.availableEndTime",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.availableTime.availableEndTime.value",
+                "text": "The closing time of day (the date is not included). Note: If the AllDay flag is set, then this time is ignored",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Not avail times - need better description."
+          }
+        ],
+        "linkId": "HealthcareService.notAvailableTime",
+        "title": "Not avail times - need better description",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "HealthcareService.notAvailableTime.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.notAvailableTime.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The reason that can be presented to the user as to why this time is not available."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "HealthcareService.notAvailableTime.description",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.notAvailableTime.description.value",
+                "text": "The reason that can be presented to the user as to why this time is not available",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Service is not available (seasonally or for a public holiday) from this date."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "HealthcareService.notAvailableTime.startDate",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.notAvailableTime.startDate.value",
+                "text": "Service is not available (seasonally or for a public holiday) from this date",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Service is not available (seasonally or for a public holiday) until this date."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "HealthcareService.notAvailableTime.endDate",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "HealthcareService.notAvailableTime.endDate.value",
+                "text": "Service is not available (seasonally or for a public holiday) until this date",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A description of Site availability exceptions, e.g., public holiday availability. Succinctly describing all possible exceptions to normal Site availability as details in the Available Times and Not Available Times. (May contain HTML formatted text)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.availabilityExceptions",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.availabilityExceptions.value",
+            "text": "A description of Site availability exceptions, e.g., public holiday availability. Succinctly describing all possible exceptions to normal Site availability as details in the Available Times and Not Available Times",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The public part of the 'keys' allocated to an Organization by an accredited body to support secure exchange of data over the internet. To be provided by the Organization, where available. Note: This is a base64 encoded digital certificate. The ServD Federation's Profile will specify the type of certificate to be used and its purpose."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.publicKey",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.publicKey.value",
+            "text": "The public part of the 'keys' allocated to an Organization by an accredited body to support secure exchange of data over the internet. To be provided by the Organization, where available",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Program Names that can be used to categorize the service."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "HealthcareService.programName",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.programName.value",
+            "text": "Program Names that can be used to categorize the service",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "List of contacts related to this specific healthcare service. If this is empty, then refer to the location's contacts."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "ContactPoint"
+          }
+        ],
+        "linkId": "HealthcareService.contactPoint",
+        "text": "List of contacts related to this specific healthcare service. If this is empty, then refer to the location's contacts",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.contactPoint.system",
+            "text": "type:",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.contactPoint.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.contactPoint.use",
+            "text": "use:",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Collection of Characteristics (attributes). These could be such things as is wheelchair accessible."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.characteristic",
+        "text": "Collection of Characteristics (attributes)",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.characteristic.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.characteristic.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Ways that the service accepts referrals."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.referralMethod",
+        "text": "Ways that the service accepts referrals",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.referralMethod.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.referralMethod.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The setting where this service can be provided, such is in home, or at location in organisation."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.setting",
+        "text": "The setting where this service can be provided, such is in home, or at location in organisation",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.setting.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.setting.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Collection of Target Groups for the Service Site (The target audience that this service is for)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.targetGroup",
+        "text": "Collection of Target Groups for the Service Site (The target audience that this service is for)",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.targetGroup.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.targetGroup.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Need better description."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.coverageArea",
+        "text": "Need better description",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.coverageArea.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.coverageArea.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Need better description."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.catchmentArea",
+        "text": "Need better description",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.catchmentArea.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.catchmentArea.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "List of the specific."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "HealthcareService.serviceCode",
+        "text": "List of the specific",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "HealthcareService.serviceCode.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "HealthcareService.serviceCode.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><Observation xmlns="http://hl7.org/fhir"><id value="f201"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>contained</b>: , 
+      </p>
+      <p>
+        <b>code</b>: BMI 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;60621009&#39; = &#39;Quetelet index&#39;, given as &#39;Body mass index&#39;}; {LOINC code &#39;39156-5&#39; = &#39;Body mass index (BMI) [Ratio]&#39;, given as &#39;Body mass index (BMI) [Ratio]&#39;})</span>
+      </p>
+      <p>
+        <b>value</b>: 31.31
+      </p>
+      <p>
+        <b>interpretation</b>: High 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;75540009&#39; = &#39;High&#39;, given as &#39;High&#39;}; {http://hl7.org/fhir/v2/0078 code &#39;H&#39; = &#39;Above high normal)</span>
+      </p>
+      <p>
+        <b>issued</b>: Apr 4, 2013 12:27:00 PM
+      </p>
+      <p>
+        <b>status</b>: FINAL
+      </p>
+      <p>
+        <b>reliability</b>: OK
+      </p>
+      <p>
+        <b>bodySite</b>: Entire body as a whole 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;38266002&#39; = &#39;Total body&#39;, given as &#39;Entire body as a whole&#39;})</span>
+      </p>
+      <p>
+        <b>method</b>: Measurement procedure 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;122869004&#39; = &#39;Measurement&#39;, given as &#39;Measurement procedure&#39;})</span>
+      </p>
+      <p>
+        <b>subject</b>: 
+        <a href="Patient/f201">Roel. Generated Summary: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL); Roel(OFFICIAL); ph: +31612345678(MOBILE), ph: +31201234567(HOME); MALE; birthDate: Mar 13, 1960; 
+          <span title="Codes: {http://snomed.info/sct 36629006}, {http://hl7.org/fhir/v3/MaritalStatus M}">Legally married</span>; active
+        </a>
+      </p>
+      <p>
+        <b>performer</b>: 
+        <a href="Practitioner/f201">Generated Summary: UZI-nummer = 12345678901 (OFFICIAL); Dokter Bronsig(OFFICIAL); ph: +31715269111(WORK); MALE; birthDate: Dec 24, 1956</a>
+      </p>
+      <blockquote>
+        <p>
+          <b>referenceRange</b>
+        </p>
+        <p>
+          <b>high</b>: 20
+        </p>
+        <p>
+          <b>meaning</b>: Underweight 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;248342006&#39; = &#39;Underweight (finding)&#39;, given as &#39;Underweight&#39;})</span>
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b>referenceRange</b>
+        </p>
+        <p>
+          <b>low</b>: 20
+        </p>
+        <p>
+          <b>high</b>: 25
+        </p>
+        <p>
+          <b>meaning</b>: Normal weight 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;43664005&#39; = &#39;Normal weight (finding)&#39;, given as &#39;Normal weight&#39;})</span>
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b>referenceRange</b>
+        </p>
+        <p>
+          <b>low</b>: 25
+        </p>
+        <p>
+          <b>high</b>: 30
+        </p>
+        <p>
+          <b>meaning</b>: Overweight 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;238131007&#39; = &#39;Overweight (finding)&#39;, given as &#39;Overweight&#39;})</span>
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b>referenceRange</b>
+        </p>
+        <p>
+          <b>low</b>: 30
+        </p>
+        <p>
+          <b>high</b>: 40
+        </p>
+        <p>
+          <b>meaning</b>: Obese 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;414915002&#39; = &#39;Obese (finding)&#39;, given as &#39;Obese&#39;})</span>
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b>referenceRange</b>
+        </p>
+        <p>
+          <b>low</b>: 40
+        </p>
+        <p>
+          <b>meaning</b>: Morbid obesity 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;238136002&#39; = &#39;Morbid obesity (disorder)&#39;, given as &#39;Morbid obesity&#39;})</span>
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b>related</b>
+        </p>
+        <p>
+          <b>type</b>: DERIVEDFROM
+        </p>
+        <p>
+          <b>target</b>: Body height measure 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;50373000&#39; = &#39;Body height measure (observable entity)&#39;, given as &#39;Body height measure&#39;})</span>; 182 centimeter
+          <span style="background: LightGoldenRodYellow "> (Details: SNOMED CT code 258672001 = &#39;centimeter (qualifier value)&#39;)</span>; FINAL; OK
+        </p>
+      </blockquote>
+      <blockquote>
+        <p>
+          <b>related</b>
+        </p>
+        <p>
+          <b>type</b>: DERIVEDFROM
+        </p>
+        <p>
+          <b>target</b>: Body weight 
+          <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;27113001&#39; = &#39;Body weight (observable entity)&#39;, given as &#39;Body weight&#39;})</span>; 103.7 kilogram
+          <span style="background: LightGoldenRodYellow "> (Details: SNOMED CT code 258683005 = &#39;kilogram (qualifier value)&#39;)</span>; FINAL; OK
+        </p>
+      </blockquote>
+    </div></text><contained><Observation><id value="height"/><code><coding><system value="http://snomed.info/sct"/><code value="50373000"/><display value="Body height measure"/></coding></code><valueQuantity><value value="182"/><units value="centimeter"/><system value="http://snomed.info/sct"/><code value="258672001"/></valueQuantity><status value="final"/><!--   The observation is complete   --><reliability value="ok"/></Observation></contained><contained><Observation><!--   No reliability concerns   --><id value="weight"/><code><coding><system value="http://snomed.info/sct"/><code value="27113001"/><display value="Body weight"/></coding></code><valueQuantity><value value="103.7"/><units value="kilogram"/><system value="http://snomed.info/sct"/><code value="258683005"/></valueQuantity><status value="final"/><!--   The observation is complete   --><reliability value="ok"/></Observation></contained><!--   No reliability concerns   --><code><!--   Kind of observation = BMI   --><coding><system value="http://snomed.info/sct"/><code value="60621009"/><display value="Body mass index"/></coding><coding><system value="http://loinc.org"/><code value="39156-5"/><display value="Body mass index (BMI) [Ratio]"/></coding><text value="BMI"/></code><valueQuantity><!--   BMI=31,31   --><value value="31.31"/></valueQuantity><interpretation><!--   BMI of 31,31 is high   --><coding><system value="http://snomed.info/sct"/><code value="75540009"/><display value="High"/></coding><coding><system value="http://hl7.org/fhir/v2/0078"/><code value="H"/></coding></interpretation><issued value="2013-04-04T13:27:00+01:00"/><!--   BMI was measured on this April fourth   --><status value="final"/><!--   The observation is complete   --><reliability value="ok"/><!--   No reliability concerns   --><bodySiteCodeableConcept><!--   BMI applies to whole body   --><coding><system value="http://snomed.info/sct"/><code value="38266002"/><display value="Entire body as a whole"/></coding></bodySiteCodeableConcept><method><!--   BMI method is measurement as an action   --><coding><system value="http://snomed.info/sct"/><code value="122869004"/><display value="Measurement procedure"/></coding></method><!--   No identifier could be provided to this observation   --><subject><!--   It entails Roel's BMI   --><reference value="Patient/f201"/><display value="Roel"/></subject><performer><reference value="Practitioner/f201"/></performer><referenceRange><!--   BMI<20 indicates low BMI   --><high><value value="20"/></high><meaning><coding><system value="http://snomed.info/sct"/><code value="248342006"/><display value="Underweight"/></coding></meaning></referenceRange><referenceRange><!--   20<BMI<25 indicates normal BMI   --><low><value value="20"/></low><high><value value="25"/></high><meaning><coding><system value="http://snomed.info/sct"/><code value="43664005"/><display value="Normal weight"/></coding></meaning></referenceRange><referenceRange><!--   25<BMI<30 indicates overweight   --><low><value value="25"/></low><high><value value="30"/></high><meaning><coding><system value="http://snomed.info/sct"/><code value="238131007"/><display value="Overweight"/></coding></meaning></referenceRange><referenceRange><!--   30<BMI<40 indicates obesity   --><low><value value="30"/></low><high><value value="40"/></high><meaning><coding><system value="http://snomed.info/sct"/><code value="414915002"/><display value="Obese"/></coding></meaning></referenceRange><referenceRange><!--   BMI>40 indicates severe obesity   --><low><value value="40"/></low><meaning><coding><system value="http://snomed.info/sct"/><code value="238136002"/><display value="Morbid obesity"/></coding></meaning></referenceRange><related><type value="derived-from"/><target><reference value="#height"/></target></related><related><type value="derived-from"/><target><reference value="#weight"/></target></related></Observation>

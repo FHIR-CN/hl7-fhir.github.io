@@ -1,0 +1,61 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Composition-document",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Generate a Document</h2><p>OPERATION: Generate a Document</p><div><p>A client can ask a server to generate a fully bundled document from a composition resource.\nThe server takes the composition resource, locates all the referenced resources and other\nadditional resources as configured or requested and either returns a full document bundle,\nor returns an error. Note that since this is a search operation, the document bundle is\nwrapped inside the search bundle.</p>\n<p>If some of the resources are located on other servers, it is at the discretion of the\nserver whether to retrieve them or return an error. If the correct version of the document\nthat would be generated already exists, then the server can return the existing one.</p>\n</div><p>URL: [base]/Composition/$Generate a Document</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>persist</td><td>0..1</td><td>boolean</td><td><div><p>Whether to store the document at the document end-point (/Document) or not once it is generated. Value = true or false (default is for the server to decide)</p>\n</div></td></tr><tr><td>IN</td><td>cert</td><td>0..1</td><td>string</td><td><div><p>Certificate URL to use to sign the document with. The certificate should be associated with one of the attestors</p>\n</div></td></tr><tr><td>IN</td><td>pword</td><td>0..1</td><td>string</td><td><div><p>Password for private key if certificate requires one and the server doesn't know it by some other means. Putting the password in the URL has obvious security implications to consider. An alternative is for the client to sign the document</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Composition-document",
+  "name": "Generate a Document",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A client can ask a server to generate a fully bundled document from a composition resource.\nThe server takes the composition resource, locates all the referenced resources and other\nadditional resources as configured or requested and either returns a full document bundle,\nor returns an error. Note that since this is a search operation, the document bundle is \nwrapped inside the search bundle.\n\nIf some of the resources are located on other servers, it is at the discretion of the \nserver whether to retrieve them or return an error. If the correct version of the document \nthat would be generated already exists, then the server can return the existing one.",
+  "status": "draft",
+  "date": "2015-03-23T23:56:59+00:00",
+  "kind": "operation",
+  "code": "document",
+  "system": false,
+  "type": [
+    "Composition"
+  ],
+  "instance": false,
+  "parameter": [
+    {
+      "name": "persist",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Whether to store the document at the document end-point (/Document) or not once it is generated. Value = true or false (default is for the server to decide)",
+      "type": "boolean"
+    },
+    {
+      "name": "cert",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Certificate URL to use to sign the document with. The certificate should be associated with one of the attestors",
+      "type": "string"
+    },
+    {
+      "name": "pword",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Password for private key if certificate requires one and the server doesn't know it by some other means. Putting the password in the URL has obvious security implications to consider. An alternative is for the client to sign the document",
+      "type": "string"
+    }
+  ]
+}

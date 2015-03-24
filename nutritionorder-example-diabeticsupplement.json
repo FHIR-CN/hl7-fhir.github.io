@@ -1,0 +1,90 @@
+{
+  "resourceType": "NutritionOrder",
+  "id": "diabeticsupplement",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t\t\n      <h3>Nutrition Order Diabetic Supplement Canonical Example</h3>\n\t\t\t\n      <ul>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Patient: </b>Peter Chalmers\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Orderer: </b>Dr Adam Careful\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Date: </b>2014-09-17\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Known Allergies: </b>Cashew Nuts\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Food Preferences: </b>Kosher\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Supplement(Brand): </b>Adult diabetic formula (Glucerna)\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Schedule: </b>3pm and HS\n        </li>\n\t\t\t\n      </ul>\n\t\t\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example",
+    "display": "Peter Chalmers"
+  },
+  "orderer": {
+    "reference": "Practitioner/example",
+    "display": "Dr Adam Careful"
+  },
+  "identifier": [
+    {
+      "system": "http://goodhealthhospital.org/nutrition-orders",
+      "value": "123"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/example",
+    "display": "Inpatient"
+  },
+  "dateTime": "2014-09-17",
+  "status": "active",
+  "allergyIntolerance": [
+    {
+      "reference": "AllergyIntolerance/example",
+      "display": "Cashew Nuts"
+    }
+  ],
+  "foodPreferenceModifier": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/diet",
+          "code": "kosher"
+        }
+      ]
+    }
+  ],
+  "excludeFoodModifier": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "20140730",
+          "code": "227493005",
+          "display": "Cashew Nut"
+        }
+      ]
+    }
+  ],
+  "supplement": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "443051000124104",
+            "display": "Adult diabetes specialty formula"
+          },
+          {
+            "system": "http://goodhealthhospital.org/supplement-type-codes",
+            "code": "1010",
+            "display": "Adult diabetic formula"
+          }
+        ],
+        "text": "Adult diabetic formula"
+      },
+      "productName": "Glucerna",
+      "scheduled": {
+        "repeat": {
+          "bounds": {
+            "start": "2015-02-10"
+          },
+          "period": 1,
+          "periodUnits": "h",
+          "when": "HS"
+        }
+      },
+      "quantity": {
+        "value": 1,
+        "units": "8 oz bottle"
+      }
+    }
+  ]
+}

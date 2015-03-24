@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-genetic-patient",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-genetic-patient",
+  "name": "genetic-patient",
+  "base": "Observation",
+  "type": "string",
+  "description": "Genetics laboratory patient identifier, if different"
+}

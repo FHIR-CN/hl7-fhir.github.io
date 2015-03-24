@@ -1,0 +1,103 @@
+{
+  "resourceType": "Practitioner",
+  "id": "f005",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>identifier</b>: 118265112 (OFFICIAL), 191REW8WE916 (USUAL)\n      </p>\n      <p>\n        <b>name</b>: Langeveld Anne (OFFICIAL)\n      </p>\n      <p>\n        <b>telecom</b>: ph: 0205563847(WORK), a.langeveld@bmc.nl(WORK), fax: 0205668916(WORK)\n      </p>\n      <p>\n        <b>address</b>: Galapagosweg 9 Amsterdam 1105 AZ NLD (WORK)\n      </p>\n      <p>\n        <b>gender</b>: FEMALE\n      </p>\n      <p>\n        <b>birthDate</b>: Mar 11, 1959\n      </p>\n      <h3>PractitionerRoles</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>ManagingOrganization</b>\n          </td>\n          <td>\n            <b>Role</b>\n          </td>\n          <td>\n            <b>Specialty</b>\n          </td>\n          <td>\n            <b>Period</b>\n          </td>\n          <td>\n            <b>Location</b>\n          </td>\n          <td>\n            <b>HealthcareService</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>\n            <a href=\"Organization/f001\">BMC. Generated Summary: 91654 (OFFICIAL), 17-0112278 (USUAL); name: Burgers University Medical Center; \n              <span title=\"Codes: {urn:oid:2.16.840.1.113883.2.4.15.1060 V6}, {http://hl7.org/fhir/organization-type prov}\">University Medical Hospital</span>; ph: 022-655 2300(WORK)\n            </a>\n          </td>\n          <td>Care role \n            <span style=\"background: LightGoldenRodYellow \">(Details : {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.000' = '01.000', given as 'Arts'})</span>\n          </td>\n          <td>specialisation \n            <span style=\"background: LightGoldenRodYellow \">(Details : {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.018' = '01.018', given as 'Keel- neus- en oorarts'})</span>\n          </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n        </tr>\n      </table>\n      <p>\n        <b>communication</b>: France \n        <span style=\"background: LightGoldenRodYellow \">(Details : {urn:oid:2.16.840.1.113883.6.121 code 'fr' = 'fr', given as 'France'})</span>\n      </p>\n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:oid:2.16.528.1.1007.3.1",
+      "value": "118265112"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+      "value": "191REW8WE916"
+    }
+  ],
+  "name": {
+    "use": "official",
+    "family": [
+      "Anne"
+    ],
+    "given": [
+      "Langeveld"
+    ],
+    "suffix": [
+      "MD"
+    ]
+  },
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0205563847",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "a.langeveld@bmc.nl",
+      "use": "work"
+    },
+    {
+      "system": "fax",
+      "value": "0205668916",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "Galapagosweg 9"
+      ],
+      "city": "Amsterdam",
+      "postalCode": "1105 AZ",
+      "country": "NLD"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1959-03-11",
+  "practitionerRole": [
+    {
+      "managingOrganization": {
+        "reference": "Organization/f001",
+        "display": "BMC"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.15.111",
+            "code": "01.000",
+            "display": "Arts"
+          }
+        ],
+        "text": "Care role"
+      },
+      "specialty": [
+        {
+          "coding": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.2.4.15.111",
+              "code": "01.018",
+              "display": "Keel- neus- en oorarts"
+            }
+          ],
+          "text": "specialisation"
+        }
+      ]
+    }
+  ],
+  "communication": [
+    {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.6.121",
+          "code": "fr",
+          "display": "France"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "procedure-status",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 4 concepts</p><h2>ProcedureStatus</h2><p>A code specifying the state of the procedure record</p><p>This value set defines its own terms in the system http://hl7.org/fhir/procedure-status</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b><a href=\"v3/ActStatus/index.html\">v3 Map (ActStatus)</a></b></td></tr><tr><td>in-progress<a name=\"in-progress\"> </a></td><td>In Progress</td><td>The procedure is still occurring.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#active\">active</a></td></tr><tr><td>aborted<a name=\"aborted\"> </a></td><td>Aborted</td><td>The procedure was terminated without completing successfully.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#aborted\">aborted</a></td></tr><tr><td>completed<a name=\"completed\"> </a></td><td>Completed</td><td>All actions involved in the procedure have taken place.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#completed\">completed</a></td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered In Error</td><td>The statement was entered in error and Is not valid.</td><td><span title=\"equal\">=</span><a href=\"v3/ActStatus/index.html#nullified\">nullified</a></td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1470"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/procedure-status",
+  "version": "0.4.0",
+  "name": "ProcedureStatus",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A code specifying the state of the procedure record",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1470"
+      }
+    ],
+    "system": "http://hl7.org/fhir/procedure-status",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "in-progress",
+        "display": "In Progress",
+        "definition": "The procedure is still occurring."
+      },
+      {
+        "code": "aborted",
+        "display": "Aborted",
+        "definition": "The procedure was terminated without completing successfully."
+      },
+      {
+        "code": "completed",
+        "display": "Completed",
+        "definition": "All actions involved in the procedure have taken place."
+      },
+      {
+        "code": "entered-in-error",
+        "display": "Entered In Error",
+        "definition": "The statement was entered in error and Is not valid."
+      }
+    ]
+  }
+}

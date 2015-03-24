@@ -1,0 +1,113 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-provenance-agent-role",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div><p>This value set contains 6 concepts</p><h2>ProvenanceParticipantRole</h2><p>The role that a provenance participant played</p><p>This value set defines its own terms in the system http://hl7.org/fhir/provenance-participant-role</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td><td><b>Comments</b></td></tr><tr><td>enterer<a name=\"enterer\"> </a></td><td>A person entering the data into the originating system</td><td>The data entry person is collected optionally for internal quality control purposes. This includes the transcriptionist for dictated text</td></tr><tr><td>performer<a name=\"performer\"> </a></td><td>A person, animal, organization or device that who actually and principally carries out the activity</td><td>Device should only be assigned as a performer in circumstances where the device is performing independent of human intervention. Need not be the principal responsible actor</td></tr><tr><td>author<a name=\"author\"> </a></td><td>A party that originates the resource and therefore has responsibility for the information given in the resource and ownership of this resource</td><td>Every resource should have an author</td></tr><tr><td>verifier<a name=\"verifier\"> </a></td><td>A person who verifies the correctness and appropriateness of activity</td><td>This is often used in association with the institution that hosts an activity</td></tr><tr><td>attester<a name=\"attester\"> </a></td><td>A verifier who attests to the accuracy of the resource</td><td/></tr><tr><td>informant<a name=\"informant\"> </a></td><td>A person who reported information that contributed to the resource</td><td>e.g., a next of kin who answers questions about the patient's history</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.269"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/provenance-agent-role",
+  "version": "0.4.0",
+  "name": "ProvenanceParticipantRole",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The role that a provenance participant played",
+  "status": "draft",
+  "experimental": true,
+  "extensible": true,
+  "date": "2023-05-12",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:null"
+      }
+    ],
+    "system": "http://hl7.org/fhir/provenance-participant-role",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-comments",
+            "valueString": "The data entry person is collected optionally for internal quality control purposes. This includes the transcriptionist for dictated text"
+          }
+        ],
+        "code": "enterer",
+        "definition": "A person entering the data into the originating system"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-comments",
+            "valueString": "Device should only be assigned as a performer in circumstances where the device is performing independent of human intervention. Need not be the principal responsible actor"
+          }
+        ],
+        "code": "performer",
+        "definition": "A person, animal, organization or device that who actually and principally carries out the activity"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-comments",
+            "valueString": "Every resource should have an author"
+          }
+        ],
+        "code": "author",
+        "definition": "A party that originates the resource and therefore has responsibility for the information given in the resource and ownership of this resource"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-comments",
+            "valueString": "This is often used in association with the institution that hosts an activity"
+          }
+        ],
+        "code": "verifier",
+        "definition": "A person who verifies the correctness and appropriateness of activity"
+      },
+      {
+        "code": "attester",
+        "definition": "A verifier who attests to the accuracy of the resource"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-comments",
+            "valueString": "e.g., a next of kin who answers questions about the patient's history"
+          }
+        ],
+        "code": "informant",
+        "definition": "A person who reported information that contributed to the resource"
+      }
+    ]
+  }
+}

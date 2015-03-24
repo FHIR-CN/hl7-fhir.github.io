@@ -1,0 +1,42 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "medication",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>recordedDate</b>: Mar 1, 2010\n      </p>\n      <p>\n        <b>recorder</b>: \n        <a href=\"Practitioner/13\">Practitioner/13</a>\n      </p>\n      <p>\n        <b>patient</b>: \n        <a href=\"Patient/example\">Generated Summary: Extensions: todo; MRN = 12345 (USUAL); Peter James Chalmers (OFFICIAL), Jim ; -unknown-(HOME), ph: (03) 5555 6473(WORK); MALE; birthDate: Dec 25, 1974; active</a>\n      </p>\n      <p>\n        <b>substance</b>: ALLERGENIC EXTRACT, PENICILLIN \n        <span style=\"background: LightGoldenRodYellow \">(Details : {http://www.nlm.nih.gov/research/umls/rxnorm code '314422' = '314422', given as 'ALLERGENIC EXTRACT, PENICILLIN'})</span>\n      </p>\n      <p>\n        <b>status</b>: UNCONFIRMED\n      </p>\n      <p>\n        <b>criticality</b>: HIGH\n      </p>\n      <p>\n        <b>category</b>: MEDICATION\n      </p>\n      <h3>Events</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Substance</b>\n          </td>\n          <td>\n            <b>Certainty</b>\n          </td>\n          <td>\n            <b>Manifestation</b>\n          </td>\n          <td>\n            <b>Description</b>\n          </td>\n          <td>\n            <b>Onset</b>\n          </td>\n          <td>\n            <b>Duration</b>\n          </td>\n          <td>\n            <b>Severity</b>\n          </td>\n          <td>\n            <b>ExposureRoute</b>\n          </td>\n          <td>\n            <b>Comment</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td>Hives \n            <span style=\"background: LightGoldenRodYellow \">(Details : {SNOMED CT code '247472004' = 'Weal (disorder)', given as 'Hives'})</span>\n          </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n          <td> </td>\n        </tr>\n      </table>\n    </div>"
+  },
+  "recordedDate": "2010-03-01",
+  "recorder": {
+    "reference": "Practitioner/13"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "substance": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "314422",
+        "display": "ALLERGENIC EXTRACT, PENICILLIN"
+      }
+    ]
+  },
+  "status": "unconfirmed",
+  "criticality": "high",
+  "category": "medication",
+  "event": [
+    {
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "247472004",
+              "display": "Hives"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hspc-Ordinal-Abnormal-Union",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set does not contain a fixed number of concepts</p><h2>Ordinal Assessment or Interpretation</h2><p>HL7 V3:ObservationInterpretation OID: 2.16.840.1.113883.5.83 + SNOMED CT SNOMED CT concepts from the Degree findings (qualifier value)272520006, Presence findings (qualifier value)260411009, Absence findings (qualifier value)272519000</p><p><b>Copyright Statement:</b> IHC</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include all codes defined in <a href=\"v3/ObservationInterpretation/index.html\">http://hl7.org/fhir/v3/ObservationInterpretation</a></li><li>Include codes from http://snomed.info/sct where concept  is-a  272520006</li><li>Include codes from http://snomed.info/sct where concept  is-a  260411009</li><li>Include codes from http://snomed.info/sct where concept  is-a  272519000</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1284"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/hspc-Ordinal-Abnormal-Union",
+  "version": "0.01",
+  "name": "Ordinal Assessment or Interpretation",
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.clinicaleleement.com"
+        }
+      ]
+    }
+  ],
+  "description": "HL7 V3:ObservationInterpretation OID: 2.16.840.1.113883.5.83 + SNOMED CT SNOMED CT concepts from the Degree findings (qualifier value)272520006, Presence findings (qualifier value)260411009, Absence findings (qualifier value)272519000",
+  "copyright": "IHC",
+  "status": "draft",
+  "experimental": true,
+  "date": "2014-06-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/v3/ObservationInterpretation"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "272520006"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "260411009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "272519000"
+          }
+        ]
+      }
+    ]
+  }
+}

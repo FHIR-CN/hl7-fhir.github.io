@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="transaction-operation"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>TransactionOperation</h2>
+      <p>The operation associated with an entry in either a update history, or a transaction/ transaction response</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/transaction-operation</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>noop
+            <a name="noop"> </a>
+          </td>
+          <td>no operation</td>
+          <td>No Operation occurred - only valid in a transaction response.</td>
+        </tr>
+      </table>
+      <p>In addition, this value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include these codes as defined in http://hl7.org/fhir/restful-interaction
+          <table>
+            <tr>
+              <td>
+                <b>Code</b>
+              </td>
+              <td>
+                <b>Display</b>
+              </td>
+            </tr>
+            <tr>
+              <td>create</td>
+              <td>Create</td>
+              <td>Create a new resource with a server assigned id</td>
+            </tr>
+            <tr>
+              <td>update</td>
+              <td>Update</td>
+              <td>Update an existing resource by its id (or create it if it is new)</td>
+            </tr>
+            <tr>
+              <td>delete</td>
+              <td>Delete</td>
+              <td>Delete a resource</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.954"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/transaction-operation"/>
+  <version value="0.4.0"/>
+  <name value="TransactionOperation"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="The operation associated with an entry in either a update history, or a transaction/ transaction response"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.954"/>
+    </extension>
+    <system value="http://hl7.org/fhir/transaction-operation"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="noop"/>
+      <display value="no operation"/>
+      <definition value="No Operation occurred - only valid in a transaction response."/>
+    </concept>
+  </define>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/restful-interaction"/>
+      <concept>
+        <code value="create"/>
+        <display value="Create"/>
+      </concept>
+      <concept>
+        <code value="update"/>
+        <display value="Update"/>
+      </concept>
+      <concept>
+        <code value="delete"/>
+        <display value="Delete"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

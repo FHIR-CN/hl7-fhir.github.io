@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="valueset-extensions-ValueSet-author"/>
+  <url value="http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-author"/>
+  <name value="author"/>
+  <base value="ValueSet"/>
+  <type value="string"/>
+</SearchParameter>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><Observation xmlns="http://hl7.org/fhir"><id value="f205"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>code</b>: Glomerular filtration rate/1.73 sq M.predicted 
+        <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;69405-9&#39; = &#39;Glomerular filtration rate/1.73 sq M.predicted&#39;, given as &#39;Glomerular filtration rate/1.73 sq M.predicted&#39;})</span>
+      </p>
+      <p>
+        <b>value</b>: 54 mL/min/1.73m2
+        <span style="background: LightGoldenRodYellow "> (Details: http://unitsofmeasure.org code mL/min/{1.73_m2} = &#39;mL/min/{1.73_m2}&#39;)</span>
+      </p>
+      <p>
+        <b>interpretation</b>: low 
+        <span style="background: LightGoldenRodYellow ">(Details : {http://hl7.org/fhir/v2/0078 code &#39;L&#39; = &#39;Below low normal&#39;, given as &#39;low&#39;})</span>
+      </p>
+      <p>
+        <b>issued</b>: Apr 4, 2013 1:34:00 PM
+      </p>
+      <p>
+        <b>status</b>: FINAL
+      </p>
+      <p>
+        <b>reliability</b>: OK
+      </p>
+      <p>
+        <b>method</b>: Calculated laboratory test method 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;117337005&#39; = &#39;117337005&#39;, given as &#39;Calculated laboratory test method&#39;})</span>
+      </p>
+      <p>
+        <b>identifier</b>: eGFR value of Roel on April 2013 - 03720 = 1304-03720-eGFR
+      </p>
+      <p>
+        <b>subject</b>: 
+        <a href="Patient/f201">Roel. Generated Summary: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL); Roel(OFFICIAL); ph: +31612345678(MOBILE), ph: +31201234567(HOME); MALE; birthDate: Mar 13, 1960; 
+          <span title="Codes: {http://snomed.info/sct 36629006}, {http://hl7.org/fhir/v3/MaritalStatus M}">Legally married</span>; active
+        </a>
+      </p>
+      <p>
+        <b>performer</b>: 
+        <a href="Practitioner/f202">Luigi Maas. Generated Summary: UZI-nummer = 12345678902 (OFFICIAL), BIG-nummer = 12345678902 (OFFICIAL); Luigi Maas(OFFICIAL); ph: +31715269111(WORK); MALE; birthDate: Jun 12, 1960</a>
+      </p>
+      <h3>ReferenceRanges</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Low</b>
+          </td>
+          <td>
+            <b>High</b>
+          </td>
+          <td>
+            <b>Meaning</b>
+          </td>
+          <td>
+            <b>Age</b>
+          </td>
+          <td>
+            <b>Text</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>60 mL/min/1.73m2
+            <span style="background: LightGoldenRodYellow "> (Details: http://unitsofmeasure.org code mL/min/{1.73_m2} = &#39;mL/min/{1.73_m2}&#39;)</span>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </table>
+    </div></text><code><!--    Kind of observation = eGFR    --><coding><system value="http://loinc.org"/><code value="69405-9"/><display value="Glomerular filtration rate/1.73 sq M.predicted"/></coding></code><valueQuantity><!--    eGFR=54mL/min/1.73m2    --><value value="54"/><units value="mL/min/1.73m2"/><system value="http://unitsofmeasure.org"/><code value="mL/min/{1.73_m2}"/></valueQuantity><interpretation><coding><system value="http://hl7.org/fhir/v2/0078"/><code value="L"/><display value="low"/></coding></interpretation><issued value="2013-04-04T14:34:00+01:00"/><!--    eGFR was measured on April fourth    --><status value="final"/><!--    The observation is complete    --><reliability value="ok"/><!--    No reliability concerns    --><method><!--    Method was serum measurement    --><coding><system value="http://snomed.info/id"/><code value="117337005"/><display value="Calculated laboratory test method"/></coding></method><identifier><label value="eGFR value of Roel on April 2013 - 03720"/><system value="https://intranet.aumc.nl/labvalues"/><!--    Does not exist    --><value value="1304-03720-eGFR"/></identifier><subject><!--    It entails Roel's Glomerular rate    --><reference value="Patient/f201"/><display value="Roel"/></subject><performer><!--    by Luigi Maas    --><reference value="Practitioner/f202"/><display value="Luigi Maas"/></performer><referenceRange><low><value value="60"/><units value="mL/min/1.73m2"/><system value="http://unitsofmeasure.org"/><code value="mL/min/{1.73_m2}"/></low></referenceRange></Observation>

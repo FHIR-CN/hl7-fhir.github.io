@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "id": "transaction-processing-mode",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 3 concepts</p><h2>TransactionProcessingMode</h2><p>Defines how a match URL should be used when processing a transaction</p><p>This value set defines its own terms in the system http://hl7.org/fhir/transaction-processing-mode</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>ignore<a name=\"ignore\"> </a></td><td>ignore</td><td>If a matching resource is found, then ignore the resource and do not process it as part of the transaction (and return the matching resource information in the transaction response).</td></tr><tr><td>update<a name=\"update\"> </a></td><td>update</td><td>If a matching resource is found, then update it with this resource, otherwise create a new one.</td></tr><tr><td>delete<a name=\"delete\"> </a></td><td>delete</td><td>If a resource matching the information provided is found, delete it. If no matching resource is found, the transaction fails.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.904"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/transaction-processing-mode",
+  "version": "0.4.0",
+  "name": "TransactionProcessingMode",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Defines how a match URL should be used when processing a transaction",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.904"
+      }
+    ],
+    "system": "http://hl7.org/fhir/transaction-processing-mode",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "ignore",
+        "display": "ignore",
+        "definition": "If a matching resource is found, then ignore the resource and do not process it as part of the transaction (and return the matching resource information in the transaction response)."
+      },
+      {
+        "code": "update",
+        "display": "update",
+        "definition": "If a matching resource is found, then update it with this resource, otherwise create a new one."
+      },
+      {
+        "code": "delete",
+        "display": "delete",
+        "definition": "If a resource matching the information provided is found, delete it. If no matching resource is found, the transaction fails."
+      }
+    ]
+  }
+}

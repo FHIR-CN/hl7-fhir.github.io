@@ -1,0 +1,246 @@
+{
+  "resourceType": "Bundle",
+  "id": "xds",
+  "meta": {
+    "lastUpdated": "2013-07-01T13:11:33Z"
+  },
+  "type": "transaction",
+  "base": "cid:123@healthintersections.com.au",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "a1",
+        "meta": {
+          "lastUpdated": "2013-07-01T13:11:33Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>\n            \n            <a href=\"http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32\">Document: urn:oid:129.6.58.92.88336</a>undefined, created 24/12/2005\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>masterIdentifier</b>: urn:oid:129.6.58.92.88336\n            </p>\n            <p>\n              <b>subject</b>: \n              <a href=\"cid:123@healthintersections.com.au/Patient/a2\">cid:123@healthintersections.com.au/Patient/a2</a>\n            </p>\n            <p>\n              <b>type</b>: History and Physical \n              <span style=\"background: LightGoldenRodYellow \">(Details : {http://ihe.net/connectathon/classCodes code 'History and Physical' = 'History and Physical', given as 'History and Physical'})</span>\n            </p>\n            <p>\n              <b>format</b>: \n              <a href=\"urn:oid:1.3.6.1.4.1.19376.1.5.3.1.1.16.1.4\">urn:oid:1.3.6.1.4.1.19376.1.5.3.1.1.16.1.4</a>\n            </p>\n            <p>\n              <b>author</b>: \n              <a href=\"cid:123@healthintersections.com.au/Practitioner/a3\">cid:123@healthintersections.com.au/Practitioner/a3</a>, \n              <a href=\"cid:123@healthintersections.com.au/Practitioner/a4\">cid:123@healthintersections.com.au/Practitioner/a4</a>\n            </p>\n            <p>\n              <b>created</b>: Dec 24, 2005\n            </p>\n            <p>\n              <b>indexed</b>: Jul 1, 2013 1:11:33 PM\n            </p>\n            <p>\n              <b>status</b>: CURRENT\n            </p>\n            <p>\n              <b>description</b>: Physical\n            </p>\n            <p>\n              <b>content</b>: \n            </p>\n            <blockquote>\n              <p>\n                <b>context</b>\n              </p>\n              <p>\n                <b>period</b>: Dec 22, 2004 10:00:00 PM --&gt; Dec 22, 2004 10:01:00 PM\n              </p>\n              <p>\n                <b>practiceSetting</b>: General Medicine \n                <span style=\"background: LightGoldenRodYellow \">(Details : {http://ihe.net/connectathon/practiceSettingCodes code 'General Medicine' = 'General Medicine', given as 'General Medicine'})</span>\n              </p>\n            </blockquote>\n          </div>"
+        },
+        "masterIdentifier": {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:oid:129.6.58.92.88336"
+        },
+        "subject": {
+          "reference": "cid:123@healthintersections.com.au/Patient/a2"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://ihe.net/connectathon/classCodes",
+              "code": "History and Physical",
+              "display": "History and Physical"
+            }
+          ]
+        },
+        "format": [
+          "urn:oid:1.3.6.1.4.1.19376.1.5.3.1.1.16.1.4"
+        ],
+        "author": [
+          {
+            "reference": "cid:123@healthintersections.com.au/Practitioner/a3"
+          },
+          {
+            "reference": "cid:123@healthintersections.com.au/Practitioner/a4"
+          }
+        ],
+        "created": "2005-12-24",
+        "indexed": "2013-07-01T23:11:33+10:00",
+        "status": "current",
+        "description": "Physical",
+        "content": [
+          {
+            "contentType": "text/plain",
+            "language": "en-us",
+            "url": "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"
+          }
+        ],
+        "context": {
+          "period": {
+            "start": "2004-12-23T08:00:00+10:00",
+            "end": "2004-12-23T08:01:00+10:00"
+          },
+          "practiceSetting": {
+            "coding": [
+              {
+                "system": "http://ihe.net/connectathon/practiceSettingCodes",
+                "code": "General Medicine",
+                "display": "General Medicine"
+              }
+            ]
+          }
+        }
+      },
+      "transaction": {
+        "method": "POST",
+        "url": "DocumentReference"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "a2",
+        "meta": {
+          "lastUpdated": "2013-07-01T13:11:33Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Person DOE, John, M, dob: 27/05/1956\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>identifier</b>: MRN (USUAL)\n            </p>\n            <p>\n              <b>name</b>: DOE, John\n            </p>\n            <p>\n              <b>birthDate</b>: May 27, 1956\n            </p>\n          </div>"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "value": "MRN"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "text": "DOE, John",
+            "family": [
+              "Doe"
+            ],
+            "given": [
+              "John"
+            ]
+          }
+        ],
+        "birthDate": "1956-05-27"
+      },
+      "transaction": {
+        "method": "POST",
+        "url": "Patient",
+        "ifNoneExist": "Patient?identifier=http://acme.org/xds/patients!89765a87b"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "a3",
+        "meta": {
+          "lastUpdated": "2013-07-01T13:11:33Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Author Gerald Smitty @ Cleveland Clinic\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>identifier</b>: usual = ??\n            </p>\n            <p>\n              <b>name</b>: Gerald Smitty \n            </p>\n            <blockquote>\n              <p>\n                <b>practitionerRole</b>\n              </p>\n              <p>\n                <b>managingOrganization</b>: Cleveland Clinic\n              </p>\n              <p>\n                <b>role</b>: Attending \n                <span style=\"background: LightGoldenRodYellow \">(Details : {[not stated] code 'Attending' = 'Attending)</span>\n              </p>\n              <p>\n                <b>specialty</b>: Orthopedic \n                <span style=\"background: LightGoldenRodYellow \">(Details : {[not stated] code 'Orthopedic' = 'Orthopedic)</span>\n              </p>\n            </blockquote>\n            <blockquote>\n              <p>\n                <b>practitionerRole</b>\n              </p>\n              <p>\n                <b>managingOrganization</b>: Parma Community\n              </p>\n            </blockquote>\n          </div>"
+        },
+        "identifier": [
+          {
+            "label": "usual"
+          }
+        ],
+        "name": {
+          "use": "usual",
+          "family": [
+            "Smitty"
+          ],
+          "given": [
+            "Gerald"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "managingOrganization": {
+              "display": "Cleveland Clinic"
+            },
+            "role": {
+              "coding": [
+                {
+                  "code": "Attending"
+                }
+              ]
+            },
+            "specialty": [
+              {
+                "coding": [
+                  {
+                    "code": "Orthopedic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "managingOrganization": {
+              "display": "Parma Community"
+            }
+          }
+        ]
+      },
+      "transaction": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "a4",
+        "meta": {
+          "lastUpdated": "2013-07-01T13:11:33Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Author Person @ Cleveland Clinic\n            <hr/>\n            <p>\n              <b>Generated Narrative with Details</b>\n            </p>\n            <p>\n              <b>text</b>: \n            </p>\n            <p>\n              <b>name</b>: Sherry Dopplemeyer \n            </p>\n            <blockquote>\n              <p>\n                <b>practitionerRole</b>\n              </p>\n              <p>\n                <b>managingOrganization</b>: Cleveland Clinic\n              </p>\n              <p>\n                <b>role</b>: Primary Surgon \n                <span style=\"background: LightGoldenRodYellow \">(Details : {[not stated] code 'Primary Surgon' = 'Primary Surgon)</span>\n              </p>\n              <p>\n                <b>specialty</b>: Orthopedic \n                <span style=\"background: LightGoldenRodYellow \">(Details : {[not stated] code 'Orthopedic' = 'Orthopedic)</span>\n              </p>\n            </blockquote>\n            <blockquote>\n              <p>\n                <b>practitionerRole</b>\n              </p>\n              <p>\n                <b>managingOrganization</b>: Berea Community\n              </p>\n            </blockquote>\n          </div>"
+        },
+        "name": {
+          "use": "usual",
+          "family": [
+            "Dopplemeyer"
+          ],
+          "given": [
+            "Sherry"
+          ]
+        },
+        "practitionerRole": [
+          {
+            "managingOrganization": {
+              "display": "Cleveland Clinic"
+            },
+            "role": {
+              "coding": [
+                {
+                  "code": "Primary Surgon"
+                }
+              ]
+            },
+            "specialty": [
+              {
+                "coding": [
+                  {
+                    "code": "Orthopedic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "managingOrganization": {
+              "display": "Berea Community"
+            }
+          }
+        ]
+      },
+      "transaction": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Binary",
+        "id": "1e404af3-077f-4bee-b7a6-a9be97e1ce32",
+        "meta": {
+          "lastUpdated": "2013-07-01T13:11:33Z"
+        },
+        "contentType": "text/plain",
+        "content": "YXNkYXNkYXNkYXNkYXNk"
+      },
+      "transaction": {
+        "method": "POST",
+        "url": "Binary"
+      }
+    }
+  ]
+}

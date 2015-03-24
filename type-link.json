@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "type-link",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 5 concepts</p><h2>ClaimType</h2><p>The type or discipline-style of the claim</p><p>This value set defines its own terms in the system http://hl7.org/fhir/type-link</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>institutional<a name=\"institutional\"> </a></td><td>Institutional</td><td>A claim for Institution based, typically in-patient, goods and services.</td></tr><tr><td>oral<a name=\"oral\"> </a></td><td>Oral Health</td><td>A claim for Oral Health (Dentist, Denturist, Hygienist) goods and services.</td></tr><tr><td>pharmacy<a name=\"pharmacy\"> </a></td><td>Pharmacy</td><td>A claim for Pharmacy based goods and services.</td></tr><tr><td>professional<a name=\"professional\"> </a></td><td>Professional</td><td>A claim for Professional, typically out-patient, goods and services.</td></tr><tr><td>vision<a name=\"vision\"> </a></td><td>Vision</td><td>A claim for Vision (Opthamologist, Optometrist and Optician) goods and services.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1730"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/type-link",
+  "version": "0.4.0",
+  "name": "ClaimType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The type or discipline-style of the claim",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1730"
+      }
+    ],
+    "system": "http://hl7.org/fhir/type-link",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "institutional",
+        "display": "Institutional",
+        "definition": "A claim for Institution based, typically in-patient, goods and services."
+      },
+      {
+        "code": "oral",
+        "display": "Oral Health",
+        "definition": "A claim for Oral Health (Dentist, Denturist, Hygienist) goods and services."
+      },
+      {
+        "code": "pharmacy",
+        "display": "Pharmacy",
+        "definition": "A claim for Pharmacy based goods and services."
+      },
+      {
+        "code": "professional",
+        "display": "Professional",
+        "definition": "A claim for Professional, typically out-patient, goods and services."
+      },
+      {
+        "code": "vision",
+        "display": "Vision",
+        "definition": "A claim for Vision (Opthamologist, Optometrist and Optician) goods and services."
+      }
+    ]
+  }
+}

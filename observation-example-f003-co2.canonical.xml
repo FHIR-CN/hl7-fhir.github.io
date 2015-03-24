@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><Observation xmlns="http://hl7.org/fhir"><id value="f003"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>code</b>: Carbon dioxide in blood 
+        <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;11557-6&#39; = &#39;Carbon dioxide [Partial pressure] in Blood&#39;, given as &#39;Carbon dioxide in blood&#39;})</span>
+      </p>
+      <p>
+        <b>value</b>: 6.2 kPa
+        <span style="background: LightGoldenRodYellow "> (Details: http://unitsofmeasure.org code kPa = &#39;kPa&#39;)</span>
+      </p>
+      <p>
+        <b>interpretation</b>: abnormal 
+        <span style="background: LightGoldenRodYellow ">(Details : {http://hl7.org/fhir/v2/0078 code &#39;A&#39; = &#39;Abnormal (applies to non-numeric results)&#39;, given as &#39;abnormal&#39;})</span>
+      </p>
+      <p>
+        <b>applies</b>: Apr 2, 2013 9:30:10 AM --&gt; Apr 5, 2013 9:30:10 AM
+      </p>
+      <p>
+        <b>issued</b>: Apr 3, 2013 2:30:10 PM
+      </p>
+      <p>
+        <b>status</b>: FINAL
+      </p>
+      <p>
+        <b>reliability</b>: OK
+      </p>
+      <p>
+        <b>bodySite</b>: Superficial forearm vein 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;308046002&#39; = &#39;308046002&#39;, given as &#39;Superficial forearm vein&#39;})</span>
+      </p>
+      <p>
+        <b>method</b>: Injection to forearm 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;120220003&#39; = &#39;120220003&#39;, given as &#39;Injection to forearm&#39;})</span>
+      </p>
+      <p>
+        <b>identifier</b>: 6325 (OFFICIAL)
+      </p>
+      <p>
+        <b>subject</b>: 
+        <a href="Patient/f001">P. van de Heuvel. Generated Summary: 738472983 (USUAL), ?? (USUAL); Pieter van de Heuvel ; ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME); MALE; birthDate: Nov 17, 1944; 
+          <span title="Codes: {http://hl7.org/fhir/v3/MaritalStatus M}">Getrouwd</span>; multipleBirth; active
+        </a>
+      </p>
+      <p>
+        <b>performer</b>: 
+        <a href="Practitioner/f005">A. Langeveld. Generated Summary: 118265112 (OFFICIAL), 191REW8WE916 (USUAL); Langeveld Anne (OFFICIAL); ph: 0205563847(WORK), a.langeveld@bmc.nl(WORK), fax: 0205668916(WORK); FEMALE; birthDate: Mar 11, 1959; 
+          <span title="Codes: {urn:oid:2.16.840.1.113883.6.121 fr}">France</span>
+        </a>
+      </p>
+      <h3>ReferenceRanges</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Low</b>
+          </td>
+          <td>
+            <b>High</b>
+          </td>
+          <td>
+            <b>Meaning</b>
+          </td>
+          <td>
+            <b>Age</b>
+          </td>
+          <td>
+            <b>Text</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>4.8 kPa
+            <span style="background: LightGoldenRodYellow "> (Details: http://unitsofmeasure.org code kPa = &#39;kPa&#39;)</span>
+          </td>
+          <td>6.0 kPa
+            <span style="background: LightGoldenRodYellow "> (Details: http://unitsofmeasure.org code kPa = &#39;kPa&#39;)</span>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </table>
+    </div></text><code><coding><system value="http://loinc.org"/><code value="11557-6"/><display value="Carbon dioxide in blood"/></coding></code><valueQuantity><value value="6.2"/><units value="kPa"/><system value="http://unitsofmeasure.org"/><code value="kPa"/></valueQuantity><interpretation><coding><system value="http://hl7.org/fhir/v2/0078"/><code value="A"/><display value="abnormal"/></coding></interpretation><appliesPeriod><start value="2013-04-02T10:30:10+01:00"/><end value="2013-04-05T10:30:10+01:00"/></appliesPeriod><issued value="2013-04-03T15:30:10+01:00"/><status value="final"/><!--     urn:oid:2.16.840.1.113883.4.642.1.7     --><reliability value="ok"/><!--     2.16.840.1.113883.4.642.1.118     --><bodySiteCodeableConcept><coding><system value="http://snomed.info/id"/><code value="308046002"/><display value="Superficial forearm vein"/></coding></bodySiteCodeableConcept><method><coding><system value="http://snomed.info/id"/><code value="120220003"/><display value="Injection to forearm"/></coding></method><identifier><use value="official"/><system value="http://www.bmc.nl/zorgportal/identifiers/observations"/><value value="6325"/></identifier><subject><reference value="Patient/f001"/><display value="P. van de Heuvel"/></subject><performer><reference value="Practitioner/f005"/><display value="A. Langeveld"/></performer><referenceRange><low><value value="4.8"/><units value="kPa"/><system value="http://unitsofmeasure.org"/><code value="kPa"/></low><high><value value="6.0"/><units value="kPa"/><system value="http://unitsofmeasure.org"/><code value="kPa"/></high></referenceRange></Observation>

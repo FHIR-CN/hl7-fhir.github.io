@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "id": "type-restful-interaction",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 9 concepts</p><h2>TypeRestfulInteraction</h2><p>Operations supported by REST at the type or instance level</p><p>This value set includes codes defined in other code systems, using the following rules:</p><ul><li>Include these codes as defined in http://hl7.org/fhir/restful-interaction<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>read</td><td>Read</td><td>Read the current state of the resource</td></tr><tr><td>vread</td><td>Vread</td><td>Read the state of a specific version of the resource</td></tr><tr><td>update</td><td>Update</td><td>Update an existing resource by its id (or create it if it is new)</td></tr><tr><td>delete</td><td>Delete</td><td>Delete a resource</td></tr><tr><td>history-instance</td><td>History Instance</td><td>Retrieve the update history for a particular resource</td></tr><tr><td>validate</td><td>Validate</td><td>Check that the content would be acceptable as an update</td></tr><tr><td>history-type</td><td>History Type</td><td>Retrieve the update history for a all resources of a particular type</td></tr><tr><td>create</td><td>Create</td><td>Create a new resource with a server assigned id</td></tr><tr><td>search-type</td><td>Search Type</td><td>Search all resources of the specified type based on some filter criteria</td></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.406"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/type-restful-interaction",
+  "version": "0.4.0",
+  "name": "TypeRestfulInteraction",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Operations supported by REST at the type or instance level",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/restful-interaction",
+        "concept": [
+          {
+            "code": "read",
+            "display": "Read"
+          },
+          {
+            "code": "vread",
+            "display": "Vread"
+          },
+          {
+            "code": "update",
+            "display": "Update"
+          },
+          {
+            "code": "delete",
+            "display": "Delete"
+          },
+          {
+            "code": "history-instance",
+            "display": "History Instance"
+          },
+          {
+            "code": "validate",
+            "display": "Validate"
+          },
+          {
+            "code": "history-type",
+            "display": "History Type"
+          },
+          {
+            "code": "create",
+            "display": "Create"
+          },
+          {
+            "code": "search-type",
+            "display": "Search Type"
+          }
+        ]
+      }
+    ]
+  }
+}

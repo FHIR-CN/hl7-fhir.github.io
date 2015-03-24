@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><Condition xmlns="http://hl7.org/fhir"><id value="f204"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>patient</b>: 
+        <a href="Patient/f201">Roel. Generated Summary: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL); Roel(OFFICIAL); ph: +31612345678(MOBILE), ph: +31201234567(HOME); MALE; birthDate: Mar 13, 1960; 
+          <span title="Codes: {http://snomed.info/sct 36629006}, {http://hl7.org/fhir/v3/MaritalStatus M}">Legally married</span>; active
+        </a>
+      </p>
+      <p>
+        <b>encounter</b>: 
+        <a href="Encounter/f203">Roel&#39;s encounter on March eleventh. Generated Summary: Roel&#39;s encounter on March eleventh 2013 = Encounter_Roel_20130311 (TEMP); FINISHED; INPATIENT; 
+          <span title="Codes: {http://snomed.info/sct 183807002}">Inpatient stay for nine days</span>; period: Mar 11, 2013 --&gt; Mar 20, 2013; 
+          <span title="Codes: ">The patient seems to suffer from bilateral pneumonia and renal insufficiency, most likely due to chemotherapy.</span>; 
+          <span title="Codes: {http://snomed.info/sct 394849002}">High priority</span>
+        </a>
+      </p>
+      <p>
+        <b>asserter</b>: 
+        <a href="Practitioner/f201">Generated Summary: UZI-nummer = 12345678901 (OFFICIAL); Dokter Bronsig(OFFICIAL); ph: +31715269111(WORK); MALE; birthDate: Dec 24, 1956</a>
+      </p>
+      <p>
+        <b>dateAsserted</b>: Mar 11, 2013
+      </p>
+      <p>
+        <b>code</b>: Acute renal insufficiency specified as due to procedure 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;36225005&#39; = &#39;Acute renal failure due to procedure&#39;, given as &#39;Acute renal insufficiency specified as due to procedure&#39;})</span>
+      </p>
+      <p>
+        <b>category</b>: Problem 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;55607006&#39; = &#39;Problem&#39;, given as &#39;Problem&#39;}; {http://hl7.org/fhir/condition-category code &#39;condition&#39; = &#39;condition)</span>
+      </p>
+      <p>
+        <b>clinicalStatus</b>: WORKING
+      </p>
+      <p>
+        <b>severity</b>: Severe 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;24484000&#39; = &#39;Severe&#39;, given as &#39;Severe&#39;})</span>
+      </p>
+      <p>
+        <b>onset</b>: Mar 11, 2013
+      </p>
+      <p>
+        <b>abatement</b>: Mar 20, 2013
+      </p>
+      <h3>Stages</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Summary</b>
+          </td>
+          <td>
+            <b>Assessment</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>Temporary 
+            <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;14803004&#39; = &#39;Transient&#39;, given as &#39;Temporary&#39;})</span>
+          </td>
+          <td> </td>
+        </tr>
+      </table>
+      <h3>Locations</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Detail</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>Kidney 
+            <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;181414000&#39; = &#39;Kidney&#39;, given as &#39;Kidney&#39;})</span>
+          </td>
+          <td> </td>
+        </tr>
+      </table>
+      <h3>DueTos</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Target</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td>
+            <a href="Procedure/f201">TPF chemotherapy for the sphenoid bone. Generated Summary: COMPLETED; 
+              <span title="Codes: {http://snomed.info/sct 367336001}">Chemotherapy</span>; 
+              <span title="Codes: {http://snomed.info/sct 272676008}">Sphenoid bone</span>; 
+              <span title="Codes: ">DiagnosticReport/f201</span>; performed: Jan 28, 2013 12:31:00 PM --&gt; Jan 28, 2013 1:27:00 PM; notes: Eerste neo-adjuvante TPF-kuur bij groot proces in sphenoid met intracraniale uitbreiding.
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div></text><patient><!--   It entails Roel's problem   --><reference value="Patient/f201"/><display value="Roel"/></patient><encounter><reference value="Encounter/f203"/><display value="Roel&#39;s encounter on March eleventh"/></encounter><asserter><reference value="Practitioner/f201"/></asserter><dateAsserted value="2013-03-11"/><code><coding><system value="http://snomed.info/sct"/><code value="36225005"/><display value="Acute renal insufficiency specified as due to procedure"/></coding></code><category><!--   Renal insufficiency could become a severe problem   --><coding><system value="http://snomed.info/sct"/><code value="55607006"/><display value="Problem"/></coding><coding><system value="http://hl7.org/fhir/condition-category"/><code value="condition"/></coding></category><clinicalStatus value="working"/><!--   The patient is being treated on the basis that this is the problem, but it is still not confirmed (<certainty> is therewith also working)   --><severity><coding><system value="http://snomed.info/sct"/><code value="24484000"/><display value="Severe"/></coding></severity><onsetDateTime value="2013-03-11"/><abatementDate value="2013-03-20"/><!--   After the nine days of inpatient admission, the problem went in remission   --><stage><!--   The problem is temporary and will not become permanent renal insufficiency   --><summary><coding><system value="http://snomed.info/sct"/><code value="14803004"/><display value="Temporary"/></coding></summary></stage><location><code><coding><system value="http://snomed.info/sct"/><code value="181414000"/><display value="Kidney"/></coding></code></location><dueTo><!--   TODO the difference between "due-to" and "follows" is very unclear in the current documentation   --><target><reference value="Procedure/f201"/><display value="TPF chemotherapy for the sphenoid bone"/></target></dueTo></Condition>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><CarePlan xmlns="http://hl7.org/fhir"><id value="f002"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>identifier</b>: CP2934 (OFFICIAL)
+      </p>
+      <p>
+        <b>patient</b>: 
+        <a href="Patient/f001">P. van de Heuvel. Generated Summary: 738472983 (USUAL), ?? (USUAL); Pieter van de Heuvel ; ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME); MALE; birthDate: Nov 17, 1944; 
+          <span title="Codes: {http://hl7.org/fhir/v3/MaritalStatus M}">Getrouwd</span>; multipleBirth; active
+        </a>
+      </p>
+      <p>
+        <b>status</b>: COMPLETED
+      </p>
+      <p>
+        <b>period</b>: Jul 6, 2011 --&gt; Jul 7, 2013
+      </p>
+      <p>
+        <b>modified</b>: Jul 7, 2011 8:30:10 AM
+      </p>
+      <p>
+        <b>concern</b>: 
+        <a href="Condition/f201">?????. Generated Summary: ????; dateAsserted: Apr 4, 2013; 
+          <span title="Codes: {http://snomed.info/sct 386661006}">Fever</span>; 
+          <span title="Codes: {http://snomed.info/sct 55607006}, {http://hl7.org/fhir/condition-category condition}">Problem</span>; CONFIRMED; 
+          <span title="Codes: {http://snomed.info/sct 255604002}">Mild</span>; onset: Apr 2, 2013
+        </a>
+      </p>
+      <h3>Participants</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Role</b>
+          </td>
+          <td>
+            <b>Member</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td>
+            <a href="Practitioner/f003">M.I.M. Versteegh. Generated Summary: 846100293 (OFFICIAL), 243HID3RT938 (USUAL); Marc Versteegh (OFFICIAL); ph: 0205562431(WORK), m.versteegh@bmc.nl(WORK), fax: 0205662948(WORK); MALE; birthDate: Jul 1, 1963; 
+              <span title="Codes: {urn:oid:2.16.840.1.113883.6.121 nl}">Dutch</span>
+            </a>
+          </td>
+        </tr>
+      </table>
+      <h3>Goals</h3>
+      <table class="grid">
+        <tr>
+          <td>
+            <b>Id</b>
+          </td>
+          <td>
+            <b>Description</b>
+          </td>
+          <td>
+            <b>Status</b>
+          </td>
+          <td>
+            <b>Notes</b>
+          </td>
+          <td>
+            <b>Concern</b>
+          </td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>succesful surgery on lung of patient</td>
+          <td>ACHIEVED</td>
+          <td>goal accomplished with minor complications</td>
+          <td> </td>
+        </tr>
+      </table>
+      <blockquote>
+        <p>
+          <b>activity</b>
+        </p>
+        <p>
+          <b>status</b>: COMPLETED
+        </p>
+        <p>
+          <b>prohibited</b>: true
+        </p>
+        <h3>Simples</h3>
+        <table class="grid">
+          <tr>
+            <td>
+              <b>Id</b>
+            </td>
+            <td>
+              <b>Category</b>
+            </td>
+            <td>
+              <b>Code</b>
+            </td>
+            <td>
+              <b>Scheduled[x]</b>
+            </td>
+            <td>
+              <b>Location</b>
+            </td>
+            <td>
+              <b>Performer</b>
+            </td>
+            <td>
+              <b>Product</b>
+            </td>
+            <td>
+              <b>DailyAmount</b>
+            </td>
+            <td>
+              <b>Quantity</b>
+            </td>
+            <td>
+              <b>Details</b>
+            </td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td>PROCEDURE</td>
+            <td>Partial lobectomy of lung 
+              <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;359615001&#39; = &#39;Partial lobectomy of lung&#39;, given as &#39;Partial lobectomy of lung&#39;})</span>
+            </td>
+            <td>2011-07-07T09:30:10+01:00</td>
+            <td> </td>
+            <td>
+              <a href="Practitioner/f003">M.I.M. Versteegh. Generated Summary: 846100293 (OFFICIAL), 243HID3RT938 (USUAL); Marc Versteegh (OFFICIAL); ph: 0205562431(WORK), m.versteegh@bmc.nl(WORK), fax: 0205662948(WORK); MALE; birthDate: Jul 1, 1963; 
+                <span title="Codes: {urn:oid:2.16.840.1.113883.6.121 nl}">Dutch</span>
+              </a>
+            </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+        </table>
+      </blockquote>
+    </div></text><identifier><use value="official"/><!--    urn:oid:2.16.840.1.113883.4.642.1.36    --><system value="http://www.bmc.nl/zorgportal/identifiers/careplans"/><value value="CP2934"/></identifier><patient><reference value="Patient/f001"/><display value="P. van de Heuvel"/></patient><status value="completed"/><!--    urn:oid:2.16.840.1.113883.4.642.1.36    --><period><start value="2011-07-06"/><end value="2013-07-07"/></period><modified value="2011-07-07T09:30:10+01:00"/><concern><reference value="Condition/f201"/><!--   TODO Correcte referentie   --><display value="?????"/></concern><participant><member><reference value="Practitioner/f003"/><display value="M.I.M. Versteegh"/></member></participant><goal><description value="succesful surgery on lung of patient"/><status value="achieved"/><!--    urn:oid:2.16.840.1.113883.4.642.1.38    --><notes value="goal accomplished with minor complications"/></goal><activity><status value="completed"/><prohibited value="true"/><simple><category value="procedure"/><!--    urn:oid:2.16.840.1.113883.4.642.1.39    --><code><coding><system value="http://snomed.info/sct"/><code value="359615001"/><display value="Partial lobectomy of lung"/></coding></code><scheduledString value="2011-07-07T09:30:10+01:00"/><performer><reference value="Practitioner/f003"/><display value="M.I.M. Versteegh"/></performer></simple></activity></CarePlan>

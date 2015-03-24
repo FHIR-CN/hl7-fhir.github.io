@@ -1,0 +1,25 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "example-extension",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>url</b>: \n        <a href=\"http://hl7.org/fhir/SearchParameter/example-extension\">http://hl7.org/fhir/SearchParameter/example-extension</a>\n      </p>\n      <p>\n        <b>name</b>: Example Search Parameter on an extension\n      </p>\n      <p>\n        <b>publisher</b>: HL7 FHIR Project\n      </p>\n      <h3>Contacts</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Name</b>\n          </td>\n          <td>\n            <b>Telecom</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td> </td>\n          <td>http://hl7.org/fhir</td>\n        </tr>\n      </table>\n      <p>\n        <b>base</b>: Patient\n      </p>\n      <p>\n        <b>type</b>: TOKEN\n      </p>\n      <p>\n        <b>description</b>: Search by url for a participation agreement\n      </p>\n      <p>\n        <b>xpath</b>: http://example.org/fhir/StructureDefinition/participation-agreement\n      </p>\n    </div>"
+  },
+  "url": "http://hl7.org/fhir/SearchParameter/example-extension",
+  "name": "Example Search Parameter on an extension",
+  "publisher": "HL7 FHIR Project",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "base": "Patient",
+  "type": "token",
+  "description": "Search by url for a participation agreement",
+  "xpath": "http://example.org/fhir/StructureDefinition/participation-agreement"
+}

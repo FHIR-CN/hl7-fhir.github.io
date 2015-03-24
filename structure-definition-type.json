@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "structure-definition-type",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 4 concepts</p><h2>StructureDefinitionType</h2><p>Defines the type of structure that a definition is describing</p><p>This value set defines its own terms in the system http://hl7.org/fhir/structure-definition-type</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>type<a name=\"type\"> </a></td><td>Data Type</td><td>A data type - either a primitive or complex structure that defines a set of data elements. These can be used throughout Resource and extension definitions.</td></tr><tr><td>resource<a name=\"resource\"> </a></td><td>Resource</td><td>A resource defined by the FHIR specification.</td></tr><tr><td>constraint<a name=\"constraint\"> </a></td><td>Constrained Type</td><td>A set of constraints on a resource or data type that describe how it is used for a particular use.</td></tr><tr><td>extension<a name=\"extension\"> </a></td><td>Extension Definition</td><td>A definition of an extension that can be used in a FHIR resource (or a set of constraints on an exsting extension).</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.1161"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/structure-definition-type",
+  "version": "0.4.0",
+  "name": "StructureDefinitionType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Defines the type of structure that a definition is describing",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.1161"
+      }
+    ],
+    "system": "http://hl7.org/fhir/structure-definition-type",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "type",
+        "display": "Data Type",
+        "definition": "A data type - either a primitive or complex structure that defines a set of data elements. These can be used throughout Resource and extension definitions."
+      },
+      {
+        "code": "resource",
+        "display": "Resource",
+        "definition": "A resource defined by the FHIR specification."
+      },
+      {
+        "code": "constraint",
+        "display": "Constrained Type",
+        "definition": "A set of constraints on a resource or data type that describe how it is used for a particular use."
+      },
+      {
+        "code": "extension",
+        "display": "Extension Definition",
+        "definition": "A definition of an extension that can be used in a FHIR resource (or a set of constraints on an exsting extension)."
+      }
+    ]
+  }
+}

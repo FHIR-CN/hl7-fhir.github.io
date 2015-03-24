@@ -1,0 +1,84 @@
+{
+  "resourceType": "ValueSet",
+  "id": "group-type",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><p>This value set contains 6 concepts</p><h2>GroupType</h2><p>Types of resources that are part of group</p><p>This value set defines its own terms in the system http://hl7.org/fhir/group-type</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>person<a name=\"person\"> </a></td><td>Person</td><td>Group contains &quot;person&quot; Patient resources.</td></tr><tr><td>animal<a name=\"animal\"> </a></td><td>Animal</td><td>Group contains &quot;animal&quot; Patient resources.</td></tr><tr><td>practitioner<a name=\"practitioner\"> </a></td><td>Practitioner</td><td>Group contains healthcare practitioner resources.</td></tr><tr><td>device<a name=\"device\"> </a></td><td>Device</td><td>Group contains Device resources.</td></tr><tr><td>medication<a name=\"medication\"> </a></td><td>Medication</td><td>Group contains Medication resources.</td></tr><tr><td>substance<a name=\"substance\"> </a></td><td>Substance</td><td>Group contains Substance resources.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.74"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/group-type",
+  "version": "0.4.0",
+  "name": "GroupType",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Types of resources that are part of group",
+  "status": "draft",
+  "experimental": false,
+  "date": "2015-03-23T23:56:59+00:00",
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.74"
+      }
+    ],
+    "system": "http://hl7.org/fhir/group-type",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "person",
+        "display": "Person",
+        "definition": "Group contains \"person\" Patient resources."
+      },
+      {
+        "code": "animal",
+        "display": "Animal",
+        "definition": "Group contains \"animal\" Patient resources."
+      },
+      {
+        "code": "practitioner",
+        "display": "Practitioner",
+        "definition": "Group contains healthcare practitioner resources."
+      },
+      {
+        "code": "device",
+        "display": "Device",
+        "definition": "Group contains Device resources."
+      },
+      {
+        "code": "medication",
+        "display": "Medication",
+        "definition": "Group contains Medication resources."
+      },
+      {
+        "code": "substance",
+        "display": "Substance",
+        "definition": "Group contains Substance resources."
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="slotstatus"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This value set contains 4 concepts</p>
+      <h2>SlotStatus</h2>
+      <p>The free/busy status of a slot</p>
+      <p>This value set defines its own terms in the system http://hl7.org/fhir/slotstatus</p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>BUSY
+            <a name="BUSY"> </a>
+          </td>
+          <td>B U S Y</td>
+          <td>Indicates that the time interval is busy because one  or more events have been scheduled for that interval.</td>
+        </tr>
+        <tr>
+          <td>FREE
+            <a name="FREE"> </a>
+          </td>
+          <td>F R E E</td>
+          <td>Indicates that the time interval is free for scheduling.</td>
+        </tr>
+        <tr>
+          <td>BUSY-UNAVAILABLE
+            <a name="BUSY-UNAVAILABLE"> </a>
+          </td>
+          <td>B U S Y U N A V A I L A B L E</td>
+          <td>Indicates that the time interval is busy and that the interval can not be scheduled.</td>
+        </tr>
+        <tr>
+          <td>BUSY-TENTATIVE
+            <a name="BUSY-TENTATIVE"> </a>
+          </td>
+          <td>B U S Y T E N T A T I V E</td>
+          <td>Indicates that the time interval is busy because one or more events have been tentatively scheduled for that interval.</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.365"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/slotstatus"/>
+  <version value="0.4.0"/>
+  <name value="SlotStatus"/>
+  <publisher value="HL7 (FHIR Project)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@lists.hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="The free/busy status of a slot"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2015-03-23T23:56:59+00:00"/>
+  <define>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+      <valueUri value="urn:oid:2.16.840.1.113883.4.642.1.365"/>
+    </extension>
+    <system value="http://hl7.org/fhir/slotstatus"/>
+    <caseSensitive value="true"/>
+    <concept>
+      <code value="BUSY"/>
+      <display value="B U S Y"/>
+      <definition value="Indicates that the time interval is busy because one  or more events have been scheduled for that interval."/>
+    </concept>
+    <concept>
+      <code value="FREE"/>
+      <display value="F R E E"/>
+      <definition value="Indicates that the time interval is free for scheduling."/>
+    </concept>
+    <concept>
+      <code value="BUSY-UNAVAILABLE"/>
+      <display value="B U S Y U N A V A I L A B L E"/>
+      <definition value="Indicates that the time interval is busy and that the interval can not be scheduled."/>
+    </concept>
+    <concept>
+      <code value="BUSY-TENTATIVE"/>
+      <display value="B U S Y T E N T A T I V E"/>
+      <definition value="Indicates that the time interval is busy because one or more events have been tentatively scheduled for that interval."/>
+    </concept>
+  </define>
+</ValueSet>

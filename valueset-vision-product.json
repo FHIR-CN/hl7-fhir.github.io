@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "valueset-vision-product",
+  "meta": {
+    "lastUpdated": "2015-03-23T23:56:59.139+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      This value set includes a smattering of Vision Presciption Product codes.\n    <hr/><p>This value set contains 2 concepts</p><h2>Example Vision Prescription Product Codes</h2><p>This value set includes a smattering of Prescription Product codes</p><p><b>Copyright Statement:</b> This is an example set</p><p>This value set defines its own terms in the system http://hl7.org/fhir/ex-visionprescriptionproduct</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td></tr><tr><td>lens<a name=\"lens\"> </a></td><td/></tr><tr><td>contact<a name=\"contact\"> </a></td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.556"
+    }
+  ],
+  "url": "http://hl7.org/fhir/vs/vision-product",
+  "version": "0.4.0",
+  "name": "Example Vision Prescription Product Codes",
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a smattering of Prescription Product codes",
+  "copyright": "This is an example set",
+  "status": "draft",
+  "experimental": true,
+  "define": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:null"
+      }
+    ],
+    "system": "http://hl7.org/fhir/ex-visionprescriptionproduct",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "lens"
+      },
+      {
+        "code": "contact"
+      }
+    ]
+  }
+}

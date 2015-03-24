@@ -1,0 +1,9 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-genetic-lab",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-genetic-lab",
+  "name": "genetic-lab",
+  "base": "Observation",
+  "type": "string",
+  "description": "Genetics laboratory identifier"
+}

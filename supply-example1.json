@@ -1,0 +1,80 @@
+{
+  "resourceType": "Supply",
+  "id": "102",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>\n        <b>Generated Narrative with Details</b>\n      </p>\n      <p>\n        <b>kind</b>: Central Supply \n        <span style=\"background: LightGoldenRodYellow \">(Details : {http://hl7.org/fhir/supply-type code 'central' = 'central', given as 'Central Supply'})</span>\n      </p>\n      <p>\n        <b>identifier</b>: 23455\n      </p>\n      <p>\n        <b>status</b>: RECEIVED\n      </p>\n      <p>\n        <b>orderedItem</b>: \n        <a href=\"Device/f001\">Feeding tube. Generated Summary: \n          <span title=\"Codes: {http://snomed.info/sct 25062003}\">Feeding tube, device</span>\n        </a>\n      </p>\n      <h3>Dispenses</h3>\n      <table class=\"grid\">\n        <tr>\n          <td>\n            <b>Id</b>\n          </td>\n          <td>\n            <b>Identifier</b>\n          </td>\n          <td>\n            <b>Status</b>\n          </td>\n          <td>\n            <b>Type</b>\n          </td>\n          <td>\n            <b>Quantity</b>\n          </td>\n          <td>\n            <b>SuppliedItem</b>\n          </td>\n          <td>\n            <b>Supplier</b>\n          </td>\n          <td>\n            <b>WhenPrepared</b>\n          </td>\n          <td>\n            <b>WhenHandedOver</b>\n          </td>\n          <td>\n            <b>Destination</b>\n          </td>\n          <td>\n            <b>Receiver</b>\n          </td>\n        </tr>\n        <tr>\n          <td> </td>\n          <td>12345 (USUAL)</td>\n          <td>DISPENSED</td>\n          <td>Device \n            <span style=\"background: LightGoldenRodYellow \">(Details : {http://hl7.org/fhir/supply-item-type code 'device' = 'Device', given as 'Device'})</span>\n          </td>\n          <td>1 EA\n            <span style=\"background: LightGoldenRodYellow \"> (Details: http://unitsofmeasure.org/ code {each} = '{each}')</span>\n          </td>\n          <td>\n            <a href=\"Device/f001\">Feeding tube. Generated Summary: \n              <span title=\"Codes: {http://snomed.info/sct 25062003}\">Feeding tube, device</span>\n            </a>\n          </td>\n          <td>\n            <a href=\"Practitioner/f006\">Rob van den Berk . Generated Summary: 937223645 (OFFICIAL), 134IDY41W988 (USUAL); Rob van den Berk (OFFICIAL); ph: 0205569288(WORK), R.A.vandenberk@bmc.nl(WORK), fax: 0205664987(WORK); MALE; birthDate: Dec 7, 1975</a>\n          </td>\n          <td> </td>\n          <td>Dec 6, 2014 11:42:15 PM</td>\n          <td>\n            <a href=\"Location/2\">Neuro Radiology Operation Room . Generated Summary: B1-S.F2.1.00; name: South Wing Neuro OR 1; description: Old South Wing, Neuro Radiology Operation Room 1 on second floor; \n              <span title=\"Codes: {http://hl7.org/fhir/v3/RoleCode RNEU}\">Neuroradiology unit</span>; ph: 2329; \n              <span title=\"Codes: {http://hl7.org/fhir/location-physical-type ro}\">Room</span>; SUSPENDED\n            </a>\n          </td>\n          <td>\n            <a href=\"Practitioner/f204\">Carla Espinosa. Generated Summary: UZI-nummer = 12345678904 (OFFICIAL); Carla Espinosa; ph: +31715262169(WORK); FEMALE; birthDate: Nov 5, 1967</a>\n          </td>\n        </tr>\n      </table>\n    </div>"
+  },
+  "kind": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/supply-type",
+        "code": "central",
+        "display": "Central Supply",
+        "primary": true
+      }
+    ]
+  },
+  "identifier": {
+    "system": "http://example.org/OR-Supply-Application",
+    "value": "23455",
+    "assigner": {
+      "reference": "Organization/2.16.840.1.113883.19.5",
+      "display": "Good Health Clinic"
+    }
+  },
+  "status": "received",
+  "orderedItem": {
+    "reference": "Device/f001",
+    "display": "Feeding tube"
+  },
+  "dispense": [
+    {
+      "identifier": {
+        "use": "usual",
+        "system": "http://example.org/MM-Supply-Application",
+        "value": "12345",
+        "assigner": {
+          "reference": "Organization/2.16.840.1.113883.19.5",
+          "display": "Good Health Clinic"
+        }
+      },
+      "status": "dispensed",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/supply-item-type",
+            "code": "device",
+            "display": "Device",
+            "primary": true
+          }
+        ]
+      },
+      "quantity": {
+        "value": 1,
+        "units": "EA",
+        "system": "http://unitsofmeasure.org/",
+        "code": "{each}"
+      },
+      "suppliedItem": {
+        "reference": "Device/f001",
+        "display": "Feeding tube"
+      },
+      "supplier": {
+        "reference": "Practitioner/f006",
+        "display": "Rob van den Berk "
+      },
+      "whenHandedOver": "2014-12-06T15:42:15-08:00",
+      "destination": {
+        "reference": "Location/2",
+        "display": "Neuro Radiology Operation Room "
+      },
+      "receiver": [
+        {
+          "reference": "Practitioner/f204",
+          "display": "Carla Espinosa"
+        }
+      ]
+    }
+  ]
+}

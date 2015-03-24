@@ -1,0 +1,138 @@
+{
+  "resourceType": "NutritionOrder",
+  "id": "renaldiet",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t\t\n      <h3>Nutrition Order Renal Diet Example</h3>\n\t\t\t\n      <ul>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Patient: </b>Peter Chalmers\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Orderer: </b>Dr Adam Careful\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Date: </b>2014-09-17\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Known Allergies: </b>Cashew Nuts\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Food Preferences: </b>dairy-free:  Excludes dairy products\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Oral Diet Type: </b>Renal Diet\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Nutrients Requirements: </b>\n\t\t\t\t\t\n          <ol>\n\t\t\t\t\t\t\n            <li>1000 milligrams Phosphorus</li>\n\t\t\t\t\t\t\n            <li>2 grams Sodium</li>\n\t\t\t\t\t\t\n            <li>2 grams Potassium</li>\n\t\t\t\t\t\n          </ol>\n\t\t\t\t\n        </li>\n\t\t\t\t\n        <li>\n\t\t\t\t\t\n          <b>Schedule: </b>three times a day starting on  breakfast 2/10\n        </li>\n\t\t\t\n      </ul>\n\t\t\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example",
+    "display": "Peter Chalmers"
+  },
+  "orderer": {
+    "reference": "Practitioner/example",
+    "display": "Dr Adam Careful"
+  },
+  "identifier": [
+    {
+      "system": "http://goodhealthhospital.org/nutrition-orders",
+      "value": "123"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/example",
+    "display": "Inpatient"
+  },
+  "dateTime": "2014-09-17",
+  "status": "active",
+  "allergyIntolerance": [
+    {
+      "reference": "AllergyIntolerance/example",
+      "display": "Cashew Nuts"
+    }
+  ],
+  "foodPreferenceModifier": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/diet",
+          "code": "dairy-free"
+        }
+      ]
+    }
+  ],
+  "excludeFoodModifier": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "version": "20140730",
+          "code": "227493005",
+          "display": "Cashew Nut"
+        }
+      ]
+    }
+  ],
+  "oralDiet": {
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "33489005",
+            "display": "Renal diet"
+          },
+          {
+            "system": "http://goodhealthhospital.org/diet-type-codes",
+            "code": "1050",
+            "display": "Renal"
+          }
+        ],
+        "text": "Renal Diet"
+      }
+    ],
+    "scheduled": {
+      "repeat": {
+        "bounds": {
+          "start": "2015-02-10"
+        },
+        "frequency": 3,
+        "period": 1,
+        "periodUnits": "d"
+      }
+    },
+    "nutrient": [
+      {
+        "modifier": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39972003",
+              "display": "Sodium"
+            }
+          ]
+        },
+        "amount": {
+          "value": 2,
+          "units": "grams",
+          "system": "http://unitsofmeasure.org",
+          "code": "g"
+        }
+      },
+      {
+        "modifier": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "30820000",
+              "display": "Phosphorus"
+            }
+          ]
+        },
+        "amount": {
+          "value": 1000,
+          "units": "milligrams",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        }
+      },
+      {
+        "modifier": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "88480006",
+              "display": "Potassium"
+            }
+          ]
+        },
+        "amount": {
+          "value": 2,
+          "units": "grams",
+          "system": "http://unitsofmeasure.org",
+          "code": "g"
+        }
+      }
+    ]
+  }
+}

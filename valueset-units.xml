@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="valueset-units"/>
+  <meta>
+    <lastUpdated value="2015-03-23T23:56:59.139+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      This value set includes all UCUM codes
+    
+      <hr/>
+      <p>This value set does not contain a fixed number of concepts</p>
+      <h2>UCUM Codes</h2>
+      <p>UCUM Codes for units of measure. This value set includes all UCUM codes</p>
+      <p>
+        <b>Copyright Statement:</b> The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright © 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved.
+      </p>
+      <p>This value set includes codes defined in other code systems, using the following rules:</p>
+      <ul>
+        <li>Include all codes defined in http://unitsofmeasure.org</li>
+      </ul>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/valueset-oid">
+    <valueUri value="urn:oid:2.16.840.1.113883.4.642.2.523"/>
+  </extension>
+  <url value="http://hl7.org/fhir/vs/units"/>
+  <version value="0.4.0"/>
+  <name value="UCUM Codes"/>
+  <publisher value="FHIR Project team"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="UCUM Codes for units of measure. This value set includes all UCUM codes"/>
+  <copyright value="The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright © 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved."/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+    </include>
+  </compose>
+</ValueSet>

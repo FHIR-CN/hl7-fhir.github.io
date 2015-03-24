@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><DiagnosticReport xmlns="http://hl7.org/fhir"><id value="f001"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>contained</b>: 
+      </p>
+      <p>
+        <b>name</b>: Complete blood count (hemogram) panel - Blood by Automated count 
+        <span style="background: LightGoldenRodYellow ">(Details : {LOINC code &#39;58410-2&#39; = &#39;Complete blood count (hemogram) panel - Blood by Automated count&#39;, given as &#39;Complete blood count (hemogram) panel - Blood by Automated count&#39;})</span>
+      </p>
+      <p>
+        <b>status</b>: FINAL
+      </p>
+      <p>
+        <b>issued</b>: May 15, 2013 6:32:52 PM
+      </p>
+      <p>
+        <b>subject</b>: 
+        <a href="Patient/f001">P. van den Heuvel. Generated Summary: 738472983 (USUAL), ?? (USUAL); Pieter van de Heuvel ; ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME); MALE; birthDate: Nov 17, 1944; 
+          <span title="Codes: {http://hl7.org/fhir/v3/MaritalStatus M}">Getrouwd</span>; multipleBirth; active
+        </a>
+      </p>
+      <p>
+        <b>performer</b>: 
+        <a href="Organization/f001">Burgers University Medical Centre. Generated Summary: 91654 (OFFICIAL), 17-0112278 (USUAL); name: Burgers University Medical Center; 
+          <span title="Codes: {urn:oid:2.16.840.1.113883.2.4.15.1060 V6}, {http://hl7.org/fhir/organization-type prov}">University Medical Hospital</span>; ph: 022-655 2300(WORK)
+        </a>
+      </p>
+      <p>
+        <b>identifier</b>: nr1239044 (OFFICIAL)
+      </p>
+      <p>
+        <b>requestDetail</b>: P. van den Heuvel; L2381 (OFFICIAL); clinicalNotes: patient almost fainted during procedure
+      </p>
+      <p>
+        <b>serviceCategory</b>: Haematology test 
+        <span style="background: LightGoldenRodYellow ">(Details : {SNOMED CT code &#39;252275004&#39; = &#39;Hematology test&#39;, given as &#39;Haematology test&#39;}; {http://hl7.org/fhir/v2/0074 code &#39;HM&#39; = &#39;Hematology)</span>
+      </p>
+      <p>
+        <b>diagnostic</b>: Apr 2, 2013
+      </p>
+      <p>
+        <b>result</b>: 
+      </p>
+      <ul>
+        <li>
+          <a href="Observation/f001">Generated Summary: 
+            <span title="Codes: {http://loinc.org 15074-8}">Glucose [Moles/volume] in Blood</span>; 6.3 mmol/l; 
+            <span title="Codes: {http://hl7.org/fhir/v2/0078 A}">abnormal</span>; applies: Apr 2, 2013 8:30:10 AM --&gt; Apr 5, 2013 8:30:10 AM; issued: Apr 3, 2013 2:30:10 PM; 
+            <span title="Codes: {http://snomed.info/sct 308046002}">Superficial forearm vein</span>; 
+            <span title="Codes: {http://snomed.info/sct 120220003}">Injection to forearm</span>; 6323 (OFFICIAL); P. van de Heuvel; A. Langeveld
+          </a>
+        </li>
+        <li>
+          <a href="Observation/f002">Generated Summary: 
+            <span title="Codes: {http://loinc.org 11555-0}">Base excess in Blood by calculation</span>; 12.6 mmol/l; 
+            <span title="Codes: {http://hl7.org/fhir/v2/0078 A}">abnormal</span>; applies: Apr 2, 2013 9:30:10 AM --&gt; Apr 5, 2013 9:30:10 AM; issued: Apr 3, 2013 2:30:10 PM; 
+            <span title="Codes: {http://snomed.info/sct 308046002}">Superficial forearm vein</span>; 
+            <span title="Codes: {http://snomed.info/sct 120220003}">Injection to forearm</span>; 6324 (OFFICIAL); P. van de Heuvel; A. Langeveld
+          </a>
+        </li>
+        <li>
+          <a href="Observation/f003">Generated Summary: 
+            <span title="Codes: {http://loinc.org 11557-6}">Carbon dioxide in blood</span>; 6.2 kPa; 
+            <span title="Codes: {http://hl7.org/fhir/v2/0078 A}">abnormal</span>; applies: Apr 2, 2013 9:30:10 AM --&gt; Apr 5, 2013 9:30:10 AM; issued: Apr 3, 2013 2:30:10 PM; 
+            <span title="Codes: {http://snomed.info/id 308046002}">Superficial forearm vein</span>; 
+            <span title="Codes: {http://snomed.info/id 120220003}">Injection to forearm</span>; 6325 (OFFICIAL); P. van de Heuvel; A. Langeveld
+          </a>
+        </li>
+        <li>
+          <a href="Observation/f004">Generated Summary: 
+            <span title="Codes: {http://loinc.org 789-8}">Erythrocytes [#/volume] in Blood by Automated count</span>; 4.12 10^12/L; 
+            <span title="Codes: {http://hl7.org/fhir/v2/0078 A}">abnormal</span>; applies: Apr 2, 2013 9:30:10 AM --&gt; Apr 5, 2013 9:30:10 AM; issued: Apr 3, 2013 2:30:10 PM; 
+            <span title="Codes: {http://snomed.info/id 308046002}">Superficial forearm vein</span>; 
+            <span title="Codes: {http://snomed.info/id 120220003}">Injection to forearm</span>; 6326 (OFFICIAL); P. van de Heuvel; A. Langeveld
+          </a>
+        </li>
+        <li>
+          <a href="Observation/f005">Generated Summary: 
+            <span title="Codes: {http://loinc.org 30350-3}">Hemoglobin [Mass/volume] in Venous blood</span>; 7.2 g/dl; 
+            <span title="Codes: {http://hl7.org/fhir/v2/0078 L}">low</span>; applies: Apr 2, 2013 9:30:10 AM --&gt; Apr 5, 2013 9:30:10 AM; issued: Apr 3, 2013 2:30:10 PM; 
+            <span title="Codes: {http://snomed.info/sct 308046002}">Superficial forearm vein</span>; 
+            <span title="Codes: {http://snomed.info/sct 120220003}">Injection to forearm</span>; 6327 (OFFICIAL); P. van de Heuvel; A. Langeveld
+          </a>
+        </li>
+      </ul>
+      <p>
+        <b>conclusion</b>: Core lab
+      </p>
+    </div></text><contained><DiagnosticOrder><id value="req"/><subject><reference value="Patient/f001"/><display value="P. van den Heuvel"/></subject><orderer><reference value="Practitioner/f001"/><display value="E.van den Broek"/></orderer><identifier><use value="official"/><system value="http://www.bmc.nl/zorgportal/identifiers/labresults"/><value value="L2381"/></identifier><encounter><reference value="Encounter/f001"/></encounter><!--   TODO Correcte verwijzing   --><clinicalNotes value="patient almost fainted during procedure"/><item><code><coding><system value="http://loinc.org"/><!--     LOINC     --><code value="58410-2"/><display value="Complete blood count (hemogram) panel - Blood by Automated count"/></coding></code><bodySiteCodeableConcept><coding><system value="http://snomed.info/sct"/><code value="14975008"/><display value="Forearm structure"/></coding></bodySiteCodeableConcept></item></DiagnosticOrder></contained><name><coding><system value="http://loinc.org"/><code value="58410-2"/><display value="Complete blood count (hemogram) panel - Blood by Automated count"/></coding></name><status value="final"/><!--    OID: 2.16.840.1.113883.4.642.1.7    --><issued value="2013-05-15T19:32:52+01:00"/><!--    ISO 8601    --><subject><!--    Linked to a RESOURCE Patient    --><!--    OID: 2.16.840.1.113883.4.642.1.4    --><reference value="Patient/f001"/><display value="P. van den Heuvel"/></subject><performer><reference value="Organization/f001"/><display value="Burgers University Medical Centre"/></performer><identifier><use value="official"/><system value="http://www.bmc.nl/zorgportal/identifiers/reports"/><value value="nr1239044"/></identifier><requestDetail><reference value="#req"/></requestDetail><serviceCategory><coding><system value="http://snomed.info/sct"/><code value="252275004"/><display value="Haematology test"/></coding><coding><system value="http://hl7.org/fhir/v2/0074"/><code value="HM"/></coding></serviceCategory><diagnosticDateTime value="2013-04-02"/><result><reference value="Observation/f001"/></result><result><reference value="Observation/f002"/></result><result><reference value="Observation/f003"/></result><result><reference value="Observation/f004"/></result><result><reference value="Observation/f005"/></result><conclusion value="Core lab"/></DiagnosticReport>
